@@ -35,7 +35,7 @@ namespace TheLongDarkItemMarker.Views
 
             Map = map;
 
-            ZoomFactor = 1;
+            ZoomFactor = UtilityMethods.GetZoomFactorForImageToFitInSpecifiedSize(Map.Image, panelMap.Size);
 
             DisplayMap();
         }

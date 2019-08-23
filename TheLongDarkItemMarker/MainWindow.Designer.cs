@@ -55,7 +55,7 @@
             this.panelMapSelection.Controls.Add(this.radioButtonMapCoastalHighway);
             this.panelMapSelection.Controls.Add(this.radioButtonMapMysteryLake);
             this.panelMapSelection.Controls.Add(this.labelMapSelection);
-            this.panelMapSelection.Location = new System.Drawing.Point(12, 59);
+            this.panelMapSelection.Location = new System.Drawing.Point(12, 65);
             this.panelMapSelection.Name = "panelMapSelection";
             this.panelMapSelection.Size = new System.Drawing.Size(173, 363);
             this.panelMapSelection.TabIndex = 0;
@@ -181,16 +181,16 @@
             // panelMap
             // 
             this.panelMap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMap.Location = new System.Drawing.Point(209, 59);
+            this.panelMap.Location = new System.Drawing.Point(209, 65);
             this.panelMap.Name = "panelMap";
-            this.panelMap.Size = new System.Drawing.Size(1280, 720);
+            this.panelMap.Size = new System.Drawing.Size(820, 820);
             this.panelMap.TabIndex = 1;
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1520, 825);
+            this.ClientSize = new System.Drawing.Size(1648, 897);
             this.Controls.Add(this.panelMap);
             this.Controls.Add(this.panelMapSelection);
             this.Name = "MainWindow";

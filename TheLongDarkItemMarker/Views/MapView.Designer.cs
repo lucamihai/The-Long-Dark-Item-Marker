@@ -39,7 +39,7 @@ namespace TheLongDarkItemMarker.Views
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "MapView";
-            this.Size = new System.Drawing.Size(1280, 720);
+            this.Size = new System.Drawing.Size(820, 820);
             this.ResumeLayout(false);
 
         }

@@ -11,5 +11,20 @@ namespace TheLongDarkItemMarker.Utility
 
             return zoomedImage;
         }
+
+        public static float GetZoomFactorForImageToFitInSpecifiedSize(Image image, Size size)
+        {
+            var maximumValueFromOriginalSize = image.Size.Width > image.Size.Height
+                ? image.Size.Width
+                : image.Size.Height;
+
+            var minimumValueFromSpecifiedSize = size.Width < size.Height
+                ? size.Width
+                : size.Height;
+
+            var zoomFactor = (float)minimumValueFromSpecifiedSize / maximumValueFromOriginalSize;
+
+            return zoomFactor;
+        }
     }
 }
