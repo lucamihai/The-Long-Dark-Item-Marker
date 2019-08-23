@@ -7,15 +7,21 @@ namespace TheLongDarkItemMarker.Views
     public partial class MapView : UserControl
     {
         public Map Map { get; }
+        private Panel panelMap;
 
         public MapView(Map map)
         {
             ValidateMap(map);
 
             InitializeComponent();
+            panelMap = new Panel();
+            panelMap.Size = this.Size;
+            panelMap.AutoScroll = true;
+            this.Controls.Add(panelMap);
 
             Map = map;
-            this.BackgroundImage = Map.Image;
+            
+            DisplayMap();
         }
 
         private void ValidateMap(Map map)
@@ -26,6 +32,13 @@ namespace TheLongDarkItemMarker.Views
             }
 
             map.ValidateAndThrow();
+        }
+
+        private void DisplayMap()
+        {
+            var pictureBox = new PictureBox {Size = Map.Image.Size, Image = Map.Image};
+            panelMap.Controls.Clear();
+            panelMap.Controls.Add(pictureBox);
         }
     }
 }
