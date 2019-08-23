@@ -96,6 +96,10 @@
       <Project>{e6cad944-5ba3-475c-927b-9f00fd3b1d00}</Project>
       <Name>TheLongDarkItemMarker.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TheLongDarkItemMarker.Utility\TheLongDarkItemMarker.Utility.csproj">
+      <Project>{8fb27f29-bc1f-4c3d-8420-324058c8e52a}</Project>
+      <Name>TheLongDarkItemMarker.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CoastalHighway.png" />
