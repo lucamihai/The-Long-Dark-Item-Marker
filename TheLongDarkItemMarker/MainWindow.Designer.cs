@@ -40,9 +40,7 @@
             this.radioButtonMapMysteryLake = new System.Windows.Forms.RadioButton();
             this.labelMapSelection = new System.Windows.Forms.Label();
             this.panelMap = new System.Windows.Forms.Panel();
-            this.labelSelectedMap = new System.Windows.Forms.Label();
             this.panelMapSelection.SuspendLayout();
-            this.panelMap.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMapSelection
@@ -164,10 +162,10 @@
             this.radioButtonMapMysteryLake.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonMapMysteryLake.Location = new System.Drawing.Point(7, 41);
             this.radioButtonMapMysteryLake.Name = "radioButtonMapMysteryLake";
-            this.radioButtonMapMysteryLake.Size = new System.Drawing.Size(105, 21);
+            this.radioButtonMapMysteryLake.Size = new System.Drawing.Size(109, 21);
             this.radioButtonMapMysteryLake.TabIndex = 1;
             this.radioButtonMapMysteryLake.TabStop = true;
-            this.radioButtonMapMysteryLake.Text = "Mistery Lake";
+            this.radioButtonMapMysteryLake.Text = "Mystery Lake";
             this.radioButtonMapMysteryLake.UseVisualStyleBackColor = true;
             // 
             // labelMapSelection
@@ -183,21 +181,10 @@
             // panelMap
             // 
             this.panelMap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMap.Controls.Add(this.labelSelectedMap);
             this.panelMap.Location = new System.Drawing.Point(209, 59);
             this.panelMap.Name = "panelMap";
             this.panelMap.Size = new System.Drawing.Size(1280, 720);
             this.panelMap.TabIndex = 1;
-            // 
-            // labelSelectedMap
-            // 
-            this.labelSelectedMap.AutoSize = true;
-            this.labelSelectedMap.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSelectedMap.Location = new System.Drawing.Point(476, 359);
-            this.labelSelectedMap.Name = "labelSelectedMap";
-            this.labelSelectedMap.Size = new System.Drawing.Size(196, 36);
-            this.labelSelectedMap.TabIndex = 0;
-            this.labelSelectedMap.Text = "Selected map";
             // 
             // MainWindow
             // 
@@ -210,8 +197,6 @@
             this.Text = "The Long Dark Item Marker";
             this.panelMapSelection.ResumeLayout(false);
             this.panelMapSelection.PerformLayout();
-            this.panelMap.ResumeLayout(false);
-            this.panelMap.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,7 +215,6 @@
         private System.Windows.Forms.RadioButton radioButtonMapBrokenRailroad;
         private System.Windows.Forms.RadioButton radioButtonMapForlornMuskeg;
         private System.Windows.Forms.Panel panelMap;
-        private System.Windows.Forms.Label labelSelectedMap;
     }
 }
 

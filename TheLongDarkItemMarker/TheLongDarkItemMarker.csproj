@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1C44167D-EE07-48BE-B7B6-19EE3B4EB2F4}</ProjectGuid>
+    <ProjectGuid>{D7484745-7D51-4CAF-88BC-33A14A8D84CD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TheLongDarkItemMarker</RootNamespace>
     <AssemblyName>TheLongDarkItemMarker</AssemblyName>
@@ -52,8 +52,16 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="MapImageNames.cs" />
+    <Compile Include="MapNames.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\MapView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MapView.Designer.cs">
+      <DependentUpon>MapView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,7 +73,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\MapView.resx">
+      <DependentUpon>MapView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +90,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TheLongDarkItemMarker.Domain\TheLongDarkItemMarker.Domain.csproj">
+      <Project>{e6cad944-5ba3-475c-927b-9f00fd3b1d00}</Project>
+      <Name>TheLongDarkItemMarker.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoastalHighway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrokenRailroad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MountainTown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HushedRiverValley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForlornMuskeg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TimberwolfMountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PleasantValley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MysteryLake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesolationPoint.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
