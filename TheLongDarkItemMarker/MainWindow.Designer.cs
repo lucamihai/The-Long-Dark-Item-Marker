@@ -195,6 +195,7 @@
             this.Controls.Add(this.panelMapSelection);
             this.Name = "MainWindow";
             this.Text = "The Long Dark Item Marker";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainWindow_KeyDown);
             this.panelMapSelection.ResumeLayout(false);
             this.panelMapSelection.PerformLayout();
             this.ResumeLayout(false);

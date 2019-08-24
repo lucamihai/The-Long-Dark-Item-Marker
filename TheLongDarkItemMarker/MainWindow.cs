@@ -11,6 +11,7 @@ namespace TheLongDarkItemMarker
     [ExcludeFromCodeCoverage]
     public partial class MainWindow : Form
     {
+        private MapView mapView;
         private Dictionary<string, string> mapImageNames;
 
         public MainWindow()
@@ -19,6 +20,8 @@ namespace TheLongDarkItemMarker
             InitializeMapImageNameDictionary();
 
             AssignEventToRadioButtonsForMapSelection();
+
+            this.KeyPreview = true;
         }
 
         private void InitializeMapImageNameDictionary()
@@ -71,10 +74,31 @@ namespace TheLongDarkItemMarker
 
         private void DisplayMap(Map map)
         {
-            var mapView = new MapView(map);
+            mapView = new MapView(map);
 
             panelMap.Controls.Clear();
             panelMap.Controls.Add(mapView);
+        }
+
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            var position = Control.MousePosition;
+            var positionToMapView = mapView.PointToClient(position);
+
+            if (mapView.DisplayRectangle.Contains(positionToMapView))
+            {
+                if (e.KeyCode == Keys.PageUp)
+                {
+                    mapView.ZoomFactor += 0.025f;
+                    //this.PerformLayout();
+                }
+
+                if (e.KeyCode == Keys.PageDown)
+                {
+                    mapView.ZoomFactor -= 0.025f;
+                    //this.PerformLayout();
+                }
+            }
         }
     }
 }
