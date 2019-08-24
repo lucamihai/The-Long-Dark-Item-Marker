@@ -8,7 +8,7 @@ namespace TheLongDarkItemMarker.Views
 {
     public partial class MapView : UserControl
     {
-        private Pen pen;
+        public Color MarkerColor { get; set; } = Color.Black;
 
         private ContextMenuStrip contextMenuStrip;
         private Point rightClickLocation;
@@ -36,7 +36,6 @@ namespace TheLongDarkItemMarker.Views
             InitializeComponent();
             InitializeContextMenuStrip();
             InitializePanelMap();
-            InitializePen();
 
             this.Controls.Add(panelMap);
 
@@ -82,11 +81,6 @@ namespace TheLongDarkItemMarker.Views
             panelMap.AutoScroll = true;
         }
 
-        private void InitializePen()
-        {
-            pen = new Pen(Color.Black, 2);
-        }
-
         private void DisplayMap()
         {
             var currentHorizontalScrollPercentage = GetCurrentHorizontalScrollPercentage();
@@ -117,12 +111,17 @@ namespace TheLongDarkItemMarker.Views
         {
             foreach (var marker in Map.Markers)
             {
-                var position = new Point();
-                position.X = (int) (pictureBox.Image.Width * marker.XPositionPercentage) / 100;
-                position.Y = (int) (pictureBox.Image.Height * marker.YPositionPercentage) / 100;
+                var position = new Point
+                {
+                    X = (int) (pictureBox.Image.Width * marker.XPositionPercentage) / 100,
+                    Y = (int) (pictureBox.Image.Height * marker.YPositionPercentage) / 100
+                };
 
                 var rectangle = new Rectangle(position, new Size(5, 5));
-                e.Graphics.DrawRectangle(pen, rectangle);
+                using (var pen = new Pen(MarkerColor))
+                {
+                    e.Graphics.DrawRectangle(pen, rectangle);
+                }
             }
         }
 
