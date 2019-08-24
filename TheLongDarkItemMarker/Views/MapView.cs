@@ -43,6 +43,12 @@ namespace TheLongDarkItemMarker.Views
             ZoomFactor = UtilityMethods.GetZoomFactorForImageToFitInSpecifiedSize(Map.Image, panelMap.Size);
         }
 
+        public void ForceDraw()
+        {
+            DisplayMap();
+            pictureBox.Refresh();
+        }
+
         private void ValidateMap(Map map)
         {
             if (map == null)

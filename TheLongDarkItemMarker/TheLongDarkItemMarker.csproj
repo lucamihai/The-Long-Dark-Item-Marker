@@ -33,7 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.8.4.0\lib\net45\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -78,6 +82,7 @@
     <EmbeddedResource Include="Views\MapView.resx">
       <DependentUpon>MapView.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -95,6 +100,10 @@
     <ProjectReference Include="..\TheLongDarkItemMarker.Domain\TheLongDarkItemMarker.Domain.csproj">
       <Project>{e6cad944-5ba3-475c-927b-9f00fd3b1d00}</Project>
       <Name>TheLongDarkItemMarker.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TheLongDarkItemMarker.FileSaving\TheLongDarkItemMarker.FileSaving.csproj">
+      <Project>{85ee57f0-6eda-4c9d-85e5-f1c8828c2fe1}</Project>
+      <Name>TheLongDarkItemMarker.FileSaving</Name>
     </ProjectReference>
     <ProjectReference Include="..\TheLongDarkItemMarker.Utility\TheLongDarkItemMarker.Utility.csproj">
       <Project>{8fb27f29-bc1f-4c3d-8420-324058c8e52a}</Project>

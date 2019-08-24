@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using FluentValidation;
 using TheLongDarkItemMarker.Domain.Entities;
+using TheLongDarkItemMarker.FileSaving;
 using TheLongDarkItemMarker.Views;
 
 namespace TheLongDarkItemMarker
@@ -14,6 +17,13 @@ namespace TheLongDarkItemMarker
         private MapView mapView;
         private Dictionary<string, string> mapImageNames;
 
+        private string ActiveFolderPath
+        {
+            get => textBoxActiveFolder.Text;
+            set => textBoxActiveFolder.Text = value;
+        }
+        private readonly JsonManager jsonManager;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -22,6 +32,9 @@ namespace TheLongDarkItemMarker
             AssignEventToRadioButtonsForMapSelection();
 
             this.KeyPreview = true;
+
+            jsonManager = new JsonManager();
+            labelWarning.Text = "There is currently no active folder set!";
         }
 
         private void InitializeMapImageNameDictionary()
@@ -59,6 +72,11 @@ namespace TheLongDarkItemMarker
 
             if (radioButton.Checked)
             {
+                if (ActiveFolderPath != string.Empty)
+                {
+                    SaveMarkers();
+                }
+
                 var mapName = radioButton.Text;
                 var mapImageName = mapImageNames[mapName];
                 var map = new Map
@@ -69,6 +87,11 @@ namespace TheLongDarkItemMarker
 
                 map.ValidateAndThrow();
                 DisplayMap(map);
+
+                if (ActiveFolderPath != string.Empty)
+                {
+                    LoadMarkers();
+                }
             }
         }
 
@@ -90,14 +113,88 @@ namespace TheLongDarkItemMarker
                 if (e.KeyCode == Keys.PageUp)
                 {
                     mapView.ZoomFactor += 0.025f;
-                    //this.PerformLayout();
                 }
 
                 if (e.KeyCode == Keys.PageDown)
                 {
                     mapView.ZoomFactor -= 0.025f;
-                    //this.PerformLayout();
                 }
+            }
+        }
+
+        private void SetActiveFolderClick(object sender, System.EventArgs e)
+        {
+            using (var folderBrowserDialog = new FolderBrowserDialog())
+            {
+                var dialogResult = folderBrowserDialog.ShowDialog();
+
+                if (dialogResult == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog.SelectedPath))
+                {
+                    ActiveFolderPath = folderBrowserDialog.SelectedPath;
+                    labelWarning.Text = string.Empty;
+
+                    LoadMarkers();
+                }
+            }
+        }
+
+        private string GetMarkersJsonFileNameBasedOnMapName(string mapName)
+        {
+            return $"{ActiveFolderPath}\\{mapName} markers.json";
+        }
+
+        private void ValidateMarkers(List<Marker> markers)
+        {
+            foreach (var marker in markers)
+            {
+                marker.ValidateAndThrow();
+            }
+        }
+
+        private void SaveMarkers()
+        {
+            var markers = mapView.Map.Markers;
+            var mapName = mapView.Map.Name;
+            var fileName = GetMarkersJsonFileNameBasedOnMapName(mapName);
+
+            jsonManager.SaveMarkersToJsonFile(markers, fileName);
+
+        }
+
+        private void LoadMarkers()
+        {
+            var mapName = mapView.Map.Name;
+            var fileName = GetMarkersJsonFileNameBasedOnMapName(mapName);
+
+            List<Marker> markers;
+
+            try
+            {
+                markers = jsonManager.GetMarkersFromJsonFile(fileName);
+                ValidateMarkers(markers);
+            }
+            catch (ValidationException exception)
+            {
+                MessageBox.Show(
+                    $"Data from {fileName} is not correctly formatted.{Environment.NewLine}{exception.Message}");
+                return;
+            }
+            catch (ArgumentException exception)
+            {
+                markers = new List<Marker>();
+            }
+
+            mapView.Map.Markers.Clear();
+            mapView.Map.Markers.AddRange(markers);
+
+            mapView.ForceDraw();
+        }
+
+        private void OnFormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (ActiveFolderPath != string.Empty)
+            {
+                SaveMarkers();
             }
         }
     }

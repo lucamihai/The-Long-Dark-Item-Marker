@@ -40,7 +40,14 @@
             this.radioButtonMapMysteryLake = new System.Windows.Forms.RadioButton();
             this.labelMapSelection = new System.Windows.Forms.Label();
             this.panelMap = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setActiveFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelActiveFolder = new System.Windows.Forms.Label();
+            this.labelWarning = new System.Windows.Forms.Label();
+            this.textBoxActiveFolder = new System.Windows.Forms.TextBox();
             this.panelMapSelection.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMapSelection
@@ -186,19 +193,82 @@
             this.panelMap.Size = new System.Drawing.Size(820, 820);
             this.panelMap.TabIndex = 1;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1648, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setActiveFolderToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // setActiveFolderToolStripMenuItem
+            // 
+            this.setActiveFolderToolStripMenuItem.Name = "setActiveFolderToolStripMenuItem";
+            this.setActiveFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.setActiveFolderToolStripMenuItem.Text = "Set active folder";
+            this.setActiveFolderToolStripMenuItem.Click += new System.EventHandler(this.SetActiveFolderClick);
+            // 
+            // labelActiveFolder
+            // 
+            this.labelActiveFolder.AutoSize = true;
+            this.labelActiveFolder.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelActiveFolder.Location = new System.Drawing.Point(209, 13);
+            this.labelActiveFolder.Name = "labelActiveFolder";
+            this.labelActiveFolder.Size = new System.Drawing.Size(80, 15);
+            this.labelActiveFolder.TabIndex = 3;
+            this.labelActiveFolder.Text = "Active folder:";
+            // 
+            // labelWarning
+            // 
+            this.labelWarning.AutoSize = true;
+            this.labelWarning.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWarning.ForeColor = System.Drawing.Color.Red;
+            this.labelWarning.Location = new System.Drawing.Point(209, 39);
+            this.labelWarning.Name = "labelWarning";
+            this.labelWarning.Size = new System.Drawing.Size(106, 15);
+            this.labelWarning.TabIndex = 4;
+            this.labelWarning.Text = "Warnings go here";
+            // 
+            // textBoxActiveFolder
+            // 
+            this.textBoxActiveFolder.Location = new System.Drawing.Point(295, 11);
+            this.textBoxActiveFolder.Name = "textBoxActiveFolder";
+            this.textBoxActiveFolder.ReadOnly = true;
+            this.textBoxActiveFolder.Size = new System.Drawing.Size(711, 20);
+            this.textBoxActiveFolder.TabIndex = 5;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1648, 897);
+            this.Controls.Add(this.textBoxActiveFolder);
+            this.Controls.Add(this.labelWarning);
+            this.Controls.Add(this.labelActiveFolder);
             this.Controls.Add(this.panelMap);
             this.Controls.Add(this.panelMapSelection);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainWindow";
             this.Text = "The Long Dark Item Marker";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainWindow_KeyDown);
             this.panelMapSelection.ResumeLayout(false);
             this.panelMapSelection.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -216,6 +286,12 @@
         private System.Windows.Forms.RadioButton radioButtonMapBrokenRailroad;
         private System.Windows.Forms.RadioButton radioButtonMapForlornMuskeg;
         private System.Windows.Forms.Panel panelMap;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setActiveFolderToolStripMenuItem;
+        private System.Windows.Forms.Label labelActiveFolder;
+        private System.Windows.Forms.Label labelWarning;
+        private System.Windows.Forms.TextBox textBoxActiveFolder;
     }
 }
 
