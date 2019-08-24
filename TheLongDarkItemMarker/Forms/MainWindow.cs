@@ -110,6 +110,8 @@ namespace TheLongDarkItemMarker.Forms
 
         private void OnMarkerClicked(Marker clickedMarker)
         {
+            mapView.ForceDraw();
+
             markerView = new MarkerView(clickedMarker);
 
             panelClickedMarker.Controls.Clear();

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
 
@@ -28,6 +29,7 @@ namespace TheLongDarkItemMarker.Forms
             marker.ValidateAndThrow();
         }
 
+        [ExcludeFromCodeCoverage]
         private void SaveMarkerClick(object sender, EventArgs e)
         {
             var markerName = textBoxMarkerName.Text;
@@ -50,6 +52,7 @@ namespace TheLongDarkItemMarker.Forms
             this.Close();
         }
 
+        [ExcludeFromCodeCoverage]
         private void CancelClick(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;

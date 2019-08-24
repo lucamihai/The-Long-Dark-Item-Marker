@@ -9,8 +9,11 @@ namespace TheLongDarkItemMarker.Views
 {
     public partial class MapView : UserControl
     {
-        public Color MarkerColor { get; set; } = Color.Black;
-        public Size MarkerSize { get; set; } = new Size(5, 5);
+        public Color MarkerInactiveColor { get; set; } = Color.Orange;
+        public Color MarkerActiveColor { get; set; } = Color.DarkGreen;
+        public Size MarkerSize { get; set; } = new Size(10, 10);
+
+        private Marker activeMarker;
 
         private ContextMenuStrip contextMenuStrip;
         private Point rightClickLocation;
@@ -129,9 +132,20 @@ namespace TheLongDarkItemMarker.Views
                 var position = GetMarkerPosition(marker);
                 var rectangle = new Rectangle(position, MarkerSize);
 
-                using (var pen = new Pen(MarkerColor))
+                using (var brush = new SolidBrush(MarkerInactiveColor))
                 {
-                    e.Graphics.DrawRectangle(pen, rectangle);
+                    e.Graphics.FillRectangle(brush, rectangle);
+                }
+            }
+
+            if (activeMarker != null)
+            {
+                var position = GetMarkerPosition(activeMarker);
+                var rectangle = new Rectangle(position, MarkerSize);
+
+                using (var brush = new SolidBrush(MarkerActiveColor))
+                {
+                    e.Graphics.FillRectangle(brush, rectangle);
                 }
             }
         }
@@ -218,6 +232,7 @@ namespace TheLongDarkItemMarker.Views
 
                 if (RectangleWasClicked(mouseEventArgs, markerRectangle))
                 {
+                    activeMarker = marker;
                     return marker;
                 }
             }

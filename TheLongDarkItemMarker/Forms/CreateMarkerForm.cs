@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
 
@@ -18,7 +19,8 @@ namespace TheLongDarkItemMarker.Forms
             YPercentage = yPercentage;
         }
 
-        private void buttonAddMarker_Click(object sender, EventArgs e)
+        [ExcludeFromCodeCoverage]
+        private void AddMarkerClick(object sender, EventArgs e)
         {
             var markerName = textBoxMarkerName.Text;
 
@@ -45,7 +47,8 @@ namespace TheLongDarkItemMarker.Forms
             this.Close();
         }
 
-        private void buttonCancel_Click(object sender, EventArgs e)
+        [ExcludeFromCodeCoverage]
+        private void CancelClick(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();

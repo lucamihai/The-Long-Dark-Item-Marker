@@ -226,7 +226,7 @@
             // 
             this.labelActiveFolder.AutoSize = true;
             this.labelActiveFolder.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelActiveFolder.Location = new System.Drawing.Point(209, 13);
+            this.labelActiveFolder.Location = new System.Drawing.Point(209, 29);
             this.labelActiveFolder.Name = "labelActiveFolder";
             this.labelActiveFolder.Size = new System.Drawing.Size(80, 15);
             this.labelActiveFolder.TabIndex = 3;
@@ -237,7 +237,7 @@
             this.labelWarning.AutoSize = true;
             this.labelWarning.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWarning.ForeColor = System.Drawing.Color.Red;
-            this.labelWarning.Location = new System.Drawing.Point(209, 39);
+            this.labelWarning.Location = new System.Drawing.Point(209, 45);
             this.labelWarning.Name = "labelWarning";
             this.labelWarning.Size = new System.Drawing.Size(106, 15);
             this.labelWarning.TabIndex = 4;
@@ -245,7 +245,7 @@
             // 
             // textBoxActiveFolder
             // 
-            this.textBoxActiveFolder.Location = new System.Drawing.Point(295, 11);
+            this.textBoxActiveFolder.Location = new System.Drawing.Point(295, 24);
             this.textBoxActiveFolder.Name = "textBoxActiveFolder";
             this.textBoxActiveFolder.ReadOnly = true;
             this.textBoxActiveFolder.Size = new System.Drawing.Size(711, 20);
@@ -292,6 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1648, 897);
             this.Controls.Add(this.labelSelectedMarker);
             this.Controls.Add(this.buttonDeleteMarker);

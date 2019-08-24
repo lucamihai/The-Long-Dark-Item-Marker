@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
 
@@ -18,6 +19,7 @@ namespace TheLongDarkItemMarker.Views
             UpdateViewData();
         }
 
+        [ExcludeFromCodeCoverage]
         public void UpdateViewData()
         {
             label1.Text = $"Marker name: {Marker.Name}";

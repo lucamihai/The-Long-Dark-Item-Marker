@@ -1,4 +1,6 @@
-﻿namespace TheLongDarkItemMarker.Forms
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace TheLongDarkItemMarker.Forms
 {
     partial class CreateMarkerForm
     {
@@ -11,6 +13,7 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        [ExcludeFromCodeCoverage]
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -26,6 +29,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        [ExcludeFromCodeCoverage]
         private void InitializeComponent()
         {
             this.labelMarkerName = new System.Windows.Forms.Label();
@@ -59,7 +63,7 @@
             this.buttonCancel.TabIndex = 24;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            this.buttonCancel.Click += new System.EventHandler(this.CancelClick);
             // 
             // buttonAddMarker
             // 
@@ -69,7 +73,7 @@
             this.buttonAddMarker.TabIndex = 23;
             this.buttonAddMarker.Text = "Add marker";
             this.buttonAddMarker.UseVisualStyleBackColor = true;
-            this.buttonAddMarker.Click += new System.EventHandler(this.buttonAddMarker_Click);
+            this.buttonAddMarker.Click += new System.EventHandler(this.AddMarkerClick);
             // 
             // errorLabel
             // 
