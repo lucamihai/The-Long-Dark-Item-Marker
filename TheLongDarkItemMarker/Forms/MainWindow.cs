@@ -16,6 +16,7 @@ namespace TheLongDarkItemMarker.Forms
     {
         private MapView mapView;
         private Dictionary<string, string> mapImageNames;
+        private MarkerView markerView;
 
         private string ActiveFolderPath
         {
@@ -35,6 +36,9 @@ namespace TheLongDarkItemMarker.Forms
 
             jsonManager = new JsonManager();
             labelWarning.Text = "There is currently no active folder set!";
+
+            buttonEditMarker.Enabled = false;
+            buttonDeleteMarker.Enabled = false;
         }
 
         private void InitializeMapImageNameDictionary()
@@ -106,10 +110,13 @@ namespace TheLongDarkItemMarker.Forms
 
         private void OnMarkerClicked(Marker clickedMarker)
         {
-            var markerView = new MarkerView(clickedMarker);
+            markerView = new MarkerView(clickedMarker);
 
             panelClickedMarker.Controls.Clear();
             panelClickedMarker.Controls.Add(markerView);
+
+            buttonEditMarker.Enabled = true;
+            buttonDeleteMarker.Enabled = true;
         }
 
         private void MainWindow_KeyDown(object sender, KeyEventArgs e)
@@ -205,6 +212,28 @@ namespace TheLongDarkItemMarker.Forms
             {
                 SaveMarkers();
             }
+        }
+
+        private void EditMarkerClick(object sender, EventArgs e)
+        {
+            var editMarkerForm = new EditMarkerForm(markerView.Marker);
+            var result = editMarkerForm.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                markerView.UpdateViewData();
+            }
+        }
+
+        private void DeleteMarkerClick(object sender, EventArgs e)
+        {
+            mapView.Map.Markers.Remove(markerView.Marker);
+            mapView.ForceDraw();
+
+            panelClickedMarker.Controls.Clear();
+
+            buttonEditMarker.Enabled = false;
+            buttonDeleteMarker.Enabled = false;
         }
     }
 }

@@ -15,6 +15,11 @@ namespace TheLongDarkItemMarker.Views
             InitializeComponent();
 
             Marker = marker;
+            UpdateViewData();
+        }
+
+        public void UpdateViewData()
+        {
             label1.Text = $"Marker name: {Marker.Name}";
         }
 

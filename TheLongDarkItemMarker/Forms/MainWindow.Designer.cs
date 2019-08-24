@@ -47,6 +47,9 @@
             this.labelWarning = new System.Windows.Forms.Label();
             this.textBoxActiveFolder = new System.Windows.Forms.TextBox();
             this.panelClickedMarker = new System.Windows.Forms.Panel();
+            this.buttonEditMarker = new System.Windows.Forms.Button();
+            this.buttonDeleteMarker = new System.Windows.Forms.Button();
+            this.labelSelectedMarker = new System.Windows.Forms.Label();
             this.panelMapSelection.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -250,16 +253,49 @@
             // 
             // panelClickedMarker
             // 
-            this.panelClickedMarker.Location = new System.Drawing.Point(1073, 65);
+            this.panelClickedMarker.Location = new System.Drawing.Point(1070, 65);
             this.panelClickedMarker.Name = "panelClickedMarker";
-            this.panelClickedMarker.Size = new System.Drawing.Size(200, 100);
+            this.panelClickedMarker.Size = new System.Drawing.Size(200, 278);
             this.panelClickedMarker.TabIndex = 6;
+            // 
+            // buttonEditMarker
+            // 
+            this.buttonEditMarker.Location = new System.Drawing.Point(1118, 356);
+            this.buttonEditMarker.Name = "buttonEditMarker";
+            this.buttonEditMarker.Size = new System.Drawing.Size(102, 23);
+            this.buttonEditMarker.TabIndex = 7;
+            this.buttonEditMarker.Text = "Edit marker";
+            this.buttonEditMarker.UseVisualStyleBackColor = true;
+            this.buttonEditMarker.Click += new System.EventHandler(this.EditMarkerClick);
+            // 
+            // buttonDeleteMarker
+            // 
+            this.buttonDeleteMarker.Location = new System.Drawing.Point(1118, 385);
+            this.buttonDeleteMarker.Name = "buttonDeleteMarker";
+            this.buttonDeleteMarker.Size = new System.Drawing.Size(102, 23);
+            this.buttonDeleteMarker.TabIndex = 8;
+            this.buttonDeleteMarker.Text = "Delete marker";
+            this.buttonDeleteMarker.UseVisualStyleBackColor = true;
+            this.buttonDeleteMarker.Click += new System.EventHandler(this.DeleteMarkerClick);
+            // 
+            // labelSelectedMarker
+            // 
+            this.labelSelectedMarker.AutoSize = true;
+            this.labelSelectedMarker.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSelectedMarker.Location = new System.Drawing.Point(1095, 39);
+            this.labelSelectedMarker.Name = "labelSelectedMarker";
+            this.labelSelectedMarker.Size = new System.Drawing.Size(142, 23);
+            this.labelSelectedMarker.TabIndex = 9;
+            this.labelSelectedMarker.Text = "Selected marker";
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1648, 897);
+            this.Controls.Add(this.labelSelectedMarker);
+            this.Controls.Add(this.buttonDeleteMarker);
+            this.Controls.Add(this.buttonEditMarker);
             this.Controls.Add(this.panelClickedMarker);
             this.Controls.Add(this.textBoxActiveFolder);
             this.Controls.Add(this.labelWarning);
@@ -302,6 +338,9 @@
         private System.Windows.Forms.Label labelWarning;
         private System.Windows.Forms.TextBox textBoxActiveFolder;
         private System.Windows.Forms.Panel panelClickedMarker;
+        private System.Windows.Forms.Button buttonEditMarker;
+        private System.Windows.Forms.Button buttonDeleteMarker;
+        private System.Windows.Forms.Label labelSelectedMarker;
     }
 }
 

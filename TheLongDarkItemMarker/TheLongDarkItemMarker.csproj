@@ -56,6 +56,12 @@
     <Compile Include="Forms\CreateMarkerForm.Designer.cs">
       <DependentUpon>CreateMarkerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EditMarkerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditMarkerForm.Designer.cs">
+      <DependentUpon>EditMarkerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\CreateMarkerForm.resx">
       <DependentUpon>CreateMarkerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditMarkerForm.resx">
+      <DependentUpon>EditMarkerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
