@@ -9,7 +9,7 @@ using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.FileSaving;
 using TheLongDarkItemMarker.Views;
 
-namespace TheLongDarkItemMarker
+namespace TheLongDarkItemMarker.Forms
 {
     [ExcludeFromCodeCoverage]
     public partial class MainWindow : Form
@@ -152,14 +152,6 @@ namespace TheLongDarkItemMarker
             return $"{ActiveFolderPath}\\{mapName} markers.json";
         }
 
-        private void ValidateMarkers(List<Marker> markers)
-        {
-            foreach (var marker in markers)
-            {
-                marker.ValidateAndThrow();
-            }
-        }
-
         private void SaveMarkers()
         {
             var markers = mapView.Map.Markers;
@@ -197,6 +189,14 @@ namespace TheLongDarkItemMarker
             mapView.Map.Markers.AddRange(markers);
 
             mapView.ForceDraw();
+        }
+
+        private void ValidateMarkers(List<Marker> markers)
+        {
+            foreach (var marker in markers)
+            {
+                marker.ValidateAndThrow();
+            }
         }
 
         private void OnFormClosing(object sender, FormClosingEventArgs e)

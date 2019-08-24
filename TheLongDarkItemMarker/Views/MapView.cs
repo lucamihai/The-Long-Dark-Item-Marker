@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
+using TheLongDarkItemMarker.Forms;
 using TheLongDarkItemMarker.Utility;
 
 namespace TheLongDarkItemMarker.Views
@@ -78,10 +79,14 @@ namespace TheLongDarkItemMarker.Views
             var xPercentage = (rightClickLocation.X * 100) / pictureBox.Image.Size.Width;
             var yPercentage = (rightClickLocation.Y * 100) / pictureBox.Image.Size.Height;
 
-            var marker = new Marker {Name = "Name", XPositionPercentage = xPercentage, YPositionPercentage = yPercentage};
-            Map.Markers.Add(marker);
+            var createMarkerForm = new CreateMarkerForm(xPercentage, yPercentage);
+            var result = createMarkerForm.ShowDialog();
 
-            pictureBox.Refresh();
+            if (result == DialogResult.OK)
+            {
+                Map.Markers.Add(createMarkerForm.Marker);
+                pictureBox.Refresh();
+            }
         }
 
         private void InitializePanelMap()

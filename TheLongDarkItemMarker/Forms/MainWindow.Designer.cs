@@ -1,4 +1,4 @@
-﻿namespace TheLongDarkItemMarker
+﻿namespace TheLongDarkItemMarker.Forms
 {
     partial class MainWindow
     {
@@ -250,7 +250,7 @@
             // 
             // panelClickedMarker
             // 
-            this.panelClickedMarker.Location = new System.Drawing.Point(1079, 65);
+            this.panelClickedMarker.Location = new System.Drawing.Point(1073, 65);
             this.panelClickedMarker.Name = "panelClickedMarker";
             this.panelClickedMarker.Size = new System.Drawing.Size(200, 100);
             this.panelClickedMarker.TabIndex = 6;
