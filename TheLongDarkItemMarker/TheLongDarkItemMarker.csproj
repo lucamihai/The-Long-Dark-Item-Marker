@@ -66,6 +66,12 @@
     <Compile Include="Views\MapView.Designer.cs">
       <DependentUpon>MapView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\MarkerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MarkerView.Designer.cs">
+      <DependentUpon>MarkerView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="Views\MapView.resx">
       <DependentUpon>MapView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MarkerView.resx">
+      <DependentUpon>MarkerView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

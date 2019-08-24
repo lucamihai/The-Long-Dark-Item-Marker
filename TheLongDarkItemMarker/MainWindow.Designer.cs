@@ -46,6 +46,7 @@
             this.labelActiveFolder = new System.Windows.Forms.Label();
             this.labelWarning = new System.Windows.Forms.Label();
             this.textBoxActiveFolder = new System.Windows.Forms.TextBox();
+            this.panelClickedMarker = new System.Windows.Forms.Panel();
             this.panelMapSelection.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -214,7 +215,7 @@
             // setActiveFolderToolStripMenuItem
             // 
             this.setActiveFolderToolStripMenuItem.Name = "setActiveFolderToolStripMenuItem";
-            this.setActiveFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.setActiveFolderToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.setActiveFolderToolStripMenuItem.Text = "Set active folder";
             this.setActiveFolderToolStripMenuItem.Click += new System.EventHandler(this.SetActiveFolderClick);
             // 
@@ -247,11 +248,19 @@
             this.textBoxActiveFolder.Size = new System.Drawing.Size(711, 20);
             this.textBoxActiveFolder.TabIndex = 5;
             // 
+            // panelClickedMarker
+            // 
+            this.panelClickedMarker.Location = new System.Drawing.Point(1079, 65);
+            this.panelClickedMarker.Name = "panelClickedMarker";
+            this.panelClickedMarker.Size = new System.Drawing.Size(200, 100);
+            this.panelClickedMarker.TabIndex = 6;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1648, 897);
+            this.Controls.Add(this.panelClickedMarker);
             this.Controls.Add(this.textBoxActiveFolder);
             this.Controls.Add(this.labelWarning);
             this.Controls.Add(this.labelActiveFolder);
@@ -292,6 +301,7 @@
         private System.Windows.Forms.Label labelActiveFolder;
         private System.Windows.Forms.Label labelWarning;
         private System.Windows.Forms.TextBox textBoxActiveFolder;
+        private System.Windows.Forms.Panel panelClickedMarker;
     }
 }
 

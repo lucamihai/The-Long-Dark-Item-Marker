@@ -98,9 +98,18 @@ namespace TheLongDarkItemMarker
         private void DisplayMap(Map map)
         {
             mapView = new MapView(map);
+            mapView.OnMarkerClicked += OnMarkerClicked;
 
             panelMap.Controls.Clear();
             panelMap.Controls.Add(mapView);
+        }
+
+        private void OnMarkerClicked(Marker clickedMarker)
+        {
+            var markerView = new MarkerView(clickedMarker);
+
+            panelClickedMarker.Controls.Clear();
+            panelClickedMarker.Controls.Add(markerView);
         }
 
         private void MainWindow_KeyDown(object sender, KeyEventArgs e)

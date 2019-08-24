@@ -9,6 +9,7 @@ namespace TheLongDarkItemMarker.Views
     public partial class MapView : UserControl
     {
         public Color MarkerColor { get; set; } = Color.Black;
+        public Size MarkerSize { get; set; } = new Size(5, 5);
 
         private ContextMenuStrip contextMenuStrip;
         private Point rightClickLocation;
@@ -26,6 +27,9 @@ namespace TheLongDarkItemMarker.Views
                 DisplayMap();
             }
         }
+
+        public delegate void MarkerClicked(Marker clickedMarker);
+        public MarkerClicked OnMarkerClicked { get; set; } = clickedMarker => { };
 
         private Panel panelMap;
 
@@ -117,13 +121,9 @@ namespace TheLongDarkItemMarker.Views
         {
             foreach (var marker in Map.Markers)
             {
-                var position = new Point
-                {
-                    X = (int) (pictureBox.Image.Width * marker.XPositionPercentage) / 100,
-                    Y = (int) (pictureBox.Image.Height * marker.YPositionPercentage) / 100
-                };
+                var position = GetMarkerPosition(marker);
+                var rectangle = new Rectangle(position, MarkerSize);
 
-                var rectangle = new Rectangle(position, new Size(5, 5));
                 using (var pen = new Pen(MarkerColor))
                 {
                     e.Graphics.DrawRectangle(pen, rectangle);
@@ -131,11 +131,32 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
-        private void PictureBoxOnMouseDown(object sender, MouseEventArgs e)
+        private Point GetMarkerPosition(Marker marker)
         {
-            if (e.Button == MouseButtons.Right)
+            var position = new Point
             {
-                rightClickLocation = e.Location;
+                X = (int)(pictureBox.Image.Width * marker.XPositionPercentage) / 100,
+                Y = (int)(pictureBox.Image.Height * marker.YPositionPercentage) / 100
+            };
+
+            return position;
+        }
+
+        private void PictureBoxOnMouseDown(object sender, MouseEventArgs mouseEventArgs)
+        {
+            if (mouseEventArgs.Button == MouseButtons.Left)
+            {
+                var clickedMarker = GetClickedMarkerOrNullIfNoMarkerWasClicked(mouseEventArgs);
+
+                if (clickedMarker != null)
+                {
+                    OnMarkerClicked(clickedMarker);
+                }
+            }
+
+            if (mouseEventArgs.Button == MouseButtons.Right)
+            {
+                rightClickLocation = mouseEventArgs.Location;
             }
         }
 
@@ -181,6 +202,31 @@ namespace TheLongDarkItemMarker.Views
             var valueToScroll = (int)(Math.Round(scrollPercentage * maximumScrollValue))/100;
 
             panelMap.VerticalScroll.Value = valueToScroll;
+        }
+
+        private Marker GetClickedMarkerOrNullIfNoMarkerWasClicked(MouseEventArgs mouseEventArgs)
+        {
+            foreach (var marker in Map.Markers)
+            {
+                var markerPosition = GetMarkerPosition(marker);
+                var markerRectangle = new Rectangle(markerPosition, MarkerSize);
+
+                if (RectangleWasClicked(mouseEventArgs, markerRectangle))
+                {
+                    return marker;
+                }
+            }
+
+            return null;
+        }
+
+        private bool RectangleWasClicked(MouseEventArgs mouseEventArgs, Rectangle rectangle)
+        {
+            return
+                mouseEventArgs.X > rectangle.X
+                && mouseEventArgs.X < rectangle.X + rectangle.Width
+                && mouseEventArgs.Y > rectangle.Y
+                && mouseEventArgs.Y < rectangle.Y + rectangle.Height;
         }
     }
 }
