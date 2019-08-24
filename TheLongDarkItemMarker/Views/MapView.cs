@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.Utility;
@@ -7,6 +8,12 @@ namespace TheLongDarkItemMarker.Views
 {
     public partial class MapView : UserControl
     {
+        private Pen pen;
+
+        private ContextMenuStrip contextMenuStrip;
+        private Point rightClickLocation;
+
+        private PictureBox pictureBox;
         public Map Map { get; }
 
         private float zoomFactor;
@@ -20,20 +27,20 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
-        private readonly Panel panelMap;
+        private Panel panelMap;
 
         public MapView(Map map)
         {
             ValidateMap(map);
 
             InitializeComponent();
-            panelMap = new Panel();
-            panelMap.Size = this.Size;
-            panelMap.AutoScroll = true;
+            InitializeContextMenuStrip();
+            InitializePanelMap();
+            InitializePen();
+
             this.Controls.Add(panelMap);
 
             Map = map;
-
             ZoomFactor = UtilityMethods.GetZoomFactorForImageToFitInSpecifiedSize(Map.Image, panelMap.Size);
         }
 
@@ -47,13 +54,50 @@ namespace TheLongDarkItemMarker.Views
             map.ValidateAndThrow();
         }
 
+        private void InitializeContextMenuStrip()
+        {
+            var toolStripMenuItemCreateMarker = new ToolStripMenuItem();
+            toolStripMenuItemCreateMarker.Text = "Create marker here";
+            toolStripMenuItemCreateMarker.Click += ToolStripMenuItemCreateMarkerOnClick;
+
+            contextMenuStrip = new ContextMenuStrip();
+            contextMenuStrip.Items.Add(toolStripMenuItemCreateMarker);
+        }
+
+        private void ToolStripMenuItemCreateMarkerOnClick(object sender, EventArgs e)
+        {
+            var xPercentage = (rightClickLocation.X * 100) / pictureBox.Image.Size.Width;
+            var yPercentage = (rightClickLocation.Y * 100) / pictureBox.Image.Size.Height;
+
+            var marker = new Marker {Name = "Name", XPositionPercentage = xPercentage, YPositionPercentage = yPercentage};
+            Map.Markers.Add(marker);
+
+            pictureBox.Refresh();
+        }
+
+        private void InitializePanelMap()
+        {
+            panelMap = new Panel();
+            panelMap.Size = this.Size;
+            panelMap.AutoScroll = true;
+        }
+
+        private void InitializePen()
+        {
+            pen = new Pen(Color.Black, 2);
+        }
+
         private void DisplayMap()
         {
             var currentHorizontalScrollPercentage = GetCurrentHorizontalScrollPercentage();
             var currentVerticalScrollPercentage = GetCurrentVerticalScrollPercentage();
 
             var image = UtilityMethods.GetZoomedImage(Map.Image, ZoomFactor);
-            var pictureBox = new PictureBox {Size = image.Size, Image = image};
+            pictureBox = new PictureBox {Size = image.Size, Image = image};
+            pictureBox.MouseDown += PictureBoxOnMouseDown;
+            pictureBox.ContextMenuStrip = contextMenuStrip;
+            pictureBox.Paint += PictureBoxOnPaint;
+
             panelMap.Controls.Clear();
             panelMap.Controls.Add(pictureBox);
 
@@ -61,6 +105,33 @@ namespace TheLongDarkItemMarker.Views
             ScrollVertically(currentVerticalScrollPercentage);
 
             panelMap.PerformLayout();
+            pictureBox.Refresh();
+        }
+
+        private void PictureBoxOnPaint(object sender, PaintEventArgs e)
+        {
+            DrawMarkers(e);
+        }
+
+        private void DrawMarkers(PaintEventArgs e)
+        {
+            foreach (var marker in Map.Markers)
+            {
+                var position = new Point();
+                position.X = (int) (pictureBox.Image.Width * marker.XPositionPercentage) / 100;
+                position.Y = (int) (pictureBox.Image.Height * marker.YPositionPercentage) / 100;
+
+                var rectangle = new Rectangle(position, new Size(5, 5));
+                e.Graphics.DrawRectangle(pen, rectangle);
+            }
+        }
+
+        private void PictureBoxOnMouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                rightClickLocation = e.Location;
+            }
         }
 
         private float GetCurrentHorizontalScrollPercentage()

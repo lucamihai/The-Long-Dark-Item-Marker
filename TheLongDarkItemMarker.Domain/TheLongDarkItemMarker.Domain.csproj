@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Map.cs" />
+    <Compile Include="Entities\Marker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validators\MapValidator.cs" />
+    <Compile Include="Validators\MarkerValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

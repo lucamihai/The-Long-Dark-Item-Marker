@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using FluentValidation;
 using TheLongDarkItemMarker.Domain.Validators;
@@ -12,6 +13,12 @@ namespace TheLongDarkItemMarker.Domain.Entities
 
         public string Name { get; set; }
         public Image Image { get; set; }
+        public List<Marker> Markers { get; }
+
+        public Map()
+        {
+            Markers = new List<Marker>();
+        }
 
         public void ValidateAndThrow()
         {
