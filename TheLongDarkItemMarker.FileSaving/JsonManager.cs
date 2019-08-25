@@ -13,7 +13,8 @@ namespace TheLongDarkItemMarker.FileSaving
             ValidateMarkerList(markers);
             ValidateJsonFilePath(jsonFilePath);
 
-            var serializedVehicles = JsonConvert.SerializeObject(markers);
+            var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+            var serializedVehicles = JsonConvert.SerializeObject(markers, settings);
             File.WriteAllText(jsonFilePath, serializedVehicles);
         }
 
@@ -22,8 +23,9 @@ namespace TheLongDarkItemMarker.FileSaving
             ValidateJsonFilePath(jsonFilePath);
             ThrowIfFileDoesNotExist(jsonFilePath);
 
+            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
             var fileContents = File.ReadAllText(jsonFilePath);
-            var deserializedVehicles = JsonConvert.DeserializeObject<List<Marker>>(fileContents);
+            var deserializedVehicles = JsonConvert.DeserializeObject<List<Marker>>(fileContents, settings);
 
             return deserializedVehicles;
         }

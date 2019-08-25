@@ -39,6 +39,19 @@ namespace TheLongDarkItemMarker.Forms
 
             buttonEditMarker.Enabled = false;
             buttonDeleteMarker.Enabled = false;
+
+            var item = new ItemWithConditionAndQuantity
+            {
+                Condition = 60,
+                HowMany = 1,
+                ItemCategory = ItemCategory.Tool,
+                Name = "Hunting Rifle",
+                Quantity = 5,
+                QuantityMaxValue = 10,
+                QuantityName = "Rifle cartridges"
+            };
+            var itemView = new ItemView(item);
+            panelClickedMarker.Controls.Add(itemView);
         }
 
         private void InitializeMapImageNameDictionary()

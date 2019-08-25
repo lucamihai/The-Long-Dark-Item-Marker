@@ -32,24 +32,46 @@ namespace TheLongDarkItemMarker.Views
         [ExcludeFromCodeCoverage]
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxMarkerName = new System.Windows.Forms.TextBox();
+            this.panelItems = new System.Windows.Forms.Panel();
+            this.labelItems = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // textBoxMarkerName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.textBoxMarkerName.Location = new System.Drawing.Point(11, 13);
+            this.textBoxMarkerName.Name = "textBoxMarkerName";
+            this.textBoxMarkerName.ReadOnly = true;
+            this.textBoxMarkerName.Size = new System.Drawing.Size(227, 20);
+            this.textBoxMarkerName.TabIndex = 0;
+            // 
+            // panelItems
+            // 
+            this.panelItems.AutoScroll = true;
+            this.panelItems.Location = new System.Drawing.Point(11, 60);
+            this.panelItems.Name = "panelItems";
+            this.panelItems.Size = new System.Drawing.Size(420, 424);
+            this.panelItems.TabIndex = 1;
+            // 
+            // labelItems
+            // 
+            this.labelItems.AutoSize = true;
+            this.labelItems.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelItems.Location = new System.Drawing.Point(11, 41);
+            this.labelItems.Name = "labelItems";
+            this.labelItems.Size = new System.Drawing.Size(124, 19);
+            this.labelItems.TabIndex = 2;
+            this.labelItems.Text = "Items that are here:";
             // 
             // MarkerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelItems);
+            this.Controls.Add(this.panelItems);
+            this.Controls.Add(this.textBoxMarkerName);
             this.Name = "MarkerView";
+            this.Size = new System.Drawing.Size(435, 500);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -57,6 +79,8 @@ namespace TheLongDarkItemMarker.Views
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxMarkerName;
+        private System.Windows.Forms.Panel panelItems;
+        private System.Windows.Forms.Label labelItems;
     }
 }

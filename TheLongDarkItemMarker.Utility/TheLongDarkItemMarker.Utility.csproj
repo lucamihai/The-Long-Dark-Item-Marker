@@ -45,5 +45,11 @@
     <Compile Include="UtilityMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TheLongDarkItemMarker.Domain\TheLongDarkItemMarker.Domain.csproj">
+      <Project>{e6cad944-5ba3-475c-927b-9f00fd3b1d00}</Project>
+      <Name>TheLongDarkItemMarker.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

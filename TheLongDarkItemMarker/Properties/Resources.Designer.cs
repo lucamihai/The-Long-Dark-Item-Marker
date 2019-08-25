@@ -113,6 +113,26 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemHuntingRifle {
+            get {
+                object obj = ResourceManager.GetObject("itemHuntingRifle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemStick {
+            get {
+                object obj = ResourceManager.GetObject("itemStick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MountainTown {
             get {
                 object obj = ResourceManager.GetObject("MountainTown", resourceCulture);

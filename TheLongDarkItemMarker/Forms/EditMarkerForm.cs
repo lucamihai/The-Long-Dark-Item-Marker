@@ -58,5 +58,17 @@ namespace TheLongDarkItemMarker.Forms
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
+        private void EditItemListClick(object sender, EventArgs e)
+        {
+            var editItemListForm = new EditItemListForm(marker.Items);
+            var result = editItemListForm.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                marker.Items.Clear();
+                marker.Items.AddRange(editItemListForm.Items);
+            }
+        }
     }
 }

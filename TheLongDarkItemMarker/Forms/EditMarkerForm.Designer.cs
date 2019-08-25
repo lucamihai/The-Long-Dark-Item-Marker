@@ -37,6 +37,7 @@ namespace TheLongDarkItemMarker.Forms
             this.buttonSaveMarker = new System.Windows.Forms.Button();
             this.textBoxMarkerName = new System.Windows.Forms.TextBox();
             this.labelMarkerName = new System.Windows.Forms.Label();
+            this.buttonEditItemList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // errorLabel
@@ -85,12 +86,23 @@ namespace TheLongDarkItemMarker.Forms
             this.labelMarkerName.TabIndex = 26;
             this.labelMarkerName.Text = "Name (1-20 char)";
             // 
+            // buttonEditItemList
+            // 
+            this.buttonEditItemList.Location = new System.Drawing.Point(113, 117);
+            this.buttonEditItemList.Name = "buttonEditItemList";
+            this.buttonEditItemList.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditItemList.TabIndex = 31;
+            this.buttonEditItemList.Text = "Edit item list";
+            this.buttonEditItemList.UseVisualStyleBackColor = true;
+            this.buttonEditItemList.Click += new System.EventHandler(this.EditItemListClick);
+            // 
             // EditMarkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(309, 211);
+            this.Controls.Add(this.buttonEditItemList);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSaveMarker);
@@ -110,5 +122,6 @@ namespace TheLongDarkItemMarker.Forms
         private System.Windows.Forms.Button buttonSaveMarker;
         private System.Windows.Forms.TextBox textBoxMarkerName;
         private System.Windows.Forms.Label labelMarkerName;
+        private System.Windows.Forms.Button buttonEditItemList;
     }
 }

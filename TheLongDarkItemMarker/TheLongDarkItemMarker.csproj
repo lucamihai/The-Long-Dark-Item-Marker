@@ -50,11 +50,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AddItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddItemForm.Designer.cs">
+      <DependentUpon>AddItemForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CreateMarkerForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\CreateMarkerForm.Designer.cs">
       <DependentUpon>CreateMarkerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditItemListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditItemListForm.Designer.cs">
+      <DependentUpon>EditItemListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\EditMarkerForm.cs">
       <SubType>Form</SubType>
@@ -72,6 +84,12 @@
     <Compile Include="MapNames.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ItemView.Designer.cs">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MapView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,8 +102,14 @@
     <Compile Include="Views\MarkerView.Designer.cs">
       <DependentUpon>MarkerView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AddItemForm.resx">
+      <DependentUpon>AddItemForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreateMarkerForm.resx">
       <DependentUpon>CreateMarkerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditItemListForm.resx">
+      <DependentUpon>EditItemListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditMarkerForm.resx">
       <DependentUpon>EditMarkerForm.cs</DependentUpon>
@@ -103,6 +127,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\ItemView.resx">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MapView.resx">
       <DependentUpon>MapView.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +190,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DesolationPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemHuntingRifle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemStick.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
