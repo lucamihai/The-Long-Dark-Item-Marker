@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using KellermanSoftware.CompareNetObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -8,6 +9,7 @@ using TheLongDarkItemMarker.Utility.UnitTests;
 namespace TheLongDarkItemMarker.FileSaving.UnitTests
 {
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class JsonManagerUnitTests
     {
         private JsonManager jsonManager;
@@ -67,20 +69,38 @@ namespace TheLongDarkItemMarker.FileSaving.UnitTests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void ReadVehiclesFromJsonFileThrowsArgumentExceptionIfFileDoesNotExist()
+        public void GetMarkersFromJsonFileThrowsArgumentExceptionIfFileDoesNotExist()
         {
             jsonManager.GetMarkersFromJsonFile(jsonFilePath);
         }
 
         [TestMethod]
-        public void ReadVehiclesFromJsonFileReturnsExpectedList()
+        public void GetMarkersFromJsonFileReturnsExpectedList()
         {
             File.WriteAllText(jsonFilePath, Constants.MarkersJsonString);
 
-            var vehiclesFromJson = jsonManager.GetMarkersFromJsonFile(jsonFilePath);
+            var markersFromJsonFile = jsonManager.GetMarkersFromJsonFile(jsonFilePath);
 
             var compareLogic = new CompareLogic();
-            Assert.IsTrue(compareLogic.Compare(vehiclesFromJson, DomainEntities.Markers).AreEqual);
+            Assert.IsTrue(compareLogic.Compare(markersFromJsonFile, DomainEntities.Markers).AreEqual);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void GetItemsFromJsonFileThrowsArgumentExceptionIfFileDoesNotExist()
+        {
+            jsonManager.GetMarkersFromJsonFile(jsonFilePath);
+        }
+
+        [TestMethod]
+        public void GetItemsFromJsonFileReturnsExpectedList()
+        {
+            File.WriteAllText(jsonFilePath, Constants.ItemsJsonString);
+
+            var itemsFromJsonFile = jsonManager.GetItemsFromJsonFile(jsonFilePath);
+
+            var compareLogic = new CompareLogic();
+            Assert.IsTrue(compareLogic.Compare(itemsFromJsonFile, DomainEntities.Items).AreEqual);
         }
 
         [TestCleanup]

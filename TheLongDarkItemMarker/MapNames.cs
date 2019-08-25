@@ -1,5 +1,8 @@
-﻿namespace TheLongDarkItemMarker
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace TheLongDarkItemMarker
 {
+    [ExcludeFromCodeCoverage]
     internal static class MapNames
     {
         public const string MysteryLake = "Mystery Lake";

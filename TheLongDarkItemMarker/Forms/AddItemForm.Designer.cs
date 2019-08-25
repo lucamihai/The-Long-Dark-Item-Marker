@@ -1,4 +1,6 @@
-﻿namespace TheLongDarkItemMarker.Forms
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace TheLongDarkItemMarker.Forms
 {
     partial class AddItemForm
     {
@@ -36,6 +38,7 @@
             // 
             // panelItems
             // 
+            this.panelItems.AutoScroll = true;
             this.panelItems.Location = new System.Drawing.Point(12, 30);
             this.panelItems.Name = "panelItems";
             this.panelItems.Size = new System.Drawing.Size(420, 572);

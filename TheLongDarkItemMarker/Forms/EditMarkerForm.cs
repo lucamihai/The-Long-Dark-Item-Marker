@@ -59,6 +59,7 @@ namespace TheLongDarkItemMarker.Forms
             this.Close();
         }
 
+        [ExcludeFromCodeCoverage]
         private void EditItemListClick(object sender, EventArgs e)
         {
             var editItemListForm = new EditItemListForm(marker.Items);

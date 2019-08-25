@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
@@ -41,6 +42,7 @@ namespace TheLongDarkItemMarker.Forms
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void UpdateItemPanel()
         {
             panelItems.Controls.Clear();
@@ -55,6 +57,7 @@ namespace TheLongDarkItemMarker.Forms
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void AddItemClick(object sender, EventArgs e)
         {
             var addItemForm = new AddItemForm();
@@ -67,12 +70,14 @@ namespace TheLongDarkItemMarker.Forms
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void SaveClick(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
+        [ExcludeFromCodeCoverage]
         private void CancelClick(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;

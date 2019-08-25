@@ -123,9 +123,39 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemLanternFuel {
+            get {
+                object obj = ResourceManager.GetObject("itemLanternFuel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemSewingKit {
+            get {
+                object obj = ResourceManager.GetObject("itemSewingKit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemStick {
             get {
                 object obj = ResourceManager.GetObject("itemStick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemWaterPotable {
+            get {
+                object obj = ResourceManager.GetObject("itemWaterPotable", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

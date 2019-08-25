@@ -13,9 +13,9 @@ namespace TheLongDarkItemMarker.FileSaving
             ValidateMarkerList(markers);
             ValidateJsonFilePath(jsonFilePath);
 
-            var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
-            var serializedVehicles = JsonConvert.SerializeObject(markers, settings);
-            File.WriteAllText(jsonFilePath, serializedVehicles);
+            var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All, Formatting = Formatting.Indented};
+            var serializedMarkers = JsonConvert.SerializeObject(markers, settings);
+            File.WriteAllText(jsonFilePath, serializedMarkers);
         }
 
         public List<Marker> GetMarkersFromJsonFile(string jsonFilePath)
@@ -23,11 +23,23 @@ namespace TheLongDarkItemMarker.FileSaving
             ValidateJsonFilePath(jsonFilePath);
             ThrowIfFileDoesNotExist(jsonFilePath);
 
-            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+            var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
             var fileContents = File.ReadAllText(jsonFilePath);
-            var deserializedVehicles = JsonConvert.DeserializeObject<List<Marker>>(fileContents, settings);
+            var deserializedMarkers = JsonConvert.DeserializeObject<List<Marker>>(fileContents, settings);
 
-            return deserializedVehicles;
+            return deserializedMarkers;
+        }
+
+        public List<Item> GetItemsFromJsonFile(string jsonFilePath)
+        {
+            ValidateJsonFilePath(jsonFilePath);
+            ThrowIfFileDoesNotExist(jsonFilePath);
+
+            var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+            var fileContents = File.ReadAllText(jsonFilePath);
+            var deserializedItems = JsonConvert.DeserializeObject<List<Item>>(fileContents, settings);
+
+            return deserializedItems;
         }
 
         private void ValidateMarkerList(List<Marker> markers)

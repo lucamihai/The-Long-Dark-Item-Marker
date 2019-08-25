@@ -136,6 +136,9 @@
     <EmbeddedResource Include="Views\MarkerView.resx">
       <DependentUpon>MarkerView.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Config\Items.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -196,6 +199,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemStick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLanternFuel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSewingKit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWaterPotable.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

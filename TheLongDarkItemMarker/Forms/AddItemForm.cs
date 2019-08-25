@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
+using TheLongDarkItemMarker.FileSaving;
 using TheLongDarkItemMarker.Utility;
 using TheLongDarkItemMarker.Views;
 
 namespace TheLongDarkItemMarker.Forms
 {
+    [ExcludeFromCodeCoverage]
     public partial class AddItemForm : Form
     {
         private List<Item> items;
@@ -29,30 +32,15 @@ namespace TheLongDarkItemMarker.Forms
             InitializeItemViews();
         }
 
-        // TODO: Get these from a config file
         private void InitializeItems()
         {
             items = new List<Item>();
 
-            var huntingRifle = new ItemWithConditionAndQuantity
-            {
-                ItemCategory = ItemCategory.Tool,
-                Name = "Hunting Rifle",
-                HowMany = 1,
-                Condition = 100,
-                Quantity = 0,
-                QuantityMaxValue = 10,
-                QuantityName = "Rifle Cartridges"
-            };
-            items.Add(huntingRifle);
+            var jsonManager = new JsonManager();
+            var configPath = $"{Environment.CurrentDirectory}\\Config\\Items.json";
+            var configItems = jsonManager.GetItemsFromJsonFile(configPath);
 
-            var stick = new Item
-            {
-                ItemCategory = ItemCategory.FireStarting,
-                HowMany = 1,
-                Name = "Stick"
-            };
-            items.Add(stick);
+            items.AddRange(configItems);
         }
 
         private void InitializeItemViews()
@@ -71,16 +59,16 @@ namespace TheLongDarkItemMarker.Forms
             }
         }
 
-        private void OnViewClicked(ItemView itemview)
+        private void OnViewClicked(ItemView clickedItemView)
         {
             foreach (var itemView in itemViews)
             {
                 itemView.BackColor = this.BackColor;
             }
 
-            Item = UtilityMethods.GetItemClone(itemview.Item);
+            Item = UtilityMethods.GetItemClone(clickedItemView.Item);
             buttonAddSelectedItem.Enabled = true;
-            itemview.BackColor = Color.LightGreen;
+            clickedItemView.BackColor = Color.LightGreen;
         }
 
         private void AddSelectedItemClick(object sender, EventArgs e)

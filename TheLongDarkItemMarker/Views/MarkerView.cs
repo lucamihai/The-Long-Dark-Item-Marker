@@ -38,6 +38,7 @@ namespace TheLongDarkItemMarker.Views
             marker.ValidateAndThrow();
         }
 
+        [ExcludeFromCodeCoverage]
         private void DisplayItems()
         {
             for (int index = 0; index < Marker.Items.Count; index++)

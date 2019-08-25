@@ -1,7 +1,9 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Drawing;
 
 namespace TheLongDarkItemMarker.Utility.UnitTests
 {
+    [ExcludeFromCodeCoverage]
     internal static class Constants
     {
         public static Size ImageOriginalSize => new Size(100, 100);

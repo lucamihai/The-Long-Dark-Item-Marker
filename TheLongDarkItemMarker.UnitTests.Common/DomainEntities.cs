@@ -8,6 +8,12 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
     [ExcludeFromCodeCoverage]
     public static class DomainEntities
     {
+        public static List<Marker> Markers => new List<Marker>
+        {
+            Marker1,
+            Marker2
+        };
+
         public static Marker Marker1 => new Marker
         {
             Name = Constants.MarkerName1,
@@ -22,10 +28,50 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
             YPositionPercentage = Constants.MarkerYPositionPercentage2
         };
 
-        public static List<Marker> Markers => new List<Marker>
+        public static List<Item> Items => new List<Item>
         {
-            Marker1,
-            Marker2
+            Item1,
+            Item2,
+            Item3,
+            Item4
         };
+
+        public static Item Item1 => new Item
+        {
+            ItemCategory = ItemCategory.FireStarting,
+            HowMany = 1,
+            Name = "Stick"
+        };
+
+        public static Item Item2 => new ItemWithCondition
+        {
+            ItemCategory = ItemCategory.Tool,
+            HowMany = 1,
+            Name = "Sewing Kit",
+            Condition = 100
+        };
+
+        public static Item Item3 => new ItemWithQuantity
+        {
+            ItemCategory = ItemCategory.FoodAndDrink,
+            HowMany = 1,
+            Name = "Water Potable",
+            Quantity = 1,
+            QuantityMaxValue = 1,
+            QuantityName = "Liter"
+        };
+
+        public static Item Item4 => new ItemWithConditionAndQuantity
+        {
+            ItemCategory = ItemCategory.Tool,
+            HowMany = 1,
+            Name = "Hunting Rifle",
+            Condition = 100,
+            Quantity = 0,
+            QuantityMaxValue = 10,
+            QuantityName = "Rifle Cartridge"
+        };
+
+        
     }
 }

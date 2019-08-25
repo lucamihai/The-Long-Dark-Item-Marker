@@ -56,8 +56,10 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="DomainEntities.cs" />
+    <Compile Include="ViewsUnitTests\ItemViewUnitTests.cs" />
     <Compile Include="ViewsUnitTests\MapViewUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewsUnitTests\MarkerViewUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -7,16 +7,29 @@ namespace TheLongDarkItemMarker.Forms
 {
     public partial class CreateMarkerForm : Form
     {
+        [ExcludeFromCodeCoverage]
         public Marker Marker { get; set; }
+
         public float XPercentage { get; }
         public float YPercentage { get; }
 
         public CreateMarkerForm(float xPercentage, float yPercentage)
         {
+            ValidatePercentage(xPercentage);
+            ValidatePercentage(yPercentage);
+
             InitializeComponent();
 
             XPercentage = xPercentage;
             YPercentage = yPercentage;
+        }
+
+        private void ValidatePercentage(float percentage)
+        {
+            if (percentage < 0 || percentage > 100)
+            {
+                throw new ArgumentException();
+            }
         }
 
         [ExcludeFromCodeCoverage]

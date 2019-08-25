@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Text.RegularExpressions;
@@ -20,6 +21,7 @@ namespace TheLongDarkItemMarker.Views
         public Item Item { get; }
 
         public delegate void ViewClicked(ItemView itemView);
+        [ExcludeFromCodeCoverage]
         public ViewClicked OnViewClicked { get; set; } = (itemView) => { };
 
         public ItemView(Item item)
@@ -37,7 +39,6 @@ namespace TheLongDarkItemMarker.Views
 
             this.Click += delegate(object sender, EventArgs args) { OnViewClicked(this); };
             pictureBoxItem.Click += delegate(object sender, EventArgs args) { OnViewClicked(this); };
-            
         }
 
         private void ValidateItem(Item item)
@@ -48,6 +49,7 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void PrepareItemImage()
         {
             var itemImageName = GetItemImageName(Item.Name);
@@ -58,17 +60,19 @@ namespace TheLongDarkItemMarker.Views
                 : new Bitmap(pictureBoxItem.Size.Width, pictureBoxItem.Size.Height);
         }
 
+        [ExcludeFromCodeCoverage]
         private string GetItemImageName(string itemName)
         {
             return $"item{Regex.Replace(itemName, @"\s+", "")}";
         }
 
+        [ExcludeFromCodeCoverage]
         private void DisplayHowManyItems()
         {
             if (Item.HowMany > 1)
             {
                 var rectangleF = new RectangleF(0, 0, 90, 50);
-                var graphics = Graphics.FromImage(pictureBoxItem.Image);
+                var graphics = Graphics.FromImage(pictureBoxItem.BackgroundImage);
 
                 graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
@@ -81,6 +85,7 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void PrepareViewFields()
         {
             var activeFields = new List<TextBox>();
@@ -118,6 +123,7 @@ namespace TheLongDarkItemMarker.Views
             AddViewFieldsToControls(activeFields);
         }
 
+        [ExcludeFromCodeCoverage]
         private void AddViewFieldsToControls(List<TextBox> fields)
         {
             for (int index = 0; index < fields.Count; index++)

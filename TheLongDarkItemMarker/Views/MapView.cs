@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
@@ -9,8 +10,13 @@ namespace TheLongDarkItemMarker.Views
 {
     public partial class MapView : UserControl
     {
+        [ExcludeFromCodeCoverage]
         public Color MarkerInactiveColor { get; set; } = Color.Orange;
+
+        [ExcludeFromCodeCoverage]
         public Color MarkerActiveColor { get; set; } = Color.DarkGreen;
+
+        [ExcludeFromCodeCoverage]
         public Size MarkerSize { get; set; } = new Size(10, 10);
 
         private Marker activeMarker;
@@ -33,6 +39,7 @@ namespace TheLongDarkItemMarker.Views
         }
 
         public delegate void MarkerClicked(Marker clickedMarker);
+        [ExcludeFromCodeCoverage]
         public MarkerClicked OnMarkerClicked { get; set; } = clickedMarker => { };
 
         private Panel panelMap;
@@ -51,6 +58,7 @@ namespace TheLongDarkItemMarker.Views
             ZoomFactor = UtilityMethods.GetZoomFactorForImageToFitInSpecifiedSize(Map.Image, panelMap.Size);
         }
 
+        [ExcludeFromCodeCoverage]
         public void ForceDraw()
         {
             DisplayMap();
@@ -67,6 +75,7 @@ namespace TheLongDarkItemMarker.Views
             map.ValidateAndThrow();
         }
 
+        [ExcludeFromCodeCoverage]
         private void InitializeContextMenuStrip()
         {
             var toolStripMenuItemCreateMarker = new ToolStripMenuItem();
@@ -77,6 +86,7 @@ namespace TheLongDarkItemMarker.Views
             contextMenuStrip.Items.Add(toolStripMenuItemCreateMarker);
         }
 
+        [ExcludeFromCodeCoverage]
         private void ToolStripMenuItemCreateMarkerOnClick(object sender, EventArgs e)
         {
             var xPercentage = (rightClickLocation.X * 100) / pictureBox.Image.Size.Width;
@@ -92,6 +102,7 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void InitializePanelMap()
         {
             panelMap = new Panel();
@@ -99,6 +110,7 @@ namespace TheLongDarkItemMarker.Views
             panelMap.AutoScroll = true;
         }
 
+        [ExcludeFromCodeCoverage]
         private void DisplayMap()
         {
             var currentHorizontalScrollPercentage = GetCurrentHorizontalScrollPercentage();
@@ -120,11 +132,13 @@ namespace TheLongDarkItemMarker.Views
             pictureBox.Refresh();
         }
 
+        [ExcludeFromCodeCoverage]
         private void PictureBoxOnPaint(object sender, PaintEventArgs e)
         {
             DrawMarkers(e);
         }
 
+        [ExcludeFromCodeCoverage]
         private void DrawMarkers(PaintEventArgs e)
         {
             foreach (var marker in Map.Markers)
@@ -150,6 +164,7 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private Point GetMarkerPosition(Marker marker)
         {
             var position = new Point
@@ -161,6 +176,7 @@ namespace TheLongDarkItemMarker.Views
             return position;
         }
 
+        [ExcludeFromCodeCoverage]
         private void PictureBoxOnMouseDown(object sender, MouseEventArgs mouseEventArgs)
         {
             if (mouseEventArgs.Button == MouseButtons.Left)
@@ -179,6 +195,7 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private float GetCurrentHorizontalScrollPercentage()
         {
             var currentScrollValue = panelMap.HorizontalScroll.Value;
@@ -188,6 +205,7 @@ namespace TheLongDarkItemMarker.Views
             return percentageScrolled;
         }
 
+        [ExcludeFromCodeCoverage]
         private float GetCurrentVerticalScrollPercentage()
         {
             var currentScrollValue = panelMap.VerticalScroll.Value;
@@ -197,6 +215,7 @@ namespace TheLongDarkItemMarker.Views
             return percentageScrolled;
         }
 
+        [ExcludeFromCodeCoverage]
         private void ScrollHorizontally(float scrollPercentage)
         {
             if (float.IsInfinity(scrollPercentage))
@@ -210,6 +229,7 @@ namespace TheLongDarkItemMarker.Views
             panelMap.HorizontalScroll.Value = valueToScroll;
         }
 
+        [ExcludeFromCodeCoverage]
         private void ScrollVertically(float scrollPercentage)
         {
             if (float.IsInfinity(scrollPercentage))
@@ -223,6 +243,7 @@ namespace TheLongDarkItemMarker.Views
             panelMap.VerticalScroll.Value = valueToScroll;
         }
 
+        [ExcludeFromCodeCoverage]
         private Marker GetClickedMarkerOrNullIfNoMarkerWasClicked(MouseEventArgs mouseEventArgs)
         {
             foreach (var marker in Map.Markers)
@@ -240,6 +261,7 @@ namespace TheLongDarkItemMarker.Views
             return null;
         }
 
+        [ExcludeFromCodeCoverage]
         private bool RectangleWasClicked(MouseEventArgs mouseEventArgs, Rectangle rectangle)
         {
             return
