@@ -258,12 +258,12 @@ namespace TheLongDarkItemMarker.Forms
             this.panelClickedMarker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelClickedMarker.Location = new System.Drawing.Point(1070, 65);
             this.panelClickedMarker.Name = "panelClickedMarker";
-            this.panelClickedMarker.Size = new System.Drawing.Size(430, 505);
+            this.panelClickedMarker.Size = new System.Drawing.Size(470, 716);
             this.panelClickedMarker.TabIndex = 6;
             // 
             // buttonEditMarker
             // 
-            this.buttonEditMarker.Location = new System.Drawing.Point(1124, 576);
+            this.buttonEditMarker.Location = new System.Drawing.Point(1070, 802);
             this.buttonEditMarker.Name = "buttonEditMarker";
             this.buttonEditMarker.Size = new System.Drawing.Size(102, 23);
             this.buttonEditMarker.TabIndex = 7;
@@ -273,7 +273,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // buttonDeleteMarker
             // 
-            this.buttonDeleteMarker.Location = new System.Drawing.Point(1124, 605);
+            this.buttonDeleteMarker.Location = new System.Drawing.Point(1070, 831);
             this.buttonDeleteMarker.Name = "buttonDeleteMarker";
             this.buttonDeleteMarker.Size = new System.Drawing.Size(102, 23);
             this.buttonDeleteMarker.TabIndex = 8;

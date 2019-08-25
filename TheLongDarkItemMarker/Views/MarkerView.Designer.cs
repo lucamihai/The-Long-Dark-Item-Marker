@@ -47,10 +47,9 @@ namespace TheLongDarkItemMarker.Views
             // 
             // panelItems
             // 
-            this.panelItems.AutoScroll = true;
             this.panelItems.Location = new System.Drawing.Point(11, 60);
             this.panelItems.Name = "panelItems";
-            this.panelItems.Size = new System.Drawing.Size(420, 424);
+            this.panelItems.Size = new System.Drawing.Size(450, 645);
             this.panelItems.TabIndex = 1;
             // 
             // labelItems
@@ -71,7 +70,7 @@ namespace TheLongDarkItemMarker.Views
             this.Controls.Add(this.panelItems);
             this.Controls.Add(this.textBoxMarkerName);
             this.Name = "MarkerView";
-            this.Size = new System.Drawing.Size(435, 500);
+            this.Size = new System.Drawing.Size(470, 716);
             this.ResumeLayout(false);
             this.PerformLayout();
 

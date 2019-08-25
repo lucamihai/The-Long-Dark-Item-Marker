@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
+using TheLongDarkItemMarker.Enums;
 using TheLongDarkItemMarker.FileSaving;
 using TheLongDarkItemMarker.Utility;
 using TheLongDarkItemMarker.Views;
@@ -15,21 +16,21 @@ namespace TheLongDarkItemMarker.Forms
     {
         private List<Item> items;
         private List<ItemView> itemViews;
+        private readonly ItemListView itemListView;
 
         public Item Item { get; set; }
 
         public AddItemForm()
         {
             InitializeComponent();
-            InitializeItemSelection();
+            InitializeItems();
+
+            itemListView = new ItemListView(items, ItemListViewSelection.SingleElement);
+            itemListView.OnAllItemsDeselected += delegate { buttonAddSelectedItem.Enabled = false; };
+            itemListView.OnItemsSelected += delegate { buttonAddSelectedItem.Enabled = true; };
+            panelItems.Controls.Add(itemListView);
 
             buttonAddSelectedItem.Enabled = false;
-        }
-
-        private void InitializeItemSelection()
-        {
-            InitializeItems();
-            InitializeItemViews();
         }
 
         private void InitializeItems()
@@ -43,36 +44,11 @@ namespace TheLongDarkItemMarker.Forms
             items.AddRange(configItems);
         }
 
-        private void InitializeItemViews()
-        {
-            itemViews = new List<ItemView>();
-
-            for (int index = 0; index < items.Count; index++)
-            {
-                var itemView = new ItemView(items[index]);
-                itemView.Location = new Point(0, (index * itemView.Height) + 10);
-                itemView.BorderStyle = BorderStyle.FixedSingle;
-                itemView.OnViewClicked += OnViewClicked;
-                itemViews.Add(itemView);
-
-                panelItems.Controls.Add(itemView);
-            }
-        }
-
-        private void OnViewClicked(ItemView clickedItemView)
-        {
-            foreach (var itemView in itemViews)
-            {
-                itemView.BackColor = this.BackColor;
-            }
-
-            Item = UtilityMethods.GetItemClone(clickedItemView.Item);
-            buttonAddSelectedItem.Enabled = true;
-            clickedItemView.BackColor = Color.LightGreen;
-        }
-
         private void AddSelectedItemClick(object sender, EventArgs e)
         {
+            var selectedItemClone = UtilityMethods.GetItemClone(itemListView.SelectedItems[0]);
+            Item = selectedItemClone;
+
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Drawing;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
+using TheLongDarkItemMarker.Enums;
 using TheLongDarkItemMarker.Utility;
 using TheLongDarkItemMarker.Views;
 
@@ -13,6 +13,8 @@ namespace TheLongDarkItemMarker.Forms
     {
         public List<Item> Items { get; private set; }
 
+        private readonly ItemListView itemListView;
+
         public EditItemListForm(List<Item> items)
         {
             ValidateItemList(items);
@@ -20,7 +22,9 @@ namespace TheLongDarkItemMarker.Forms
             InitializeComponent();
 
             InitializeItemListFromProvidedItems(items);
-            UpdateItemPanel();
+
+            itemListView = new ItemListView(Items, ItemListViewSelection.MultipleElements);
+            panelItems.Controls.Add(itemListView);
         }
 
         private void ValidateItemList(List<Item> items)
@@ -43,21 +47,6 @@ namespace TheLongDarkItemMarker.Forms
         }
 
         [ExcludeFromCodeCoverage]
-        private void UpdateItemPanel()
-        {
-            panelItems.Controls.Clear();
-
-            for (int index = 0; index < Items.Count; index++)
-            {
-                var itemView = new ItemView(Items[index]);
-                itemView.Location = new Point(0, (index * itemView.Height) + 10);
-                itemView.BorderStyle = BorderStyle.FixedSingle;
-
-                panelItems.Controls.Add(itemView);
-            }
-        }
-
-        [ExcludeFromCodeCoverage]
         private void AddItemClick(object sender, EventArgs e)
         {
             var addItemForm = new AddItemForm();
@@ -66,7 +55,7 @@ namespace TheLongDarkItemMarker.Forms
             if (result == DialogResult.OK)
             {
                 Items.Add(addItemForm.Item);
-                UpdateItemPanel();
+                itemListView.ForceDraw();
             }
         }
 

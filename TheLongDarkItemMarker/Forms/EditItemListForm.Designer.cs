@@ -41,16 +41,15 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // panelItems
             // 
-            this.panelItems.AutoScroll = true;
             this.panelItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelItems.Location = new System.Drawing.Point(12, 47);
             this.panelItems.Name = "panelItems";
-            this.panelItems.Size = new System.Drawing.Size(425, 325);
+            this.panelItems.Size = new System.Drawing.Size(470, 716);
             this.panelItems.TabIndex = 0;
             // 
             // buttonAddItem
             // 
-            this.buttonAddItem.Location = new System.Drawing.Point(462, 47);
+            this.buttonAddItem.Location = new System.Drawing.Point(488, 47);
             this.buttonAddItem.Name = "buttonAddItem";
             this.buttonAddItem.Size = new System.Drawing.Size(75, 23);
             this.buttonAddItem.TabIndex = 1;
@@ -70,7 +69,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(111, 399);
+            this.buttonSave.Location = new System.Drawing.Point(85, 785);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 3;
@@ -80,7 +79,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(284, 399);
+            this.buttonCancel.Location = new System.Drawing.Point(258, 785);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 4;
@@ -92,7 +91,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 450);
+            this.ClientSize = new System.Drawing.Size(591, 820);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.labelItems);

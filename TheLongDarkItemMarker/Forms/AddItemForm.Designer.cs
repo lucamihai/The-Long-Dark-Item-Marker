@@ -38,10 +38,9 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // panelItems
             // 
-            this.panelItems.AutoScroll = true;
             this.panelItems.Location = new System.Drawing.Point(12, 30);
             this.panelItems.Name = "panelItems";
-            this.panelItems.Size = new System.Drawing.Size(420, 572);
+            this.panelItems.Size = new System.Drawing.Size(470, 716);
             this.panelItems.TabIndex = 0;
             // 
             // labelSelectItem
@@ -56,7 +55,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // buttonAddSelectedItem
             // 
-            this.buttonAddSelectedItem.Location = new System.Drawing.Point(80, 607);
+            this.buttonAddSelectedItem.Location = new System.Drawing.Point(100, 752);
             this.buttonAddSelectedItem.Name = "buttonAddSelectedItem";
             this.buttonAddSelectedItem.Size = new System.Drawing.Size(107, 23);
             this.buttonAddSelectedItem.TabIndex = 2;
@@ -66,7 +65,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(250, 607);
+            this.buttonCancel.Location = new System.Drawing.Point(270, 752);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 3;
@@ -79,7 +78,7 @@ namespace TheLongDarkItemMarker.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(463, 642);
+            this.ClientSize = new System.Drawing.Size(490, 796);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonAddSelectedItem);
             this.Controls.Add(this.labelSelectItem);

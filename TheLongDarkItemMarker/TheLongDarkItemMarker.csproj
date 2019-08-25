@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\ItemListViewSelection.cs" />
     <Compile Include="Forms\AddItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +85,12 @@
     <Compile Include="MapNames.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ItemListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ItemListView.Designer.cs">
+      <DependentUpon>ItemListView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ItemView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +134,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\ItemListView.resx">
+      <DependentUpon>ItemListView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ItemView.resx">
       <DependentUpon>ItemView.cs</DependentUpon>
     </EmbeddedResource>
