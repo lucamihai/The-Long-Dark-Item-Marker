@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
 using TheLongDarkItemMarker.Domain.Entities;
 
 namespace TheLongDarkItemMarker.Utility
@@ -82,6 +84,45 @@ namespace TheLongDarkItemMarker.Utility
                 Name = item.Name,
                 HowMany = item.HowMany,
             };
+        }
+
+        public static Item GetItemFromListSimilarToProvidedItem(List<Item> items, Item itemToSearch)
+        {
+            if (itemToSearch is ItemWithCondition itemWithCondition)
+            {
+                return items.OfType<ItemWithCondition>().FirstOrDefault(item =>
+                    item.ItemCategory == itemWithCondition.ItemCategory
+                    && item.Name == itemWithCondition.Name
+                    && item.Condition == itemWithCondition.Condition);
+            }
+
+            if (itemToSearch is ItemWithQuantity itemWithQuantity)
+            {
+                return items.OfType<ItemWithQuantity>().FirstOrDefault(item =>
+                    item.ItemCategory == itemWithQuantity.ItemCategory
+                    && item.Name == itemWithQuantity.Name
+                    && item.Quantity == itemWithQuantity.Quantity
+                    && item.QuantityMaxValue == itemWithQuantity.QuantityMaxValue
+                    && item.QuantityName == itemWithQuantity.QuantityName);
+            }
+
+            if (itemToSearch is ItemWithConditionAndQuantity itemWithConditionAndQuantity)
+            {
+                return items.OfType<ItemWithConditionAndQuantity>().FirstOrDefault(item =>
+                    item.ItemCategory == itemWithConditionAndQuantity.ItemCategory
+                    && item.Name == itemWithConditionAndQuantity.Name
+                    && item.Condition == itemWithConditionAndQuantity.Condition
+                    && item.Quantity == itemWithConditionAndQuantity.Quantity
+                    && item.QuantityMaxValue == itemWithConditionAndQuantity.QuantityMaxValue
+                    && item.QuantityName == itemWithConditionAndQuantity.QuantityName);
+            }
+
+            var simpleItems = items.Where(x => !(x is ItemWithCondition)
+                                               && !(x is ItemWithQuantity)
+                                               && !(x is ItemWithConditionAndQuantity));
+
+            return simpleItems.FirstOrDefault(x => x.ItemCategory == itemToSearch.ItemCategory
+                                                   && x.Name == itemToSearch.Name);
         }
     }
 }

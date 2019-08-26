@@ -54,8 +54,45 @@ namespace TheLongDarkItemMarker.Forms
 
             if (result == DialogResult.OK)
             {
-                Items.Add(addItemForm.Item);
+                AddItemOrStackExistingOne(addItemForm.Item);
                 itemListView.ForceDraw();
+            }
+        }
+
+        private void AddItemOrStackExistingOne(Item item)
+        {
+            var alreadyExistingItem = UtilityMethods.GetItemFromListSimilarToProvidedItem(Items, item);
+
+            if (alreadyExistingItem == null)
+                Items.Add(item);
+
+            else
+            {
+                if (item is ItemWithCondition itemFromFormWithCondition)
+                {
+                    var alreadyExistingItemWithCondition = alreadyExistingItem as ItemWithCondition;
+                    alreadyExistingItemWithCondition.HowMany += itemFromFormWithCondition.HowMany;
+
+                    return;
+                }
+
+                if (item is ItemWithQuantity itemFromFormWithQuantity)
+                {
+                    var alreadyExistingItemWithQuantity = alreadyExistingItem as ItemWithQuantity;
+                    alreadyExistingItemWithQuantity.HowMany += itemFromFormWithQuantity.HowMany;
+
+                    return;
+                }
+
+                if (item is ItemWithConditionAndQuantity itemFromFormWithConditionAndQuantity)
+                {
+                    var alreadyExistingItemWithConditionAndQuantity = alreadyExistingItem as ItemWithConditionAndQuantity;
+                    alreadyExistingItemWithConditionAndQuantity.HowMany += itemFromFormWithConditionAndQuantity.HowMany;
+
+                    return;
+                }
+
+                alreadyExistingItem.HowMany += item.HowMany;
             }
         }
 
