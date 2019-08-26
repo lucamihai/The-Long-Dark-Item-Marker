@@ -49,7 +49,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // buttonAddItem
             // 
-            this.buttonAddItem.Location = new System.Drawing.Point(488, 47);
+            this.buttonAddItem.Location = new System.Drawing.Point(505, 47);
             this.buttonAddItem.Name = "buttonAddItem";
             this.buttonAddItem.Size = new System.Drawing.Size(75, 23);
             this.buttonAddItem.TabIndex = 1;
@@ -91,7 +91,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 820);
+            this.ClientSize = new System.Drawing.Size(610, 820);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.labelItems);

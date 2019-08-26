@@ -71,13 +71,13 @@ namespace TheLongDarkItemMarker.Views
         {
             if (Item.HowMany > 1)
             {
-                var rectangleF = new RectangleF(0, 0, 90, 50);
+                var rectangleF = new RectangleF(0, 0, 130, 50);
                 var graphics = Graphics.FromImage(pictureBoxItem.BackgroundImage);
 
                 graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
                 graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
-                graphics.DrawString($"x{Item.HowMany}", new Font("Tahoma", 10), Brushes.Black, rectangleF);
+                graphics.DrawString($"x{Item.HowMany}", new Font("Tahoma", 30), Brushes.Black, rectangleF);
 
                 graphics.Flush();
 

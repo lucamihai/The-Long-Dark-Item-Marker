@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Drawing;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.Enums;
@@ -47,10 +46,16 @@ namespace TheLongDarkItemMarker.Forms
         private void AddSelectedItemClick(object sender, EventArgs e)
         {
             var selectedItemClone = UtilityMethods.GetItemClone(itemListView.SelectedItems[0]);
-            Item = selectedItemClone;
+            var editItemForm = new EditItemForm(selectedItemClone);
+            var result = editItemForm.ShowDialog();
 
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            if (result == DialogResult.OK)
+            {
+                Item = selectedItemClone;
+
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
 
         private void CancelClick(object sender, EventArgs e)
