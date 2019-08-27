@@ -14,7 +14,6 @@ namespace TheLongDarkItemMarker.Forms
     public partial class AddItemForm : Form
     {
         private List<Item> items;
-        private List<ItemView> itemViews;
         private readonly ItemListView itemListView;
 
         public Item Item { get; set; }
@@ -25,11 +24,21 @@ namespace TheLongDarkItemMarker.Forms
             InitializeItems();
 
             itemListView = new ItemListView(items, ItemListViewSelection.SingleElement);
-            itemListView.OnAllItemsDeselected += delegate { buttonAddSelectedItem.Enabled = false; };
-            itemListView.OnItemsSelected += delegate { buttonAddSelectedItem.Enabled = true; };
+            itemListView.OnItemsDeselected += OnItemsDeselected;
+            itemListView.OnItemsSelected += OnItemsSelected;
             panelItems.Controls.Add(itemListView);
 
             buttonAddSelectedItem.Enabled = false;
+        }
+
+        private void OnItemsDeselected()
+        {
+            buttonAddSelectedItem.Enabled = false;
+        }
+
+        private void OnItemsSelected()
+        {
+            buttonAddSelectedItem.Enabled = true;
         }
 
         private void InitializeItems()

@@ -37,6 +37,7 @@ namespace TheLongDarkItemMarker.Forms
             this.labelItems = new System.Windows.Forms.Label();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonEditSelectedItem = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panelItems
@@ -49,9 +50,9 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // buttonAddItem
             // 
-            this.buttonAddItem.Location = new System.Drawing.Point(505, 47);
+            this.buttonAddItem.Location = new System.Drawing.Point(488, 47);
             this.buttonAddItem.Name = "buttonAddItem";
-            this.buttonAddItem.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddItem.Size = new System.Drawing.Size(110, 23);
             this.buttonAddItem.TabIndex = 1;
             this.buttonAddItem.Text = "Add item";
             this.buttonAddItem.UseVisualStyleBackColor = true;
@@ -87,11 +88,22 @@ namespace TheLongDarkItemMarker.Forms
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.CancelClick);
             // 
+            // buttonEditSelectedItem
+            // 
+            this.buttonEditSelectedItem.Location = new System.Drawing.Point(488, 77);
+            this.buttonEditSelectedItem.Name = "buttonEditSelectedItem";
+            this.buttonEditSelectedItem.Size = new System.Drawing.Size(110, 23);
+            this.buttonEditSelectedItem.TabIndex = 5;
+            this.buttonEditSelectedItem.Text = "Edit selected item";
+            this.buttonEditSelectedItem.UseVisualStyleBackColor = true;
+            this.buttonEditSelectedItem.Click += new System.EventHandler(this.EditSelectedItemClick);
+            // 
             // EditItemListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 820);
+            this.Controls.Add(this.buttonEditSelectedItem);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.labelItems);
@@ -111,5 +123,6 @@ namespace TheLongDarkItemMarker.Forms
         private System.Windows.Forms.Label labelItems;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonEditSelectedItem;
     }
 }

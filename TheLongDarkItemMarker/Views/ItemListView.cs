@@ -21,9 +21,9 @@ namespace TheLongDarkItemMarker.Views
         [ExcludeFromCodeCoverage]
         public ItemsSelected OnItemsSelected { get; set; } = () => { };
 
-        public delegate void AllItemsDeselected();
+        public delegate void ItemsDeselected();
         [ExcludeFromCodeCoverage]
-        public AllItemsDeselected OnAllItemsDeselected { get; set; } = () => { };
+        public ItemsDeselected OnItemsDeselected { get; set; } = () => { };
 
         public ItemListView(List<Item> items, ItemListViewSelection itemListViewSelection)
         {
@@ -81,22 +81,17 @@ namespace TheLongDarkItemMarker.Views
             if (SelectedItems.Contains(item))
             {
                 SelectedItems.Remove(item);
-
-                if (SelectedItems.Count == 0)
-                {
-                    OnAllItemsDeselected();
-                }
+                OnItemsDeselected();
             }
             else
             {
-                OnItemsSelected();
-
                 if (ItemListViewSelection == ItemListViewSelection.SingleElement)
                 {
                     SelectedItems.Clear();
                 }
 
                 SelectedItems.Add(item);
+                OnItemsSelected();
             }
 
             UpdateColorsForItemViews();

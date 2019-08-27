@@ -25,6 +25,19 @@ namespace TheLongDarkItemMarker.Forms
 
             itemListView = new ItemListView(Items, ItemListViewSelection.MultipleElements);
             panelItems.Controls.Add(itemListView);
+
+            itemListView.OnItemsSelected += OnItemsSelected;
+            itemListView.OnItemsDeselected += OnItemsDeselected;
+        }
+
+        private void OnItemsSelected()
+        {
+            buttonEditSelectedItem.Enabled = itemListView.SelectedItems.Count == 1;
+        }
+
+        private void OnItemsDeselected()
+        {
+            buttonEditSelectedItem.Enabled = itemListView.SelectedItems.Count == 1;
         }
 
         private void ValidateItemList(List<Item> items)
@@ -59,6 +72,7 @@ namespace TheLongDarkItemMarker.Forms
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void AddItemOrStackExistingOne(Item item)
         {
             var alreadyExistingItem = UtilityMethods.GetItemFromListSimilarToProvidedItem(Items, item);
@@ -97,6 +111,19 @@ namespace TheLongDarkItemMarker.Forms
         }
 
         [ExcludeFromCodeCoverage]
+        private void EditSelectedItemClick(object sender, EventArgs e)
+        {
+            var selectedItem = itemListView.SelectedItems[0];
+            var editItemForm = new EditItemForm(selectedItem);
+            var result = editItemForm.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                itemListView.ForceDraw();
+            }
+        }
+
+        [ExcludeFromCodeCoverage]
         private void SaveClick(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
@@ -109,5 +136,6 @@ namespace TheLongDarkItemMarker.Forms
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
     }
 }

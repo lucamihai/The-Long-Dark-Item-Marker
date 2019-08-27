@@ -39,6 +39,7 @@ namespace TheLongDarkItemMarker.Views
 
             this.Click += delegate(object sender, EventArgs args) { OnViewClicked(this); };
             pictureBoxItem.Click += delegate(object sender, EventArgs args) { OnViewClicked(this); };
+            this.panelFields.Click += delegate (object sender, EventArgs args) { OnViewClicked(this); };
         }
 
         private void ValidateItem(Item item)
