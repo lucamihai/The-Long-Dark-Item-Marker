@@ -38,6 +38,7 @@ namespace TheLongDarkItemMarker.Forms
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonEditSelectedItem = new System.Windows.Forms.Button();
+            this.buttonRemoveSelectedItems = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panelItems
@@ -98,11 +99,22 @@ namespace TheLongDarkItemMarker.Forms
             this.buttonEditSelectedItem.UseVisualStyleBackColor = true;
             this.buttonEditSelectedItem.Click += new System.EventHandler(this.EditSelectedItemClick);
             // 
+            // buttonRemoveSelectedItems
+            // 
+            this.buttonRemoveSelectedItems.Location = new System.Drawing.Point(488, 153);
+            this.buttonRemoveSelectedItems.Name = "buttonRemoveSelectedItems";
+            this.buttonRemoveSelectedItems.Size = new System.Drawing.Size(110, 37);
+            this.buttonRemoveSelectedItems.TabIndex = 6;
+            this.buttonRemoveSelectedItems.Text = "Remove selected items";
+            this.buttonRemoveSelectedItems.UseVisualStyleBackColor = true;
+            this.buttonRemoveSelectedItems.Click += new System.EventHandler(this.RemoveSelectedItemsClick);
+            // 
             // EditItemListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 820);
+            this.Controls.Add(this.buttonRemoveSelectedItems);
             this.Controls.Add(this.buttonEditSelectedItem);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSave);
@@ -124,5 +136,6 @@ namespace TheLongDarkItemMarker.Forms
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonEditSelectedItem;
+        private System.Windows.Forms.Button buttonRemoveSelectedItems;
     }
 }

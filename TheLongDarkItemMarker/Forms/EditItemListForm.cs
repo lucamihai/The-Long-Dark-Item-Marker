@@ -28,16 +28,21 @@ namespace TheLongDarkItemMarker.Forms
 
             itemListView.OnItemsSelected += OnItemsSelected;
             itemListView.OnItemsDeselected += OnItemsDeselected;
+
+            buttonEditSelectedItem.Enabled = false;
+            buttonRemoveSelectedItems.Enabled = false;
         }
 
         private void OnItemsSelected()
         {
             buttonEditSelectedItem.Enabled = itemListView.SelectedItems.Count == 1;
+            buttonRemoveSelectedItems.Enabled = itemListView.SelectedItems.Count > 0;
         }
 
         private void OnItemsDeselected()
         {
             buttonEditSelectedItem.Enabled = itemListView.SelectedItems.Count == 1;
+            buttonRemoveSelectedItems.Enabled = itemListView.SelectedItems.Count > 0;
         }
 
         private void ValidateItemList(List<Item> items)
@@ -124,6 +129,20 @@ namespace TheLongDarkItemMarker.Forms
         }
 
         [ExcludeFromCodeCoverage]
+        private void RemoveSelectedItemsClick(object sender, EventArgs e)
+        {
+            foreach (var selectedItem in itemListView.SelectedItems)
+            {
+                Items.Remove(selectedItem);
+            }
+
+            itemListView.SelectedItems.Clear();
+            itemListView.ForceDraw();
+
+            OnItemsDeselected();
+        }
+
+        [ExcludeFromCodeCoverage]
         private void SaveClick(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
@@ -136,6 +155,5 @@ namespace TheLongDarkItemMarker.Forms
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
-
     }
 }
