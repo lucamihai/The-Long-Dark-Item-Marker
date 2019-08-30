@@ -14,6 +14,8 @@ namespace TheLongDarkItemMarker.Views
         private List<ItemView> itemViews;
 
         public List<Item> Items { get; }
+
+        [ExcludeFromCodeCoverage]
         public List<Item> SelectedItems { get; }
         public ItemListViewSelection ItemListViewSelection { get; }
 
@@ -52,6 +54,7 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void InitializeItemViews()
         {
             itemViews = new List<ItemView>();
@@ -69,6 +72,7 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void OnViewClicked(ItemView clickedItemView)
         {
             if (ItemListViewSelection == ItemListViewSelection.None)
@@ -97,6 +101,7 @@ namespace TheLongDarkItemMarker.Views
             UpdateColorsForItemViews();
         }
 
+        [ExcludeFromCodeCoverage]
         private void UpdateColorsForItemViews()
         {
             foreach (var itemView in itemViews)

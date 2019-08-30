@@ -33,18 +33,6 @@ namespace TheLongDarkItemMarker.Forms
             buttonRemoveSelectedItems.Enabled = false;
         }
 
-        private void OnItemsSelected()
-        {
-            buttonEditSelectedItem.Enabled = itemListView.SelectedItems.Count == 1;
-            buttonRemoveSelectedItems.Enabled = itemListView.SelectedItems.Count > 0;
-        }
-
-        private void OnItemsDeselected()
-        {
-            buttonEditSelectedItem.Enabled = itemListView.SelectedItems.Count == 1;
-            buttonRemoveSelectedItems.Enabled = itemListView.SelectedItems.Count > 0;
-        }
-
         private void ValidateItemList(List<Item> items)
         {
             if (items == null)
@@ -53,6 +41,21 @@ namespace TheLongDarkItemMarker.Forms
             }
         }
 
+        [ExcludeFromCodeCoverage]
+        private void OnItemsSelected()
+        {
+            buttonEditSelectedItem.Enabled = itemListView.SelectedItems.Count == 1;
+            buttonRemoveSelectedItems.Enabled = itemListView.SelectedItems.Count > 0;
+        }
+
+        [ExcludeFromCodeCoverage]
+        private void OnItemsDeselected()
+        {
+            buttonEditSelectedItem.Enabled = itemListView.SelectedItems.Count == 1;
+            buttonRemoveSelectedItems.Enabled = itemListView.SelectedItems.Count > 0;
+        }
+
+        [ExcludeFromCodeCoverage]
         private void InitializeItemListFromProvidedItems(List<Item> providedItems)
         {
             Items = new List<Item>();

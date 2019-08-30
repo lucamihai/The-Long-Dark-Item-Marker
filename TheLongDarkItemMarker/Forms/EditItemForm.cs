@@ -129,12 +129,13 @@ namespace TheLongDarkItemMarker.Forms
                     label.Font = new Font("Times New Roman", 12);
                     label.Location = new Point(numericUpDown.Location.X + numericUpDown.Width + 2, index * 25);
                     label.AutoSize = true;
-                    
+
                     panelFields.Controls.Add(label);
                 }
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void SaveClick(object sender, EventArgs e)
         {
             item.HowMany = (int)numericUpDownHowMany.Value;
@@ -153,6 +154,7 @@ namespace TheLongDarkItemMarker.Forms
             this.Close();
         }
 
+        [ExcludeFromCodeCoverage]
         private void CancelClick(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;

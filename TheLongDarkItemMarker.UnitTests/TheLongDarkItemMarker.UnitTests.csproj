@@ -42,6 +42,10 @@
     <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentValidation.8.4.0\lib\net45\FluentValidation.dll</HintPath>
     </Reference>
+    <Reference Include="KellermanSoftware.Compare-NET-Objects, Version=4.62.0.0, Culture=neutral, PublicKeyToken=d970ace04cc85217, processorArchitecture=MSIL">
+      <HintPath>..\packages\CompareNETObjects.4.62.0\lib\net452\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -56,6 +60,11 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="DomainEntities.cs" />
+    <Compile Include="FormsUnitTests\CreateMarkerFormUnitTests.cs" />
+    <Compile Include="FormsUnitTests\EditItemFormUnitTests.cs" />
+    <Compile Include="FormsUnitTests\EditItemListFormUnitTests.cs" />
+    <Compile Include="FormsUnitTests\EditMarkerFormUnitTests.cs" />
+    <Compile Include="ViewsUnitTests\ItemListViewUnitTests.cs" />
     <Compile Include="ViewsUnitTests\ItemViewUnitTests.cs" />
     <Compile Include="ViewsUnitTests\MapViewUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

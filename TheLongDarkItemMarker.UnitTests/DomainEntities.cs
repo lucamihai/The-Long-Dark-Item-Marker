@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using TheLongDarkItemMarker.Domain.Entities;
 
 namespace TheLongDarkItemMarker.UnitTests
@@ -16,6 +17,11 @@ namespace TheLongDarkItemMarker.UnitTests
         {
             Name = null,
             Image = Constants.MapImage1
+        };
+
+        public static List<Item> ItemList => new List<Item>
+        {
+            Item1
         };
 
         public static Item Item1 => new Item

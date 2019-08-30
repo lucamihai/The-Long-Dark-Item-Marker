@@ -37,9 +37,7 @@ namespace TheLongDarkItemMarker.Views
 
             pictureBoxItem.Refresh();
 
-            this.Click += delegate(object sender, EventArgs args) { OnViewClicked(this); };
-            pictureBoxItem.Click += delegate(object sender, EventArgs args) { OnViewClicked(this); };
-            this.panelFields.Click += delegate (object sender, EventArgs args) { OnViewClicked(this); };
+            AssignClickEvents();
         }
 
         private void ValidateItem(Item item)
@@ -87,6 +85,14 @@ namespace TheLongDarkItemMarker.Views
         }
 
         [ExcludeFromCodeCoverage]
+        private void AssignClickEvents()
+        {
+            this.Click += delegate (object sender, EventArgs args) { OnViewClicked(this); };
+            pictureBoxItem.Click += delegate (object sender, EventArgs args) { OnViewClicked(this); };
+            this.panelFields.Click += delegate (object sender, EventArgs args) { OnViewClicked(this); };
+        }
+
+        [ExcludeFromCodeCoverage]
         private void PrepareViewFields()
         {
             var activeFields = new List<TextBox>();
@@ -131,7 +137,7 @@ namespace TheLongDarkItemMarker.Views
             {
                 var field = fields[index];
                 field.Location = new Point(0, index * 25);
-                
+
                 panelFields.Controls.Add(field);
                 field.Click += delegate (object sender, EventArgs args) { OnViewClicked(this); };
             }
