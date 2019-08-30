@@ -155,7 +155,19 @@
     <EmbeddedResource Include="Views\MarkerView.resx">
       <DependentUpon>MarkerView.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Config\Items.json">
+    <None Include="Config\Items\ItemsFireStarting.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Items\ItemsFirstAid.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Items\ItemsFoodAndDrink.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Items\ItemsMaterial.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config\Items\ItemsTool.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
@@ -227,6 +239,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemWaterPotable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\Items\ItemsClothing.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

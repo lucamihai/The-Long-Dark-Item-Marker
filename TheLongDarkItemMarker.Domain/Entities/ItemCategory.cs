@@ -6,7 +6,7 @@
         FirstAid,
         Clothing,
         FoodAndDrink,
-        Tool, 
+        Tool,
         Material
     }
 }

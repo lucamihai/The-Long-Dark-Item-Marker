@@ -1,0 +1,11 @@
+﻿{
+	"$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
+	"$values": [
+		{
+			"$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+			"ItemCategory": 0,
+			"Name": "Stick",
+			"HowMany": 1
+		}
+	]
+}

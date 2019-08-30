@@ -15,6 +15,7 @@ namespace TheLongDarkItemMarker.Forms
     {
         private List<Item> items;
         private readonly ItemListView itemListView;
+        private readonly string configDirectory = $"{Environment.CurrentDirectory}\\Config\\Items";
 
         public Item Item { get; set; }
 
@@ -46,10 +47,27 @@ namespace TheLongDarkItemMarker.Forms
             items = new List<Item>();
 
             var jsonManager = new JsonManager();
-            var configPath = $"{Environment.CurrentDirectory}\\Config\\Items.json";
+            var itemsFireStarting = GetItemsFromConfig(jsonManager, ItemCategory.FireStarting);
+            var itemsFirstAid = GetItemsFromConfig(jsonManager, ItemCategory.FirstAid);
+            var itemsClothing = GetItemsFromConfig(jsonManager, ItemCategory.Clothing);
+            var itemsFoodAndDrink = GetItemsFromConfig(jsonManager, ItemCategory.FoodAndDrink);
+            var itemsTool = GetItemsFromConfig(jsonManager, ItemCategory.Tool);
+            var itemsMaterial = GetItemsFromConfig(jsonManager, ItemCategory.Material);
+
+            items.AddRange(itemsFireStarting);
+            items.AddRange(itemsFirstAid);
+            items.AddRange(itemsClothing);
+            items.AddRange(itemsFoodAndDrink);
+            items.AddRange(itemsTool);
+            items.AddRange(itemsMaterial);
+        }
+
+        private List<Item> GetItemsFromConfig(JsonManager jsonManager, ItemCategory itemCategory)
+        {
+            var configPath = $"{configDirectory}\\Items{itemCategory.ToString()}.json";
             var configItems = jsonManager.GetItemsFromJsonFile(configPath);
 
-            items.AddRange(configItems);
+            return configItems;
         }
 
         private void AddSelectedItemClick(object sender, EventArgs e)

@@ -1,0 +1,22 @@
+﻿{
+	"$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
+	"$values": [
+		{
+			"$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+			"Condition": 100,
+			"ItemCategory": 0,
+			"Name": "Sewing Kit",
+			"HowMany": 1
+		},
+		{
+			"$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+			"Condition": 100,
+			"QuantityName": "Rifle Cartridges",
+			"Quantity": 0.0,
+			"QuantityMaxValue": 10.0,
+			"ItemCategory": 4,
+			"Name": "Hunting Rifle",
+			"HowMany": 1
+		}
+	]
+}
