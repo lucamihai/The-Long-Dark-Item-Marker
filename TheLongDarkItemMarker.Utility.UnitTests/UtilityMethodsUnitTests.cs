@@ -109,7 +109,7 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
         [TestMethod]
         public void GetItemFromListSimilarToProvidedItemReturnsExpectedItemForItemSimple()
         {
-            var itemList = DomainEntities.ItemList;
+            var itemList = DomainEntities.ItemList1;
             var itemToSearch = DomainEntities.ItemSimple;
 
             var returnedItem = UtilityMethods.GetItemFromListSimilarToProvidedItem(itemList, itemToSearch);
@@ -122,7 +122,7 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
         [TestMethod]
         public void GetItemFromListSimilarToProvidedItemReturnsExpectedItemForItemWithCondition()
         {
-            var itemList = DomainEntities.ItemList;
+            var itemList = DomainEntities.ItemList1;
             var itemToSearch = DomainEntities.ItemWithCondition;
 
             var returnedItem = UtilityMethods.GetItemFromListSimilarToProvidedItem(itemList, itemToSearch);
@@ -135,7 +135,7 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
         [TestMethod]
         public void GetItemFromListSimilarToProvidedItemReturnsExpectedItemForItemWithQuantity()
         {
-            var itemList = DomainEntities.ItemList;
+            var itemList = DomainEntities.ItemList1;
             var itemToSearch = DomainEntities.ItemWithQuantity;
 
             var returnedItem = UtilityMethods.GetItemFromListSimilarToProvidedItem(itemList, itemToSearch);
@@ -148,7 +148,7 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
         [TestMethod]
         public void GetItemFromListSimilarToProvidedItemReturnsExpectedItemForItemWithConditionAndQuantity()
         {
-            var itemList = DomainEntities.ItemList;
+            var itemList = DomainEntities.ItemList1;
             var itemToSearch = DomainEntities.ItemWithConditionAndQuantity;
 
             var returnedItem = UtilityMethods.GetItemFromListSimilarToProvidedItem(itemList, itemToSearch);

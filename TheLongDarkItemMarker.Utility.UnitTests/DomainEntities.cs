@@ -7,7 +7,7 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
     [ExcludeFromCodeCoverage]
     internal static class DomainEntities
     {
-        public static List<Item> ItemList => new List<Item>
+        public static List<Item> ItemList1 => new List<Item>
         {
             ItemSimple,
             ItemWithCondition,
@@ -49,5 +49,58 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
             QuantityMaxValue = 10,
             QuantityName = "Rifle cartridge"
         };
+
+        public static List<Item> ItemList2 => new List<Item>
+        {
+            ItemFireStarting,
+            ItemFirstAid,
+            ItemClothing,
+            ItemFoodAndDrink,
+            ItemTool,
+            ItemMaterial
+        };
+
+        public static Item ItemFireStarting => new Item
+        {
+            ItemCategory = ItemCategory.FireStarting,
+            Name = "Fire starting item",
+            HowMany = 1
+        };
+
+        public static Item ItemFirstAid => new Item
+        {
+            ItemCategory = ItemCategory.FirstAid,
+            Name = "First aid item",
+            HowMany = 1
+        };
+
+        public static Item ItemClothing => new Item
+        {
+            ItemCategory = ItemCategory.Clothing,
+            Name = "Clothing item",
+            HowMany = 1
+        };
+
+        public static Item ItemFoodAndDrink => new Item
+        {
+            ItemCategory = ItemCategory.FoodAndDrink,
+            Name = "Food and drink item",
+            HowMany = 1
+        };
+
+        public static Item ItemTool => new Item
+        {
+            ItemCategory = ItemCategory.Tool,
+            Name = "Tool item",
+            HowMany = 1
+        };
+
+        public static Item ItemMaterial => new Item
+        {
+            ItemCategory = ItemCategory.Material,
+            Name = "Material item",
+            HowMany = 1
+        };
+
     }
 }
