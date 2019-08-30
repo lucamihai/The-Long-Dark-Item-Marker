@@ -22,6 +22,9 @@ namespace TheLongDarkItemMarker.FileSaving.UnitTests
             jsonFilePath = $"{Environment.CurrentDirectory}\\jsonMarkersTest.json";
         }
 
+
+        #region Markers saving / loading
+
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
         public void SaveMarkersToJsonFileThrowsArgumentNullExceptionForNullMarkerList()
@@ -85,6 +88,11 @@ namespace TheLongDarkItemMarker.FileSaving.UnitTests
             Assert.IsTrue(compareLogic.Compare(markersFromJsonFile, DomainEntities.Markers).AreEqual);
         }
 
+        #endregion
+
+
+        #region Items loading
+
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void GetItemsFromJsonFileThrowsArgumentExceptionIfFileDoesNotExist()
@@ -102,6 +110,8 @@ namespace TheLongDarkItemMarker.FileSaving.UnitTests
             var compareLogic = new CompareLogic();
             Assert.IsTrue(compareLogic.Compare(itemsFromJsonFile, DomainEntities.Items).AreEqual);
         }
+
+        #endregion
 
         [TestCleanup]
         public void Cleanup()

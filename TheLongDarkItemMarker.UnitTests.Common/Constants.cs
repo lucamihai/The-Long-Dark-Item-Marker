@@ -59,6 +59,7 @@ namespace TheLongDarkItemMarker.UnitTests.Common
           },
           {
             ""$type"": ""TheLongDarkItemMarker.Domain.Entities.ItemWithQuantity, TheLongDarkItemMarker.Domain"",
+            ""QuantityPostfix"": ""s"",
             ""QuantityName"": ""Liter"",
             ""Quantity"": 1.0,
             ""QuantityMaxValue"": 1.0,
@@ -69,6 +70,7 @@ namespace TheLongDarkItemMarker.UnitTests.Common
           {
             ""$type"": ""TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain"",
             ""Condition"": 100,
+            ""QuantityPostfix"": ""s"",
             ""QuantityName"": ""Rifle Cartridge"",
             ""Quantity"": 0.0,
             ""QuantityMaxValue"": 10.0,

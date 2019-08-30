@@ -3,6 +3,7 @@
     public interface IItemWithQuantity
     {
         string QuantityName { get; set; }
+        string QuantityPostfix { get; set; }
         float Quantity { get; set; }
         float QuantityMaxValue { get; set; }
     }

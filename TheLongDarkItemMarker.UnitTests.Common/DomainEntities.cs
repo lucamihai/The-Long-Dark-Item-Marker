@@ -58,7 +58,8 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
             Name = "Water Potable",
             Quantity = 1,
             QuantityMaxValue = 1,
-            QuantityName = "Liter"
+            QuantityName = "Liter",
+            QuantityPostfix = "s"
         };
 
         public static Item Item4 => new ItemWithConditionAndQuantity
@@ -69,9 +70,9 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
             Condition = 100,
             Quantity = 0,
             QuantityMaxValue = 10,
-            QuantityName = "Rifle Cartridge"
+            QuantityName = "Rifle Cartridge",
+            QuantityPostfix = "s"
         };
 
-        
     }
 }

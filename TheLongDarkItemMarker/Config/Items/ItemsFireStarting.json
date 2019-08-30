@@ -2,6 +2,17 @@
 	"$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
 	"$values": [
 		{
+			"$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+			"ItemCategory": 0,
+			"Name": "Cardboard Matches",
+			"Condition": 100,
+			"QuantityPostfix": "es",
+			"QuantityName": "Match",
+			"Quantity": 0.0,
+			"QuantityMaxValue": 20.0,
+			"HowMany": 1
+		},
+		{
 			"$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
 			"ItemCategory": 0,
 			"Name": "Stick",

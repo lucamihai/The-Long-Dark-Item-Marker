@@ -4,6 +4,7 @@
 		{
 			"$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithQuantity, TheLongDarkItemMarker.Domain",
 			"QuantityName": "Liter",
+			"QuantityPostfix": "s",
 			"Quantity": 1.0,
 			"QuantityMaxValue": 1.0,
 			"ItemCategory": 3,

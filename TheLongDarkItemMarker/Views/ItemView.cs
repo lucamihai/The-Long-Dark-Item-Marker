@@ -121,7 +121,7 @@ namespace TheLongDarkItemMarker.Views
             if (Item is IItemWithQuantity itemWithQuantity)
             {
                 textBoxQuantity = new TextBox();
-                textBoxQuantity.Text = $"{itemWithQuantity.Quantity} / {itemWithQuantity.QuantityMaxValue} {itemWithQuantity.QuantityName}";
+                textBoxQuantity.Text = $"{itemWithQuantity.Quantity} / {itemWithQuantity.QuantityMaxValue} {itemWithQuantity.QuantityName}{itemWithQuantity.QuantityPostfix}";
                 textBoxQuantity.ReadOnly = true;
                 textBoxQuantity.Width = 150;
                 activeFields.Add(textBoxQuantity);
