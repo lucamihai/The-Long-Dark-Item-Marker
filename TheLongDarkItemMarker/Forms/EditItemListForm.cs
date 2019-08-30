@@ -158,5 +158,25 @@ namespace TheLongDarkItemMarker.Forms
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
+        [ExcludeFromCodeCoverage]
+        private void SelectDeselectAllClick(object sender, EventArgs e)
+        {
+            if (itemListView.SelectedItems.Count == itemListView.Items.Count)
+            {
+                itemListView.SelectedItems.Clear();
+                itemListView.ForceDraw();
+
+                OnItemsDeselected();
+            }
+            else
+            {
+                itemListView.SelectedItems.Clear();
+                itemListView.SelectedItems.AddRange(itemListView.Items);
+                itemListView.ForceDraw();
+
+                OnItemsSelected();
+            }
+        }
     }
 }

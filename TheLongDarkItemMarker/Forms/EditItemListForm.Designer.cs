@@ -39,6 +39,7 @@ namespace TheLongDarkItemMarker.Forms
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonEditSelectedItem = new System.Windows.Forms.Button();
             this.buttonRemoveSelectedItems = new System.Windows.Forms.Button();
+            this.buttonSelectDeselectAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panelItems
@@ -109,11 +110,22 @@ namespace TheLongDarkItemMarker.Forms
             this.buttonRemoveSelectedItems.UseVisualStyleBackColor = true;
             this.buttonRemoveSelectedItems.Click += new System.EventHandler(this.RemoveSelectedItemsClick);
             // 
+            // buttonSelectDeselectAll
+            // 
+            this.buttonSelectDeselectAll.Location = new System.Drawing.Point(488, 419);
+            this.buttonSelectDeselectAll.Name = "buttonSelectDeselectAll";
+            this.buttonSelectDeselectAll.Size = new System.Drawing.Size(110, 37);
+            this.buttonSelectDeselectAll.TabIndex = 7;
+            this.buttonSelectDeselectAll.Text = "Select / Deselect all";
+            this.buttonSelectDeselectAll.UseVisualStyleBackColor = true;
+            this.buttonSelectDeselectAll.Click += new System.EventHandler(this.SelectDeselectAllClick);
+            // 
             // EditItemListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 820);
+            this.Controls.Add(this.buttonSelectDeselectAll);
             this.Controls.Add(this.buttonRemoveSelectedItems);
             this.Controls.Add(this.buttonEditSelectedItem);
             this.Controls.Add(this.buttonCancel);
@@ -137,5 +149,6 @@ namespace TheLongDarkItemMarker.Forms
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonEditSelectedItem;
         private System.Windows.Forms.Button buttonRemoveSelectedItems;
+        private System.Windows.Forms.Button buttonSelectDeselectAll;
     }
 }

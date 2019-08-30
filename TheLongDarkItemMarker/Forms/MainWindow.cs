@@ -7,7 +7,6 @@ using System.Windows.Forms;
 using FluentValidation;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.FileSaving;
-using TheLongDarkItemMarker.Utility;
 using TheLongDarkItemMarker.Views;
 
 namespace TheLongDarkItemMarker.Forms
@@ -186,8 +185,7 @@ namespace TheLongDarkItemMarker.Forms
             }
             catch (ValidationException exception)
             {
-                MessageBox.Show(
-                    $"Data from {fileName} is not correctly formatted.{Environment.NewLine}{exception.Message}");
+                MessageBox.Show($"Data from {fileName} is not correctly formatted.{Environment.NewLine}{exception.Message}");
                 return;
             }
             catch (ArgumentException exception)
