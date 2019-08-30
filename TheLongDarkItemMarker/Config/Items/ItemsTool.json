@@ -4,7 +4,7 @@
 		{
 			"$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
 			"Condition": 100,
-			"ItemCategory": 0,
+			"ItemCategory": 4,
 			"Name": "Sewing Kit",
 			"HowMany": 1
 		},

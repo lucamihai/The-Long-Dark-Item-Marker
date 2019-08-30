@@ -58,7 +58,8 @@ namespace TheLongDarkItemMarker.Utility
                     HowMany = itemWithQuantity.HowMany,
                     Quantity = itemWithQuantity.Quantity,
                     QuantityMaxValue = itemWithQuantity.QuantityMaxValue,
-                    QuantityName = itemWithQuantity.QuantityName
+                    QuantityName = itemWithQuantity.QuantityName,
+                    QuantityPostfix = itemWithQuantity.QuantityPostfix
                 };
             }
 
@@ -74,7 +75,8 @@ namespace TheLongDarkItemMarker.Utility
                     Condition = itemWithConditionAndQuantity.Condition,
                     Quantity = itemWithConditionAndQuantity.Quantity,
                     QuantityMaxValue = itemWithConditionAndQuantity.QuantityMaxValue,
-                    QuantityName = itemWithConditionAndQuantity.QuantityName
+                    QuantityName = itemWithConditionAndQuantity.QuantityName,
+                    QuantityPostfix = itemWithConditionAndQuantity.QuantityPostfix
                 };
             }
 

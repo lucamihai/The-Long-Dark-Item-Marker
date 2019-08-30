@@ -87,6 +87,7 @@
     <Compile Include="Forms\MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemFilteringComboBoxItem.cs" />
     <Compile Include="MapImageNames.cs" />
     <Compile Include="MapNames.cs" />
     <Compile Include="Program.cs" />
