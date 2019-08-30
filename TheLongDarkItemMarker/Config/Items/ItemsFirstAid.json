@@ -1,6 +1,97 @@
 ﻿{
 	"$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
-	"$values": [
-		
-	]
+  "$values": [
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Antiseptic",
+      "Condition": 100,
+      "QuantityName": "Liter",
+      "QuantityPostfix": "s",
+      "Quantity": 0.0,
+      "QuantityMaxValue": 0.5,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Old Mans Beard Wound Dressing",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Bandage",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Antibiotics",
+      "Condition": 100,
+      "QuantityName": "Pill",
+      "QuantityPostfix": "s",
+      "Quantity": 0.0,
+      "QuantityMaxValue": 20.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Painkillers",
+      "Condition": 100,
+      "QuantityName": "Pill",
+      "QuantityPostfix": "s",
+      "Quantity": 0.0,
+      "QuantityMaxValue": 20.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Reishi Tea",
+      "QuantityName": "Liter",
+      "QuantityPostfix": "s",
+      "Quantity": 0.0,
+      "QuantityMaxValue": 0.1,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Rose Hip Tea",
+      "QuantityName": "Liter",
+      "QuantityPostfix": "s",
+      "Quantity": 0.0,
+      "QuantityMaxValue": 0.1,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Birch Bark Tea",
+      "QuantityName": "Liter",
+      "QuantityPostfix": "s",
+      "Quantity": 0.0,
+      "QuantityMaxValue": 0.1,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Emergency Stim",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 1,
+      "Name": "Water Purification Tablets",
+      "Condition": 100,
+      "QuantityName": "Tablet",
+      "QuantityPostfix": "s",
+      "Quantity": 0.0,
+      "QuantityMaxValue": 4.0,
+      "HowMany": 1
+    }
+  ]
 }

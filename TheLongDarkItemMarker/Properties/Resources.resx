@@ -166,8 +166,20 @@
   <data name="itemAccelerant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemAccelerant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="itemAntibiotics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemAntibiotics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemAntiseptic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemAntiseptic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemBandage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemBandage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="itemBirchBark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemBirchBark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemBirchBarkTea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemBirchBarkTea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemBook" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemBook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -180,6 +192,9 @@
   </data>
   <data name="itemCedarFirewood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemCedarFirewood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemEmergencyStim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemEmergencyStim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemFirelog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemFirelog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,14 +214,29 @@
   <data name="itemNewsprintRoll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemNewsprintRoll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="itemOldMansBeardWoundDressing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemOldMansBeardWoundDressing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemPainkillers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemPainkillers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="itemReclaimedWood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemReclaimedWood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemReishiTea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemReishiTea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemRoseHipTea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemRoseHipTea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemStackOfPapers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemStackOfPapers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemTinderPlug" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemTinderPlug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemWaterPurificationTablets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemWaterPurificationTablets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemWoodMatches" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemWoodMatches.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
