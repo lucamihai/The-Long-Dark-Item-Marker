@@ -39,9 +39,10 @@ namespace TheLongDarkItemMarker.Views
             filteredItems = new List<Item>();
             filteredItems.AddRange(items);
 
+            SelectedItems = new List<Item>();
+
             InitializeComboBoxItemFiltering();
             InitializeItemViews();
-            SelectedItems = new List<Item>();
             ItemListViewSelection = itemListViewSelection;
         }
 
@@ -180,8 +181,10 @@ namespace TheLongDarkItemMarker.Views
 
             foreach (var selectedItem in SelectedItems)
             {
-                var itemViewForSelectedItem = itemViews.Single(x => x.Item == selectedItem);
-                itemViewForSelectedItem.BackColor = Color.LightGreen;
+                var itemViewForSelectedItem = itemViews.SingleOrDefault(x => x.Item == selectedItem);
+
+                if (itemViewForSelectedItem != null)
+                    itemViewForSelectedItem.BackColor = Color.LightGreen;
             }
         }
 
@@ -189,12 +192,14 @@ namespace TheLongDarkItemMarker.Views
         {
             FilterItems();
             InitializeItemViews();
+            UpdateColorsForItemViews();
         }
 
         private void TextBoxFilterByNameTextChanged(object sender, EventArgs e)
         {
             FilterItems();
             InitializeItemViews();
+            UpdateColorsForItemViews();
         }
 
         private void FilterItems()
