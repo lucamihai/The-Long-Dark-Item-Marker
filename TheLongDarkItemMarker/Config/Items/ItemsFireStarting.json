@@ -1,22 +1,125 @@
 ﻿{
-	"$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
-	"$values": [
-		{
-			"$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
-			"ItemCategory": 0,
-			"Name": "Cardboard Matches",
-			"Condition": 100,
-			"QuantityPostfix": "es",
-			"QuantityName": "Match",
-			"Quantity": 0.0,
-			"QuantityMaxValue": 20.0,
-			"HowMany": 1
-		},
-		{
-			"$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
-			"ItemCategory": 0,
-			"Name": "Stick",
-			"HowMany": 1
-		}
-	]
+  "$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
+  "$values": [
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Cardboard Matches",
+      "Condition": 100,
+      "QuantityName": "Match",
+      "QuantityPostfix": "es",
+      "Quantity": 0.0,
+      "QuantityMaxValue": 20.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Wood Matches",
+      "Condition": 100,
+      "QuantityName": "Match",
+      "QuantityPostfix": "es",
+      "Quantity": 0.0,
+      "QuantityMaxValue": 12.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Magnifying Lens",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Firestriker",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Birch Bark",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Cash",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Cat Tail Head",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Newsprint",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Newsprint Roll",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Tinder Plug",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Stack Of Papers",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Reclaimed Wood",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Fir Firewood",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Firelog",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Cedar Firewood",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Stick",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Book",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Accelerant",
+      "HowMany": 1
+    }
+  ]
 }

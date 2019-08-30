@@ -249,5 +249,53 @@
   <ItemGroup>
     <None Include="Resources\itemCardboardMatches.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemAccelerant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBirchBark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCatTailHead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCedarFirewood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFirelog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFirestriker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFirFirewood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMagnifyingLens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemNewsprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemNewsprintRoll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemReclaimedWood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemStackOfPapers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemTinderPlug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWoodMatches.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -163,4 +163,52 @@
   <data name="itemCardboardMatches" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemCardboardMatches.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="itemAccelerant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemAccelerant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemBirchBark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemBirchBark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemBook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemBook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCatTailHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCatTailHead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCedarFirewood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCedarFirewood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemFirelog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemFirelog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemFirestriker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemFirestriker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemFirFirewood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemFirFirewood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemMagnifyingLens" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemMagnifyingLens.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemNewsprint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemNewsprint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemNewsprintRoll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemNewsprintRoll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemReclaimedWood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemReclaimedWood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemStackOfPapers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemStackOfPapers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemTinderPlug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemTinderPlug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemWoodMatches" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemWoodMatches.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
