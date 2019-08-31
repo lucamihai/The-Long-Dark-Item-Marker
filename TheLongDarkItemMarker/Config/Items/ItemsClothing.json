@@ -455,6 +455,73 @@
       "Name": "Work Boots",
       "Condition": 100,
       "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Moose-Hide Satchel",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Wool Ear Wrap",
+      "Condition": 100,
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Mackenzie's Toque",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Mackenzie's Shirt",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Mackenzie's Sweater",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Mackenzie's Parka",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Mackenzie's Pants",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Mackenzie's Boots",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Mountaineering Boots",
+      "Condition": 100,
+      "HowMany": 1
     }
   ]
 }

@@ -516,5 +516,32 @@
   <ItemGroup>
     <None Include="Resources\itemRunningShoes.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMountaineeringBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMackenzie%27sBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMackenzie%27sPants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMackenzie%27sParka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMackenzie%27sSweater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMackenzie%27sShirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMackenzie%27sToque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWoolEarWrap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMoose-HideSatchel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
