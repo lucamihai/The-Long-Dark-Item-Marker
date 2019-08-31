@@ -143,6 +143,26 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemArrowhead {
+            get {
+                object obj = ResourceManager.GetObject("itemArrowhead", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemArrowShaft {
+            get {
+                object obj = ResourceManager.GetObject("itemArrowShaft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemBalaclava {
             get {
                 object obj = ResourceManager.GetObject("itemBalaclava", resourceCulture);
@@ -226,6 +246,26 @@ namespace TheLongDarkItemMarker.Properties {
         internal static System.Drawing.Bitmap itemBirchBarkTea {
             get {
                 object obj = ResourceManager.GetObject("itemBirchBarkTea", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemBirchSapling {
+            get {
+                object obj = ResourceManager.GetObject("itemBirchSapling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemBlackBearHide {
+            get {
+                object obj = ResourceManager.GetObject("itemBlackBearHide", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,6 +413,16 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemCloth {
+            get {
+                object obj = ResourceManager.GetObject("itemCloth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemCohoSalmonCooked {
             get {
                 object obj = ResourceManager.GetObject("itemCohoSalmonCooked", resourceCulture);
@@ -463,6 +513,16 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemCrowFeather {
+            get {
+                object obj = ResourceManager.GetObject("itemCrowFeather", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemCupOfCoffee {
             get {
                 object obj = ResourceManager.GetObject("itemCupOfCoffee", resourceCulture);
@@ -476,6 +536,26 @@ namespace TheLongDarkItemMarker.Properties {
         internal static System.Drawing.Bitmap itemCupOfHerbalTea {
             get {
                 object obj = ResourceManager.GetObject("itemCupOfHerbalTea", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemCuredLeather {
+            get {
+                object obj = ResourceManager.GetObject("itemCuredLeather", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemDeerHide {
+            get {
+                object obj = ResourceManager.GetObject("itemDeerHide", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -716,6 +796,26 @@ namespace TheLongDarkItemMarker.Properties {
         internal static System.Drawing.Bitmap itemGranolaBar {
             get {
                 object obj = ResourceManager.GetObject("itemGranolaBar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemGreenMapleSapling {
+            get {
+                object obj = ResourceManager.GetObject("itemGreenMapleSapling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemGut {
+            get {
+                object obj = ResourceManager.GetObject("itemGut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1073,6 +1173,16 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemMooseHide {
+            get {
+                object obj = ResourceManager.GetObject("itemMooseHide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemMooseMeatCooked {
             get {
                 object obj = ResourceManager.GetObject("itemMooseMeatCooked", resourceCulture);
@@ -1153,6 +1263,16 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemOldMan_sBeardLichen {
+            get {
+                object obj = ResourceManager.GetObject("itemOldMan\'sBeardLichen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemOldMansBeardWoundDressing {
             get {
                 object obj = ResourceManager.GetObject("itemOldMansBeardWoundDressing", resourceCulture);
@@ -1223,6 +1343,36 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemPreparedBirchBark {
+            get {
+                object obj = ResourceManager.GetObject("itemPreparedBirchBark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemPreparedReishiMushrooms {
+            get {
+                object obj = ResourceManager.GetObject("itemPreparedReishiMushrooms", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemPreparedRoseHips {
+            get {
+                object obj = ResourceManager.GetObject("itemPreparedRoseHips", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemPrybar {
             get {
                 object obj = ResourceManager.GetObject("itemPrybar", resourceCulture);
@@ -1256,6 +1406,16 @@ namespace TheLongDarkItemMarker.Properties {
         internal static System.Drawing.Bitmap itemRabbitMeatRaw {
             get {
                 object obj = ResourceManager.GetObject("itemRabbitMeatRaw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemRabbitPelt {
+            get {
+                object obj = ResourceManager.GetObject("itemRabbitPelt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1323,6 +1483,16 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemReishiMushroom {
+            get {
+                object obj = ResourceManager.GetObject("itemReishiMushroom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemReishiTea {
             get {
                 object obj = ResourceManager.GetObject("itemReishiTea", resourceCulture);
@@ -1363,6 +1533,16 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemRoseHip {
+            get {
+                object obj = ResourceManager.GetObject("itemRoseHip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemRoseHipTea {
             get {
                 object obj = ResourceManager.GetObject("itemRoseHipTea", resourceCulture);
@@ -1386,6 +1566,16 @@ namespace TheLongDarkItemMarker.Properties {
         internal static System.Drawing.Bitmap itemSaltyCrackers {
             get {
                 object obj = ResourceManager.GetObject("itemSaltyCrackers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemScrapMetal {
+            get {
+                object obj = ResourceManager.GetObject("itemScrapMetal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1796,6 +1986,16 @@ namespace TheLongDarkItemMarker.Properties {
         internal static System.Drawing.Bitmap itemWolfMeatRaw {
             get {
                 object obj = ResourceManager.GetObject("itemWolfMeatRaw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemWolfPelt {
+            get {
+                object obj = ResourceManager.GetObject("itemWolfPelt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

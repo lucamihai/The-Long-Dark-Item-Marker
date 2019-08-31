@@ -777,5 +777,65 @@
   <ItemGroup>
     <None Include="Resources\itemScrapMetalShard.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemScrapMetal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCuredLeather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCloth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCrowFeather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemArrowhead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemArrowShaft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemReishiMushroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPreparedRoseHips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPreparedReishiMushrooms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPreparedBirchBark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRoseHip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemOldMan%27sBeardLichen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBirchSapling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemGreenMapleSapling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemGut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBlackBearHide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWolfPelt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitPelt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMooseHide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDeerHide.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

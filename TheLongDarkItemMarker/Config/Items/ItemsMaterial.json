@@ -1,6 +1,181 @@
 ﻿{
 	"$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
-	"$values": [
-		
-	]
+  "$values": [
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Cloth",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Cured Leather",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Scrap Metal",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Arrow Shaft",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Arrowhead",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Crow Feather",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Old Man's Beard Lichen",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Reishi Mushroom",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Rose Hip",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Prepared Birch Bark",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Prepared Reishi Mushrooms",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Prepared Rose Hips",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Birch Sapling",
+      "Condition": 100,
+      "QuantityName": "% Cured",
+      "QuantityPostfix": "",
+      "Quantity": 100,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 100.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Green Maple Sapling",
+      "Condition": 100,
+      "QuantityName": "% Cured",
+      "QuantityPostfix": "",
+      "Quantity": 100,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 100.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Gut",
+      "Condition": 100,
+      "QuantityName": "% Cured",
+      "QuantityPostfix": "",
+      "Quantity": 100,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 100.0,
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Black Bear Hide",
+      "Condition": 100,
+      "QuantityName": "% Cured",
+      "QuantityPostfix": "",
+      "Quantity": 100,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 100.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Deer Hide",
+      "Condition": 100,
+      "QuantityName": "% Cured",
+      "QuantityPostfix": "",
+      "Quantity": 100,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 100.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Moose Hide",
+      "Condition": 100,
+      "QuantityName": "% Cured",
+      "QuantityPostfix": "",
+      "Quantity": 100,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 100.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Rabbit Pelt",
+      "Condition": 100,
+      "QuantityName": "% Cured",
+      "QuantityPostfix": "",
+      "Quantity": 100,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 100.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 5,
+      "Name": "Wolf Pelt",
+      "Condition": 100,
+      "QuantityName": "% Cured",
+      "QuantityPostfix": "",
+      "Quantity": 100,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 100.0,
+      "HowMany": 1
+    }
+  ]
 }
