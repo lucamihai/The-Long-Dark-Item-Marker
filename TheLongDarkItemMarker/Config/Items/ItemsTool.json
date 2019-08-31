@@ -8,16 +8,17 @@
 			"Name": "Sewing Kit",
 			"HowMany": 1
 		},
-		{
-			"$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
-			"Condition": 100,
-			"QuantityName": "Rifle Cartridge",
-			"QuantityPostfix": "s",
-			"Quantity": 0.0,
-			"QuantityMaxValue": 10.0,
-			"ItemCategory": 4,
-			"Name": "Hunting Rifle",
-			"HowMany": 1
-		}
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "QuantityName": "Rifle Cartridge",
+      "QuantityPostfix": "s",
+      "Quantity": 10.0,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 10.0,
+      "ItemCategory": 4,
+      "Name": "Hunting Rifle",
+      "HowMany": 1
+    }
 	]
 }

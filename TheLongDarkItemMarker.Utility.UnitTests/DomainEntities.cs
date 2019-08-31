@@ -36,6 +36,7 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
             Name = "Name3",
             HowMany = 4,
             Quantity = 0.4f,
+            QuantityMinValue = 0.1f,
             QuantityMaxValue = 1,
             QuantityName = "Liter"
         };
@@ -46,6 +47,7 @@ namespace TheLongDarkItemMarker.Utility.UnitTests
             Name = "Name4",
             HowMany = 1,
             Quantity = 3,
+            QuantityMinValue = 0,
             QuantityMaxValue = 10,
             QuantityName = "Rifle cartridge"
         };

@@ -99,11 +99,11 @@ namespace TheLongDarkItemMarker.Forms
             if (item is IItemWithQuantity itemWithQuantity)
             {
                 numericUpDownQuantity = new NumericUpDown();
-                numericUpDownQuantity.Name = $"{itemWithQuantity.QuantityName}s";
+                numericUpDownQuantity.Name = $"{itemWithQuantity.QuantityName}{itemWithQuantity.QuantityPostfix}";
                 numericUpDownQuantity.Width = 50;
                 numericUpDownQuantity.DecimalPlaces = itemWithQuantity.QuantityName == "Liter" ? 2 : 0;
                 numericUpDownQuantity.Value = (decimal)itemWithQuantity.Quantity;
-                numericUpDownQuantity.Minimum = 0;
+                numericUpDownQuantity.Minimum = (decimal)itemWithQuantity.QuantityMinValue;
                 numericUpDownQuantity.Maximum = (decimal)itemWithQuantity.QuantityMaxValue;
                 numericUpDownQuantity.Increment = 1;
                 activeFields.Add(numericUpDownQuantity);

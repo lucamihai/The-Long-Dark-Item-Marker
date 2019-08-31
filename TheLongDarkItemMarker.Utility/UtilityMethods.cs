@@ -57,6 +57,7 @@ namespace TheLongDarkItemMarker.Utility
                     Name = itemWithQuantity.Name,
                     HowMany = itemWithQuantity.HowMany,
                     Quantity = itemWithQuantity.Quantity,
+                    QuantityMinValue = itemWithQuantity.QuantityMinValue,
                     QuantityMaxValue = itemWithQuantity.QuantityMaxValue,
                     QuantityName = itemWithQuantity.QuantityName,
                     QuantityPostfix = itemWithQuantity.QuantityPostfix
@@ -74,6 +75,7 @@ namespace TheLongDarkItemMarker.Utility
                     HowMany = itemWithConditionAndQuantity.HowMany,
                     Condition = itemWithConditionAndQuantity.Condition,
                     Quantity = itemWithConditionAndQuantity.Quantity,
+                    QuantityMinValue = itemWithConditionAndQuantity.QuantityMinValue,
                     QuantityMaxValue = itemWithConditionAndQuantity.QuantityMaxValue,
                     QuantityName = itemWithConditionAndQuantity.QuantityName,
                     QuantityPostfix = itemWithConditionAndQuantity.QuantityPostfix
@@ -104,6 +106,7 @@ namespace TheLongDarkItemMarker.Utility
                     item.ItemCategory == itemWithQuantity.ItemCategory
                     && item.Name == itemWithQuantity.Name
                     && item.Quantity == itemWithQuantity.Quantity
+                    && item.QuantityMinValue == itemWithQuantity.QuantityMinValue
                     && item.QuantityMaxValue == itemWithQuantity.QuantityMaxValue
                     && item.QuantityName == itemWithQuantity.QuantityName);
             }
@@ -115,6 +118,7 @@ namespace TheLongDarkItemMarker.Utility
                     && item.Name == itemWithConditionAndQuantity.Name
                     && item.Condition == itemWithConditionAndQuantity.Condition
                     && item.Quantity == itemWithConditionAndQuantity.Quantity
+                    && item.QuantityMinValue == itemWithConditionAndQuantity.QuantityMinValue
                     && item.QuantityMaxValue == itemWithConditionAndQuantity.QuantityMaxValue
                     && item.QuantityName == itemWithConditionAndQuantity.QuantityName);
             }

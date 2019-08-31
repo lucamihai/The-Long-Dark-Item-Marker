@@ -8,7 +8,8 @@
       "Condition": 100,
       "QuantityName": "Liter",
       "QuantityPostfix": "s",
-      "Quantity": 0.0,
+      "Quantity": 0.5,
+      "QuantityMinValue": 0.1,
       "QuantityMaxValue": 0.5,
       "HowMany": 1
     },
@@ -31,7 +32,8 @@
       "Condition": 100,
       "QuantityName": "Pill",
       "QuantityPostfix": "s",
-      "Quantity": 0.0,
+      "Quantity": 20.0,
+      "QuantityMinValue": 2, 
       "QuantityMaxValue": 20.0,
       "HowMany": 1
     },
@@ -42,7 +44,8 @@
       "Condition": 100,
       "QuantityName": "Pill",
       "QuantityPostfix": "s",
-      "Quantity": 0.0,
+      "Quantity": 20.0,
+      "QuantityMinValue": 2,
       "QuantityMaxValue": 20.0,
       "HowMany": 1
     },
@@ -52,7 +55,8 @@
       "Name": "Reishi Tea",
       "QuantityName": "Liter",
       "QuantityPostfix": "s",
-      "Quantity": 0.0,
+      "Quantity": 0.1,
+      "QuantityMinValue": 0.01,
       "QuantityMaxValue": 0.1,
       "HowMany": 1
     },
@@ -62,7 +66,8 @@
       "Name": "Rose Hip Tea",
       "QuantityName": "Liter",
       "QuantityPostfix": "s",
-      "Quantity": 0.0,
+      "Quantity": 0.1,
+      "QuantityMinValue": 0.01,
       "QuantityMaxValue": 0.1,
       "HowMany": 1
     },
@@ -72,7 +77,8 @@
       "Name": "Birch Bark Tea",
       "QuantityName": "Liter",
       "QuantityPostfix": "s",
-      "Quantity": 0.0,
+      "Quantity": 0.1,
+      "QuantityMinValue": 0.01,
       "QuantityMaxValue": 0.1,
       "HowMany": 1
     },
@@ -89,7 +95,8 @@
       "Condition": 100,
       "QuantityName": "Tablet",
       "QuantityPostfix": "s",
-      "Quantity": 0.0,
+      "Quantity": 4.0,
+      "QuantityMinValue": 1.0,
       "QuantityMaxValue": 4.0,
       "HowMany": 1
     }

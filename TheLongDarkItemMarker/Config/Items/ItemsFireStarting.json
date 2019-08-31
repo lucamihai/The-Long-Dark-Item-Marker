@@ -8,7 +8,8 @@
       "Condition": 100,
       "QuantityName": "Match",
       "QuantityPostfix": "es",
-      "Quantity": 0.0,
+      "Quantity": 20.0,
+      "QuantityMinValue": 1.0,
       "QuantityMaxValue": 20.0,
       "HowMany": 1
     },
@@ -19,7 +20,8 @@
       "Condition": 100,
       "QuantityName": "Match",
       "QuantityPostfix": "es",
-      "Quantity": 0.0,
+      "Quantity": 12.0,
+      "QuantityMinValue": 1.0,
       "QuantityMaxValue": 12.0,
       "HowMany": 1
     },

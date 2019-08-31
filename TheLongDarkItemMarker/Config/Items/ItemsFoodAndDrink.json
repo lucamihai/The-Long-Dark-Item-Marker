@@ -1,15 +1,16 @@
 ﻿{
 	"$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
 	"$values": [
-		{
-			"$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithQuantity, TheLongDarkItemMarker.Domain",
-			"QuantityName": "Liter",
-			"QuantityPostfix": "s",
-			"Quantity": 1.0,
-			"QuantityMaxValue": 1.0,
-			"ItemCategory": 3,
-			"Name": "Water Potable",
-			"HowMany": 1
-		}
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithQuantity, TheLongDarkItemMarker.Domain",
+      "QuantityName": "Liter",
+      "QuantityPostfix": "s",
+      "Quantity": 1.0,
+      "QuantityMinValue": 0.01,
+      "QuantityMaxValue": 1.0,
+      "ItemCategory": 3,
+      "Name": "Water Potable",
+      "HowMany": 1
+    }
 	]
 }
