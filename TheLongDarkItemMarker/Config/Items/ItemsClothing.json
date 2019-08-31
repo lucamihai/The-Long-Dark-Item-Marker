@@ -307,6 +307,66 @@
       "Name": "Wolfskin Coat",
       "Condition": 100,
       "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Thermal Underwear",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Wool Longjohns",
+      "Condition": 100,
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Cargo Pants",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Combat Pants",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Deerskin Pants",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Jeans",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Snow Pants",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Work Pants",
+      "Condition": 100,
+      "HowMany": 1
     }
   ]
 }

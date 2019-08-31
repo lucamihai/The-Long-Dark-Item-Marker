@@ -456,5 +456,29 @@
   <ItemGroup>
     <None Include="Resources\itemMackinawJacket.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWorkPants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSnowPants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemJeans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDeerskinPants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCombatPants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCargoPants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWoolLongjohns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemThermalUnderwear.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
