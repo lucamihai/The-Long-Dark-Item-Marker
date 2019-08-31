@@ -76,7 +76,7 @@ namespace TheLongDarkItemMarker.Views
                 graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
                 graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
-                graphics.DrawString($"x{Item.HowMany}", new Font("Tahoma", 30), Brushes.Black, rectangleF);
+                graphics.DrawString($"x{Item.HowMany}", new Font("Consolas", 11), Brushes.Black, rectangleF);
 
                 graphics.Flush();
 
@@ -98,12 +98,14 @@ namespace TheLongDarkItemMarker.Views
             var activeFields = new List<TextBox>();
 
             textBoxItemCategory = new TextBox();
+            textBoxItemCategory.Font = new Font(new FontFamily("Times New Roman"), 10);
             textBoxItemCategory.Text = $"{Item.ItemCategory.ToString()} Category";
             textBoxItemCategory.ReadOnly = true;
             textBoxItemCategory.Width = 150;
             activeFields.Add(textBoxItemCategory);
 
             textBoxItemName = new TextBox();
+            textBoxItemName.Font = new Font(new FontFamily("Times New Roman"), 10);
             textBoxItemName.Text = Item.Name;
             textBoxItemName.ReadOnly = true;
             textBoxItemName.Width = 150;
@@ -112,6 +114,7 @@ namespace TheLongDarkItemMarker.Views
             if (Item is IItemWithCondition itemWithCondition)
             {
                 textBoxCondition = new TextBox();
+                textBoxCondition.Font = new Font(new FontFamily("Times New Roman"), 10);
                 textBoxCondition.Text = $"{itemWithCondition.Condition.ToString()}% Condition";
                 textBoxCondition.ReadOnly = true;
                 textBoxCondition.Width = 150;
@@ -121,6 +124,7 @@ namespace TheLongDarkItemMarker.Views
             if (Item is IItemWithQuantity itemWithQuantity)
             {
                 textBoxQuantity = new TextBox();
+                textBoxQuantity.Font = new Font(new FontFamily("Times New Roman"), 10);
                 textBoxQuantity.Text = $"{itemWithQuantity.Quantity} / {itemWithQuantity.QuantityMaxValue} {itemWithQuantity.QuantityName}{itemWithQuantity.QuantityPostfix}";
                 textBoxQuantity.ReadOnly = true;
                 textBoxQuantity.Width = 150;

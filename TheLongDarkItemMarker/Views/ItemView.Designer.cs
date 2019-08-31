@@ -39,19 +39,20 @@ namespace TheLongDarkItemMarker.Views
             // 
             // pictureBoxItem
             // 
+            this.pictureBoxItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.pictureBoxItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxItem.Location = new System.Drawing.Point(14, 24);
+            this.pictureBoxItem.Location = new System.Drawing.Point(13, 12);
             this.pictureBoxItem.Name = "pictureBoxItem";
-            this.pictureBoxItem.Size = new System.Drawing.Size(133, 119);
+            this.pictureBoxItem.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxItem.TabIndex = 0;
             this.pictureBoxItem.TabStop = false;
             // 
             // panelFields
             // 
-            this.panelFields.Location = new System.Drawing.Point(171, 24);
+            this.panelFields.Location = new System.Drawing.Point(135, 12);
             this.panelFields.Name = "panelFields";
-            this.panelFields.Size = new System.Drawing.Size(150, 119);
+            this.panelFields.Size = new System.Drawing.Size(150, 100);
             this.panelFields.TabIndex = 1;
             // 
             // ItemView
@@ -61,7 +62,7 @@ namespace TheLongDarkItemMarker.Views
             this.Controls.Add(this.panelFields);
             this.Controls.Add(this.pictureBoxItem);
             this.Name = "ItemView";
-            this.Size = new System.Drawing.Size(400, 170);
+            this.Size = new System.Drawing.Size(400, 129);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxItem)).EndInit();
             this.ResumeLayout(false);
 

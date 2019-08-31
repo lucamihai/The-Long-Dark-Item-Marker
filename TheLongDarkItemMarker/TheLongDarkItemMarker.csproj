@@ -227,33 +227,24 @@
     <None Include="Resources\DesolationPoint.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemHuntingRifle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemStick.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSewingKit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWaterPotable.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Config\Items\ItemsClothing.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCardboardMatches.png" />
+    <None Include="Resources\Stone_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemAccelerant.png" />
+    <None Include="Resources\itemBrokenArrow.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemBirchBark.png" />
+    <None Include="Resources\itemCandyBar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemBook.png" />
+    <None Include="Resources\itemCanOpener.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCargoPants.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemCash.png" />
@@ -262,7 +253,97 @@
     <None Include="Resources\itemCatTailHead.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\itemCatTailStalk.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\itemCedarFirewood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCharcoal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemClimbingSocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCloth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCohoSalmonCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCohoSalmonRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCombatBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCombatPants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCondensedMilk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCookingPot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCottonScarf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCottonToque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCowichanSweater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCrowFeather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCupOfCoffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCupOfHerbalTea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCuredLeather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDeerHide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDeerskinBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDeerskinPants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDistressPistol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDogFood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDownVest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDressShirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDrivingGloves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemEmergencyStim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemEnergyBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemEnergyDrink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemExpeditionParka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFirearmCleaningKit.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemFirelog.png" />
@@ -274,247 +355,103 @@
     <None Include="Resources\itemFirFirewood.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemMagnifyingLens.png" />
+    <None Include="Resources\itemFishermansSweater.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemNewsprint.png" />
+    <None Include="Resources\itemFishingTackle.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemNewsprintRoll.png" />
+    <None Include="Resources\itemFlare.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemReclaimedWood.png" />
+    <None Include="Resources\itemFlareShell.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemStackOfPapers.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemTinderPlug.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoodMatches.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBirchBarkTea.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemEmergencyStim.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemOldMansBeardWoundDressing.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPainkillers.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemReishiTea.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRoseHipTea.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemAntibiotics.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemAntiseptic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBandage.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWaterPurificationTablets.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolToque.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolScarf.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRabbitskinHat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLongWoolScarf.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemImprovisedHeadWrap.png" />
+    <None Include="Resources\itemFlashlight.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemFleeceCowl.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCottonToque.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCottonScarf.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBaseballCap.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBalaclava.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWorkGloves.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolMittens.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSkiGloves.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRabbitskinMitts.png" />
+    <None Include="Resources\itemFleeceMittens.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemGauntlets.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemFleeceMittens.png" />
+    <None Include="Resources\itemGranolaBar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemImprovisedHandWraps.png" />
+    <None Include="Resources\itemGreenMapleSapling.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemDrivingGloves.png" />
+    <None Include="Resources\itemGut.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCowichanSweater.png" />
+    <None Include="Resources\itemHacksaw.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemWoolShirt.png" />
+    <None Include="Resources\itemHatchet.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemT-Shirt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemThinWoolSweater.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemThickWoolSweater.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSweatshirt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPlaidShirt.png" />
+    <None Include="Resources\itemHeavyHammer.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemHoodie.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemFishermansSweater.png" />
+    <None Include="Resources\itemHook.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemDressShirt.png" />
+    <None Include="Resources\itemHuntingKnife.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemWolfskinCoat.png" />
+    <None Include="Resources\itemHuntingRifle.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemWindbreaker.png" />
+    <None Include="Resources\itemImprovisedHandWraps.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemUrbanParka.png" />
+    <None Include="Resources\itemImprovisedHatchet.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemSportVest.png" />
+    <None Include="Resources\itemImprovisedHeadWrap.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemSkiJacket.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSimpleParka.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemOldFashionedParka.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMoose-hideCloak.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMilitaryCoat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMariner%27sPeaCoat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLightShell.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemExpeditionParka.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDownVest.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBearskinCoat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMackinawJacket.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWorkPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSnowPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemJeans.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDeerskinPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCombatPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCargoPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolLongjohns.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemThermalUnderwear.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemClimbingSocks.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWorkBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemTrailBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSkiBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMukluks.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLeatherShoes.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDeerskinBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCombatBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolSocks.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSportsSocks.png" />
+    <None Include="Resources\itemImprovisedKnife.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemInsulatedBoots.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemRunningShoes.png" />
+    <None Include="Resources\itemJeans.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemMountaineeringBoots.png" />
+    <None Include="Resources\itemJeremiah%27sKnife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemJerryCan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLakeWhitefishCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLakeWhitefishRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLanternFuel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLeatherShoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLightShell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLongWoolScarf.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemMackenzie%27sBoots.png" />
@@ -526,91 +463,37 @@
     <None Include="Resources\itemMackenzie%27sParka.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemMackenzie%27sSweater.png" />
+    <None Include="Resources\itemMackenzie%27sShirt.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemMackenzie%27sShirt.png" />
+    <None Include="Resources\itemMackenzie%27sSweater.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemMackenzie%27sToque.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemWoolEarWrap.png" />
+    <None Include="Resources\itemMackinawJacket.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemMoose-HideSatchel.png" />
+    <None Include="Resources\itemMagnifyingLens.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemEnergyDrink.png" />
+    <None Include="Resources\itemMariner%27sPeaCoat.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemWaterUnsafe.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSummitSoda.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemStacy%27sGrapeSoda.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemOrangeSoda.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCupOfHerbalTea.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCupOfCoffee.png" />
+    <None Include="Resources\itemMilitaryCoat.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemMilitaryGradeMRE.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemTomatoSoup.png" />
+    <None Include="Resources\itemMooseHide.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemTinOfSardines.png" />
+    <None Include="Resources\itemMoose-hideCloak.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemPorkAndBeans.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPinnaclePeaches.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDogFood.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCondensedMilk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSaltyCrackers.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPeanutButter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemGranolaBar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemEnergyBar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCandyBar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBeefJerky.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCatTailStalk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemVenisonRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRabbitMeatCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRabbitMeatRaw.png" />
+    <None Include="Resources\itemMoose-HideSatchel.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemMooseMeatCooked.png" />
@@ -619,34 +502,142 @@
     <None Include="Resources\itemMooseMeatRaw.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemBlackBearMeatCooked.png" />
+    <None Include="Resources\itemMountaineeringBoots.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemBlackBearMeatRaw.png" />
+    <None Include="Resources\itemMountaineeringRope.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemWolfMeatCooked.png" />
+    <None Include="Resources\itemMukluks.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemWolfMeatRaw.png" />
+    <None Include="Resources\itemNewsprint.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemVenisonCooked.png" />
+    <None Include="Resources\itemNewsprintRoll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemOldFashionedParka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemOldMan%27sBeardLichen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemOldMansBeardWoundDressing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemOrangeSoda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPainkillers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPeanutButter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPinnaclePeaches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPlaidShirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPorkAndBeans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPreparedBirchBark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPreparedReishiMushrooms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPreparedRoseHips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPrybar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemQualityTools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitMeatCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitMeatRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitPelt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitskinHat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitskinMitts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRainbowTroutCooked.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemRainbowTroutRaw.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemLakeWhitefishRaw.png" />
+    <None Include="Resources\itemReclaimedWood.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemLakeWhitefishCooked.png" />
+    <None Include="Resources\itemRecycledCan.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCohoSalmonCooked.png" />
+    <None Include="Resources\itemReishiMushroom.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCohoSalmonRaw.png" />
+    <None Include="Resources\itemReishiTea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRevolver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRevolverCartridges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRifleCartridges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRoseHip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRoseHipTea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRunningShoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSaltyCrackers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemScrapMetal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemScrapMetalShard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSewingKit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSimpleArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSimpleParka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSimpleTools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSkiBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSkiGloves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSkiJacket.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemSmallmouthBassCooked.png" />
@@ -655,139 +646,145 @@
     <None Include="Resources\itemSmallmouthBassRaw.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemRainbowTroutCooked.png" />
+    <None Include="Resources\itemSnare.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemLanternFuel.png" />
+    <None Include="Resources\itemSnowPants.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemJerryCan.png" />
+    <None Include="Resources\itemSportsSocks.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemRecycledCan.png" />
+    <None Include="Resources\itemSportVest.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCookingPot.png" />
+    <None Include="Resources\itemStackOfPapers.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCanOpener.png" />
+    <None Include="Resources\itemStacy%27sGrapeSoda.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemFishingTackle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLine.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHacksaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPrybar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHuntingKnife.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHeavyHammer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHatchet.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemImprovisedHatchet.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemImprovisedKnife.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Stone_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDistressPistol.png" />
+    <None Include="Resources\itemStick.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemStone.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\itemStormLantern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSummitSoda.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\itemSurvivalBow.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemRevolver.png" />
+    <None Include="Resources\itemSweatshirt.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemBrokenArrow.png" />
+    <None Include="Resources\itemThermalUnderwear.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemSimpleArrow.png" />
+    <None Include="Resources\itemThickWoolSweater.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemRifleCartridges.png" />
+    <None Include="Resources\itemThinWoolSweater.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemRevolverCartridges.png" />
+    <None Include="Resources\itemTinderPlug.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemFlareShell.png" />
+    <None Include="Resources\itemTinOfSardines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemTomatoSoup.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemTorch.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemStormLantern.png" />
+    <None Include="Resources\itemTrailBoots.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemFlashlight.png" />
+    <None Include="Resources\itemT-Shirt.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemFlare.png" />
+    <None Include="Resources\itemUrbanParka.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemSimpleTools.png" />
+    <None Include="Resources\itemVenisonCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemVenisonRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWaterPotable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWaterPurificationTablets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWaterUnsafe.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemWhetstone.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemFirearmCleaningKit.png" />
+    <None Include="Resources\itemWindbreaker.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemQualityTools.png" />
+    <None Include="Resources\itemWolfMeatCooked.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemBearSkinBedroll.png" />
+    <None Include="Resources\itemWolfMeatRaw.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemBedroll.png" />
+    <None Include="Resources\itemWolfPelt.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemSnare.png" />
+    <None Include="Resources\itemWolfskinCoat.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemMountaineeringRope_icon.png" />
+    <None Include="Resources\itemWoodMatches.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCharcoal.png" />
+    <None Include="Resources\itemWoolEarWrap.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemJeremiah%27sKnife.png" />
+    <None Include="Resources\itemWoolLongjohns.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemScrapMetalShard.png" />
+    <None Include="Resources\itemWoolMittens.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemScrapMetal.png" />
+    <None Include="Resources\itemWoolScarf.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCuredLeather.png" />
+    <None Include="Resources\itemWoolShirt.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCloth.png" />
+    <None Include="Resources\itemWoolSocks.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemCrowFeather.png" />
+    <None Include="Resources\itemWoolToque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWorkBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWorkGloves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWorkPants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemAccelerant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemAntibiotics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemAntiseptic.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemArrowhead.png" />
@@ -796,46 +793,49 @@
     <None Include="Resources\itemArrowShaft.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemReishiMushroom.png" />
+    <None Include="Resources\itemBalaclava.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemPreparedRoseHips.png" />
+    <None Include="Resources\itemBandage.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemPreparedReishiMushrooms.png" />
+    <None Include="Resources\itemBaseballCap.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemPreparedBirchBark.png" />
+    <None Include="Resources\itemBearSkinBedroll.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemRoseHip.png" />
+    <None Include="Resources\itemBearskinCoat.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemOldMan%27sBeardLichen.png" />
+    <None Include="Resources\itemBedroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBeefJerky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBirchBark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBirchBarkTea.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemBirchSapling.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemGreenMapleSapling.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemGut.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\itemBlackBearHide.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemWolfPelt.png" />
+    <None Include="Resources\itemBlackBearMeatCooked.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemRabbitPelt.png" />
+    <None Include="Resources\itemBlackBearMeatRaw.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemMooseHide.png" />
+    <None Include="Resources\itemBook.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemDeerHide.png" />
+    <None Include="Resources\itemCardboardMatches.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
