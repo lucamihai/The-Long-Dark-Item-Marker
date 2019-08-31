@@ -277,11 +277,20 @@
   <data name="itemCargoPants" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemCargoPants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="itemClimbingSocks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemClimbingSocks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCombatBoots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCombatBoots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="itemCombatPants" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemCombatPants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemCowichanSweater" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemCowichanSweater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemDeerskinBoots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemDeerskinBoots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemDeerskinPants" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemDeerskinPants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,8 +322,14 @@
   <data name="itemImprovisedHandWraps" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemImprovisedHandWraps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="itemInsulatedBoots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemInsulatedBoots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="itemJeans" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemJeans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemLeatherShoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemLeatherShoes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemLightShell" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemLightShell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,6 +346,9 @@
   <data name="itemMoose-HideCloak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemMoose-hideCloak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="itemMukluks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemMukluks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="itemOldFashionedParka" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemOldFashionedParka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -340,8 +358,14 @@
   <data name="itemRabbitskinMitts" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemRabbitskinMitts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="itemRunningShoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemRunningShoes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="itemSimpleParka" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemSimpleParka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemSkiBoots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemSkiBoots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemSkiGloves" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemSkiGloves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -351,6 +375,9 @@
   </data>
   <data name="itemSnowPants" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemSnowPants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemSportsSocks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemSportsSocks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemSportVest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemSportVest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -370,6 +397,9 @@
   <data name="itemThinWoolSweater" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemThinWoolSweater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="itemTrailBoots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemTrailBoots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="itemUrbanParka" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemUrbanParka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -387,6 +417,12 @@
   </data>
   <data name="itemWoolShirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemWoolShirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemWoolSocks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemWoolSocks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemWorkBoots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemWorkBoots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="itemWorkGloves" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemWorkGloves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

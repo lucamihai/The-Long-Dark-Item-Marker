@@ -367,6 +367,94 @@
       "Name": "Work Pants",
       "Condition": 100,
       "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Climbing Socks",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Sports Socks",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Wool Socks",
+      "Condition": 100,
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Combat Boots",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Deerskin Boots",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Insulated Boots",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Leather Shoes",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Mukluks",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Running Shoes",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Ski Boots",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Trail Boots",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Work Boots",
+      "Condition": 100,
+      "HowMany": 1
     }
   ]
 }

@@ -480,5 +480,41 @@
   <ItemGroup>
     <None Include="Resources\itemThermalUnderwear.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemClimbingSocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWorkBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemTrailBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSkiBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMukluks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLeatherShoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDeerskinBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCombatBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWoolSocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSportsSocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemInsulatedBoots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRunningShoes.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
