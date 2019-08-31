@@ -381,5 +381,80 @@
   <ItemGroup>
     <None Include="Resources\itemDrivingGloves.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCowichanSweater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWoolShirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemT-Shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemThinWoolSweater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemThickWoolSweater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSweatshirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPlaidShirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemHoodie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFishermansSweater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDressShirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWolfskinCoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWindbreaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemUrbanParka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSportVest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSkiJacket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSimpleParka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemOldFashionedParka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMoose-hideCloak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMilitaryCoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMariner%27sPeaCoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLightShell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemExpeditionParka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDownVest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBearskinCoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMackinawJacket.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
