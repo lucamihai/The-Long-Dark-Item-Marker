@@ -543,5 +543,122 @@
   <ItemGroup>
     <None Include="Resources\itemMoose-HideSatchel.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemEnergyDrink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWaterUnsafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSummitSoda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemStacy%27sGrapeSoda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemOrangeSoda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCupOfHerbalTea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCupOfCoffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMilitaryGradeMRE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemTomatoSoup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemTinOfSardines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPorkAndBeans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPinnaclePeaches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDogFood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCondensedMilk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSaltyCrackers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPeanutButter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemGranolaBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemEnergyBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCandyBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBeefJerky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCatTailStalk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemVenisonRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitMeatCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitMeatRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMooseMeatCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMooseMeatRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBlackBearMeatCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBlackBearMeatRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWolfMeatCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWolfMeatRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemVenisonCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRainbowTroutRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLakeWhitefishRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLakeWhitefishCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCohoSalmonCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCohoSalmonRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSmallmouthBassCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSmallmouthBassRaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRainbowTroutCooked.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

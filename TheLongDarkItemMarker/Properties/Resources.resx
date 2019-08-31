@@ -457,4 +457,121 @@
   <data name="itemWorkPants" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\itemWorkPants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="itemBeefJerky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemBeefJerky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemBlackBearMeatCooked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemBlackBearMeatCooked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemBlackBearMeatRaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemBlackBearMeatRaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCandyBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCandyBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCatTailStalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCatTailStalk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCohoSalmonCooked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCohoSalmonCooked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCohoSalmonRaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCohoSalmonRaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCondensedMilk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCondensedMilk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCupOfCoffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCupOfCoffee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemCupOfHerbalTea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemCupOfHerbalTea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemDogFood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemDogFood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemEnergyBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemEnergyBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemEnergyDrink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemEnergyDrink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemGranolaBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemGranolaBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemLakeWhitefishCooked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemLakeWhitefishCooked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemLakeWhitefishRaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemLakeWhitefishRaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemMilitaryGradeMRE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemMilitaryGradeMRE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemMooseMeatCooked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemMooseMeatCooked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemMooseMeatRaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemMooseMeatRaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemOrangeSoda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemOrangeSoda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemPeanutButter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemPeanutButter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemPinnaclePeaches" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemPinnaclePeaches.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemPorkAndBeans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemPorkAndBeans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemRabbitMeatCooked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemRabbitMeatCooked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemRabbitMeatRaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemRabbitMeatRaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemRainbowTroutCooked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemRainbowTroutCooked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemRainbowTroutRaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemRainbowTroutRaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemSaltyCrackers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemSaltyCrackers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemSmallmouthBassCooked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemSmallmouthBassCooked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemSmallmouthBassRaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemSmallmouthBassRaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemStacy'sGrapeSoda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemStacy'sGrapeSoda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemSummitSoda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemSummitSoda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemTinOfSardines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemTinOfSardines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemTomatoSoup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemTomatoSoup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemVenisonCooked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemVenisonCooked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemVenisonRaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemVenisonRaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemWaterUnsafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemWaterUnsafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemWolfMeatCooked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemWolfMeatCooked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="itemWolfMeatRaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itemWolfMeatRaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
