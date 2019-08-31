@@ -68,7 +68,7 @@
       <Name>TheLongDarkItemMarker.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\TheLongDarkItemMarker.FileSaving\TheLongDarkItemMarker.FileSaving.csproj">
-      <Project>{85ee57f0-6eda-4c9d-85e5-f1c8828c2fe1}</Project>
+      <Project>{85EE57F0-6EDA-4C9D-85E5-F1C8828C2FE1}</Project>
       <Name>TheLongDarkItemMarker.FileSaving</Name>
     </ProjectReference>
     <ProjectReference Include="..\TheLongDarkItemMarker.UnitTests.Common\TheLongDarkItemMarker.UnitTests.Common.csproj">

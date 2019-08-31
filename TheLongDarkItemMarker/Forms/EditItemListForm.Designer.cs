@@ -124,6 +124,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(610, 820);
             this.Controls.Add(this.buttonSelectDeselectAll);
             this.Controls.Add(this.buttonRemoveSelectedItems);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Drawing;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.Enums;
@@ -14,6 +15,8 @@ namespace TheLongDarkItemMarker.Forms
         public List<Item> Items { get; private set; }
 
         private readonly ItemListView itemListView;
+        private AddItemView addItemView;
+        private bool isExtended;
 
         public EditItemListForm(List<Item> items)
         {
@@ -24,13 +27,14 @@ namespace TheLongDarkItemMarker.Forms
             InitializeItemListFromProvidedItems(items);
 
             itemListView = new ItemListView(Items, ItemListViewSelection.MultipleElements);
-            panelItems.Controls.Add(itemListView);
-
             itemListView.OnItemsSelected += OnItemsSelected;
             itemListView.OnItemsDeselected += OnItemsDeselected;
+            panelItems.Controls.Add(itemListView);
 
             buttonEditSelectedItem.Enabled = false;
             buttonRemoveSelectedItems.Enabled = false;
+
+            isExtended = false;
         }
 
         private void ValidateItemList(List<Item> items)
@@ -70,12 +74,48 @@ namespace TheLongDarkItemMarker.Forms
         [ExcludeFromCodeCoverage]
         private void AddItemClick(object sender, EventArgs e)
         {
-            var addItemForm = new AddItemForm();
-            var result = addItemForm.ShowDialog();
+            if (!isExtended)
+            {
+                this.Width = this.Size.Width + AddItemViewWidth + 10;
+                isExtended = true;
+
+                if (addItemView != null)
+                    Controls.Add(addItemView);
+            }
+            else
+            {
+                Controls.Remove(addItemView);
+                this.Width = this.Size.Width - AddItemViewWidth - 10;
+                isExtended = false;
+            }
+
+            if (addItemView == null)
+            {
+                InitializeAddItemView();
+                Controls.Add(addItemView);
+            }
+        }
+
+        [ExcludeFromCodeCoverage]
+        private int AddItemViewWidth => AddItemView.GetWidth;
+
+        [ExcludeFromCodeCoverage]
+        private void InitializeAddItemView()
+        {
+            addItemView = new AddItemView();
+            addItemView.Location = new Point(this.Size.Width - addItemView.Width - 10, labelItems.Height);
+            addItemView.OnItemAdd += OnItemAdd;
+        }
+
+        [ExcludeFromCodeCoverage]
+        private void OnItemAdd(Item copyOfItemToAdd)
+        {
+            var editItemForm = new EditItemForm(copyOfItemToAdd);
+            var result = editItemForm.ShowDialog();
 
             if (result == DialogResult.OK)
             {
-                AddItemOrStackExistingOne(addItemForm.Item);
+                AddItemOrStackExistingOne(copyOfItemToAdd);
                 itemListView.ForceDraw();
             }
         }

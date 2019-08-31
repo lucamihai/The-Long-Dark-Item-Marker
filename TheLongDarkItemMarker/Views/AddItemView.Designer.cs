@@ -36,7 +36,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(276, 778);
+            this.buttonCancel.Location = new System.Drawing.Point(276, 747);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 7;
@@ -45,7 +45,7 @@
             // 
             // buttonAddSelectedItem
             // 
-            this.buttonAddSelectedItem.Location = new System.Drawing.Point(106, 778);
+            this.buttonAddSelectedItem.Location = new System.Drawing.Point(106, 747);
             this.buttonAddSelectedItem.Name = "buttonAddSelectedItem";
             this.buttonAddSelectedItem.Size = new System.Drawing.Size(107, 23);
             this.buttonAddSelectedItem.TabIndex = 6;
@@ -57,7 +57,7 @@
             // 
             this.labelSelectItem.AutoSize = true;
             this.labelSelectItem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSelectItem.Location = new System.Drawing.Point(18, 34);
+            this.labelSelectItem.Location = new System.Drawing.Point(18, 3);
             this.labelSelectItem.Name = "labelSelectItem";
             this.labelSelectItem.Size = new System.Drawing.Size(93, 19);
             this.labelSelectItem.TabIndex = 5;
@@ -65,7 +65,7 @@
             // 
             // panelItems
             // 
-            this.panelItems.Location = new System.Drawing.Point(18, 56);
+            this.panelItems.Location = new System.Drawing.Point(18, 25);
             this.panelItems.Name = "panelItems";
             this.panelItems.Size = new System.Drawing.Size(470, 716);
             this.panelItems.TabIndex = 4;

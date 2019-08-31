@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.Enums;
@@ -9,6 +10,7 @@ using TheLongDarkItemMarker.Utility;
 
 namespace TheLongDarkItemMarker.Views
 {
+    [ExcludeFromCodeCoverage]
     public partial class AddItemView : UserControl
     {
         private List<Item> items;
@@ -16,8 +18,9 @@ namespace TheLongDarkItemMarker.Views
         private readonly string configDirectory = $"{Environment.CurrentDirectory}\\Config\\Items";
 
         public delegate void ItemAdd(Item copyOfItemToAdd);
-        [ExcludeFromCodeCoverage]
         public ItemAdd OnItemAdd { get; set; } = (copyOfItemToAdd) => { };
+
+        public static int GetWidth => new AddItemView(1).Width;
 
         public AddItemView()
         {
@@ -30,6 +33,12 @@ namespace TheLongDarkItemMarker.Views
             panelItems.Controls.Add(itemListView);
 
             buttonAddSelectedItem.Enabled = false;
+        }
+
+        
+        private AddItemView(int parameterForDifferentConstructorSignature)
+        {
+            InitializeComponent();
         }
 
         private void OnItemsDeselected()
