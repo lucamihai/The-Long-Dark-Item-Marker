@@ -327,5 +327,59 @@
   <ItemGroup>
     <None Include="Resources\itemWaterPurificationTablets.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWoolToque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWoolScarf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitskinHat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLongWoolScarf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemImprovisedHeadWrap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFleeceCowl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCottonToque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCottonScarf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBaseballCap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBalaclava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWorkGloves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWoolMittens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSkiGloves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRabbitskinMitts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemGauntlets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFleeceMittens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemImprovisedHandWraps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDrivingGloves.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

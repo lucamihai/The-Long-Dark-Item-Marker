@@ -1,6 +1,133 @@
 ﻿{
   "$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
   "$values": [
-    
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Balaclava",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Baseball Cap",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Cotton Scarf",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Cotton Toque",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Fleece Cowl",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Improvised Head Wrap",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Long Wool Scarf",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Rabbitskin Hat",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Wool Scarf",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Wool Toque",
+      "Condition": 100,
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Driving Gloves",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Improvised Hand Wraps",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Fleece Mittens",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Gauntlets",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Rabbitskin Mitts",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Ski Gloves",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Wool Mittens",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 2,
+      "Name": "Work Gloves",
+      "Condition": 100,
+      "HowMany": 1
+    }
   ]
 }
