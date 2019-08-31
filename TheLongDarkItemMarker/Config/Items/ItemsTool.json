@@ -1,24 +1,334 @@
 ﻿{
 	"$type": "System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib",
-	"$values": [
-		{
-			"$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
-			"Condition": 100,
-			"ItemCategory": 4,
-			"Name": "Sewing Kit",
-			"HowMany": 1
-		},
+  "$values": [
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Can Opener",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Cooking Pot",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Recycled Can",
+      "HowMany": 1
+    },
+
+
     {
       "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Jerry Can",
+      "Condition": 100,
+      "QuantityName": "Liter",
+      "QuantityPostfix": "s",
+      "Quantity": 4.0,
+      "QuantityMinValue": 0.01,
+      "QuantityMaxValue": 4.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Lantern Fuel",
+      "Condition": 100,
+      "QuantityName": "Liter",
+      "QuantityPostfix": "s",
+      "Quantity": 0.5,
+      "QuantityMinValue": 0.01,
+      "QuantityMaxValue": 0.5,
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Fishing Tackle",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Hook",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Line",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Hacksaw",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Hatchet",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Heavy Hammer",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Hunting Knife",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Prybar",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Improvised Hatchet",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Improvised Knife",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Distress Pistol",
+      "Condition": 100,
+      "QuantityName": "Flare Shell",
+      "QuantityPostfix": "s",
+      "Quantity": 1,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 1,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Hunting Rifle",
       "Condition": 100,
       "QuantityName": "Rifle Cartridge",
       "QuantityPostfix": "s",
       "Quantity": 10.0,
       "QuantityMinValue": 0.0,
       "QuantityMaxValue": 10.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
       "ItemCategory": 4,
-      "Name": "Hunting Rifle",
+      "Name": "Revolver",
+      "Condition": 100,
+      "QuantityName": "Revolver Cartridge",
+      "QuantityPostfix": "s",
+      "Quantity": 6.0,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 6.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Survival Bow",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Stone",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Flare Shell",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Revolver Cartridges",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Rifle Cartridges",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Simple Arrow",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Broken Arrow",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Flare",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Flashlight",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithConditionAndQuantity, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Storm Lantern",
+      "Condition": 100,
+      "QuantityName": "Oil liter",
+      "QuantityPostfix": "s",
+      "Quantity": 1.0,
+      "QuantityMinValue": 0.0,
+      "QuantityMaxValue": 1.0,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Torch",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Simple Tools",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Quality Tools",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Firearm Cleaning Kit",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "Condition": 100,
+      "ItemCategory": 4,
+      "Name": "Sewing Kit",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Whetstone",
+      "Condition": 100,
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Bedroll",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Bear Skin Bedroll",
+      "Condition": 100,
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Charcoal",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Mountaineering Rope",
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Snare",
+      "HowMany": 1
+    },
+
+
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Jeremiah's Knife",
+      "Condition": 100,
+      "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.ItemWithCondition, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 4,
+      "Name": "Scrap Metal Shard",
+      "Condition": 100,
       "HowMany": 1
     }
-	]
+
+  ]
 }

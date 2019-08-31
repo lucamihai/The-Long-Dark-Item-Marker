@@ -233,9 +233,6 @@
     <None Include="Resources\itemStick.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\itemLanternFuel.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\itemSewingKit.png" />
   </ItemGroup>
   <ItemGroup>
@@ -659,6 +656,126 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\itemRainbowTroutCooked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLanternFuel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemJerryCan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRecycledCan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCookingPot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCanOpener.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFishingTackle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemHook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemHacksaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemPrybar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemHuntingKnife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemHeavyHammer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemHatchet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemImprovisedHatchet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemImprovisedKnife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stone_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemDistressPistol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemStone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSurvivalBow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRevolver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBrokenArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSimpleArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRifleCartridges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemRevolverCartridges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFlareShell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemTorch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemStormLantern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFlashlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFlare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSimpleTools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemWhetstone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemFirearmCleaningKit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemQualityTools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBearSkinBedroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemBedroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemSnare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemMountaineeringRope_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemCharcoal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemJeremiah%27sKnife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemScrapMetalShard.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
