@@ -52,7 +52,7 @@ namespace TheLongDarkItemMarker.Views
             // 
             this.panelFields.Location = new System.Drawing.Point(135, 12);
             this.panelFields.Name = "panelFields";
-            this.panelFields.Size = new System.Drawing.Size(150, 100);
+            this.panelFields.Size = new System.Drawing.Size(190, 100);
             this.panelFields.TabIndex = 1;
             // 
             // ItemView

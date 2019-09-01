@@ -101,14 +101,14 @@ namespace TheLongDarkItemMarker.Views
             textBoxItemCategory.Font = new Font(new FontFamily("Times New Roman"), 10);
             textBoxItemCategory.Text = $"{Item.ItemCategory.ToString()} Category";
             textBoxItemCategory.ReadOnly = true;
-            textBoxItemCategory.Width = 150;
+            textBoxItemCategory.Width = 190;
             activeFields.Add(textBoxItemCategory);
 
             textBoxItemName = new TextBox();
             textBoxItemName.Font = new Font(new FontFamily("Times New Roman"), 10);
             textBoxItemName.Text = Item.Name;
             textBoxItemName.ReadOnly = true;
-            textBoxItemName.Width = 150;
+            textBoxItemName.Width = 190;
             activeFields.Add(textBoxItemName);
 
             if (Item is IItemWithCondition itemWithCondition)
@@ -117,7 +117,7 @@ namespace TheLongDarkItemMarker.Views
                 textBoxCondition.Font = new Font(new FontFamily("Times New Roman"), 10);
                 textBoxCondition.Text = $"{itemWithCondition.Condition.ToString()}% Condition";
                 textBoxCondition.ReadOnly = true;
-                textBoxCondition.Width = 150;
+                textBoxCondition.Width = 190;
                 activeFields.Add(textBoxCondition);
             }
 
@@ -127,7 +127,7 @@ namespace TheLongDarkItemMarker.Views
                 textBoxQuantity.Font = new Font(new FontFamily("Times New Roman"), 10);
                 textBoxQuantity.Text = $"{itemWithQuantity.Quantity} / {itemWithQuantity.QuantityMaxValue} {itemWithQuantity.QuantityName}{itemWithQuantity.QuantityPostfix}";
                 textBoxQuantity.ReadOnly = true;
-                textBoxQuantity.Width = 150;
+                textBoxQuantity.Width = 190;
                 activeFields.Add(textBoxQuantity);
             }
 
