@@ -32,6 +32,7 @@ namespace TheLongDarkItemMarker.Forms
         [ExcludeFromCodeCoverage]
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditMarkerForm));
             this.errorLabel = new System.Windows.Forms.Label();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSaveMarker = new System.Windows.Forms.Button();
@@ -108,8 +109,11 @@ namespace TheLongDarkItemMarker.Forms
             this.Controls.Add(this.buttonSaveMarker);
             this.Controls.Add(this.textBoxMarkerName);
             this.Controls.Add(this.labelMarkerName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "EditMarkerForm";
-            this.Text = "EditMarkerForm";
+            this.Text = "Edit marker";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -32,6 +32,7 @@ namespace TheLongDarkItemMarker.Forms
         [ExcludeFromCodeCoverage]
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditItemListForm));
             this.panelItems = new System.Windows.Forms.Panel();
             this.buttonAddItem = new System.Windows.Forms.Button();
             this.labelItems = new System.Windows.Forms.Label();
@@ -134,8 +135,11 @@ namespace TheLongDarkItemMarker.Forms
             this.Controls.Add(this.labelItems);
             this.Controls.Add(this.buttonAddItem);
             this.Controls.Add(this.panelItems);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "EditItemListForm";
-            this.Text = "EditItemListForm";
+            this.Text = "Edit item list";
             this.ResumeLayout(false);
             this.PerformLayout();
 

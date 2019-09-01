@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using FluentValidation;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.FileSaving;
+using TheLongDarkItemMarker.Properties;
 using TheLongDarkItemMarker.Views;
 
 namespace TheLongDarkItemMarker.Forms
@@ -111,14 +112,29 @@ namespace TheLongDarkItemMarker.Forms
         private void OnMarkerClicked(Marker clickedMarker)
         {
             mapView.ForceDraw();
-
-            markerView = new MarkerView(clickedMarker);
-
             panelClickedMarker.Controls.Clear();
-            panelClickedMarker.Controls.Add(markerView);
 
-            buttonEditMarker.Enabled = true;
-            buttonDeleteMarker.Enabled = true;
+            var currentActiveMarkerIsClicked = CurrentActiveMarkerIsClicked(clickedMarker);
+            if (CurrentActiveMarkerIsClicked(clickedMarker))
+            {
+                markerView = new MarkerView(new Marker {Name = "Some marker name"});
+            }
+            else
+            {
+                markerView = new MarkerView(clickedMarker);
+                panelClickedMarker.Controls.Add(markerView);
+            }
+
+            buttonEditMarker.Enabled = !currentActiveMarkerIsClicked;
+            buttonDeleteMarker.Enabled = !currentActiveMarkerIsClicked;
+        }
+
+        private bool CurrentActiveMarkerIsClicked(Marker clickedMarker)
+        {
+            if (markerView == null)
+                return false;
+
+            return clickedMarker == markerView.Marker;
         }
 
         private void MainWindow_KeyDown(object sender, KeyEventArgs e)
@@ -219,6 +235,7 @@ namespace TheLongDarkItemMarker.Forms
         {
             var markerItemsBeforeEdit = new List<Item>(markerView.Marker.Items);
             var editMarkerForm = new EditMarkerForm(markerView.Marker);
+            editMarkerForm.StartPosition = FormStartPosition.CenterParent;
             var result = editMarkerForm.ShowDialog();
 
             if (result == DialogResult.OK)
@@ -242,6 +259,17 @@ namespace TheLongDarkItemMarker.Forms
 
             buttonEditMarker.Enabled = false;
             buttonDeleteMarker.Enabled = false;
+        }
+
+        private void AboutToolStripMenuItemClick(object sender, EventArgs e)
+        {
+            var aboutForm = new AboutForm();
+            aboutForm.ShowDialog();
+        }
+
+        private void OpenWebPageToolStripMenuItemClick(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(Resources.HelpWebPageUrl);
         }
     }
 }

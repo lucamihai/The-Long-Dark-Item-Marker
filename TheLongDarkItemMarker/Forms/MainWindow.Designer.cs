@@ -30,6 +30,7 @@ namespace TheLongDarkItemMarker.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.panelMapSelection = new System.Windows.Forms.Panel();
             this.radioButtonMapHushedRiverValley = new System.Windows.Forms.RadioButton();
             this.radioButtonMapMountainTown = new System.Windows.Forms.RadioButton();
@@ -45,6 +46,10 @@ namespace TheLongDarkItemMarker.Forms
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setActiveFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openWebPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openReadmeFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelActiveFolder = new System.Windows.Forms.Label();
             this.labelWarning = new System.Windows.Forms.Label();
             this.textBoxActiveFolder = new System.Windows.Forms.TextBox();
@@ -202,7 +207,9 @@ namespace TheLongDarkItemMarker.Forms
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem,
+            this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1648, 24);
@@ -223,6 +230,35 @@ namespace TheLongDarkItemMarker.Forms
             this.setActiveFolderToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.setActiveFolderToolStripMenuItem.Text = "Set active folder";
             this.setActiveFolderToolStripMenuItem.Click += new System.EventHandler(this.SetActiveFolderClick);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openWebPageToolStripMenuItem,
+            this.openReadmeFileToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // openWebPageToolStripMenuItem
+            // 
+            this.openWebPageToolStripMenuItem.Name = "openWebPageToolStripMenuItem";
+            this.openWebPageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openWebPageToolStripMenuItem.Text = "Open web page";
+            this.openWebPageToolStripMenuItem.Click += new System.EventHandler(this.OpenWebPageToolStripMenuItemClick);
+            // 
+            // openReadmeFileToolStripMenuItem
+            // 
+            this.openReadmeFileToolStripMenuItem.Name = "openReadmeFileToolStripMenuItem";
+            this.openReadmeFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openReadmeFileToolStripMenuItem.Text = "Open readme file";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItemClick);
             // 
             // labelActiveFolder
             // 
@@ -307,7 +343,10 @@ namespace TheLongDarkItemMarker.Forms
             this.Controls.Add(this.panelMap);
             this.Controls.Add(this.panelMapSelection);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "MainWindow";
             this.Text = "The Long Dark Item Marker";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
@@ -345,6 +384,10 @@ namespace TheLongDarkItemMarker.Forms
         private System.Windows.Forms.Button buttonEditMarker;
         private System.Windows.Forms.Button buttonDeleteMarker;
         private System.Windows.Forms.Label labelSelectedMarker;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openWebPageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openReadmeFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

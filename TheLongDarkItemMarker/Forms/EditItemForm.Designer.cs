@@ -32,6 +32,7 @@ namespace TheLongDarkItemMarker.Forms
         [ExcludeFromCodeCoverage]
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditItemForm));
             this.panelFields = new System.Windows.Forms.Panel();
             this.pictureBoxItem = new System.Windows.Forms.PictureBox();
             this.buttonSave = new System.Windows.Forms.Button();
@@ -48,6 +49,7 @@ namespace TheLongDarkItemMarker.Forms
             // 
             // pictureBoxItem
             // 
+            this.pictureBoxItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.pictureBoxItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxItem.Location = new System.Drawing.Point(14, 12);
@@ -86,8 +88,11 @@ namespace TheLongDarkItemMarker.Forms
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.panelFields);
             this.Controls.Add(this.pictureBoxItem);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "EditItemForm";
-            this.Text = "EditItemForm";
+            this.Text = "Edit item";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxItem)).EndInit();
             this.ResumeLayout(false);
 

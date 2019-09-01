@@ -17,6 +17,7 @@ namespace TheLongDarkItemMarker.Forms
 
             this.marker = marker;
             textBoxMarkerName.Text = marker.Name;
+            errorLabel.Text = string.Empty;
         }
 
         private void ValidateMarker(Marker marker)
@@ -63,6 +64,7 @@ namespace TheLongDarkItemMarker.Forms
         private void EditItemListClick(object sender, EventArgs e)
         {
             var editItemListForm = new EditItemListForm(marker.Items);
+            editItemListForm.StartPosition = FormStartPosition.CenterParent;
             var result = editItemListForm.ShowDialog();
 
             if (result == DialogResult.OK)

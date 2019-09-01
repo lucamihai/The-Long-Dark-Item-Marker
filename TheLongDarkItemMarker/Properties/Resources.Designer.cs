@@ -61,6 +61,21 @@ namespace TheLongDarkItemMarker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The Long Dark Item Marker is an application made purely for fun purposes.
+        ///I did not earn any money making this, and I&apos;m not making any money if this application is used.
+        ///
+        ///The Long Dark is a survival game developed by Hinterland Games (https://hinterlandgames.com).
+        ///The creators of the maps I&apos;ve used can be seen in each map.
+        ///
+        ///More details can be found on the Github page of the project: https://github.com/lucamihai/The-Long-Dark-Item-Marker.
+        /// </summary>
+        internal static string About {
+            get {
+                return ResourceManager.GetString("About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap BrokenRailroad {
@@ -97,6 +112,15 @@ namespace TheLongDarkItemMarker.Properties {
             get {
                 object obj = ResourceManager.GetObject("ForlornMuskeg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://lucamihai.github.io/The-Long-Dark-Item-Marker-Wep-Page/.
+        /// </summary>
+        internal static string HelpWebPageUrl {
+            get {
+                return ResourceManager.GetString("HelpWebPageUrl", resourceCulture);
             }
         }
         

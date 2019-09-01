@@ -98,8 +98,11 @@ namespace TheLongDarkItemMarker.Views
                 XPositionPercentage = xPercentage,
                 YPositionPercentage = yPercentage
             };
+
             var editMarkerForm = new EditMarkerForm(markerToBeCreated);
+            editMarkerForm.StartPosition = FormStartPosition.CenterParent;
             editMarkerForm.Text = "Create marker";
+
             var result = editMarkerForm.ShowDialog();
 
             if (result == DialogResult.OK)
@@ -192,6 +195,10 @@ namespace TheLongDarkItemMarker.Views
 
                 if (clickedMarker != null)
                 {
+                    activeMarker = clickedMarker == activeMarker 
+                        ? null 
+                        : clickedMarker;
+
                     OnMarkerClicked(clickedMarker);
                 }
             }
@@ -260,7 +267,6 @@ namespace TheLongDarkItemMarker.Views
 
                 if (RectangleWasClicked(mouseEventArgs, markerRectangle))
                 {
-                    activeMarker = marker;
                     return marker;
                 }
             }

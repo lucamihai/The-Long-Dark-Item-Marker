@@ -76,7 +76,7 @@ namespace TheLongDarkItemMarker.Forms
         {
             if (!isExtended)
             {
-                this.Width = this.Size.Width + AddItemViewWidth + 10;
+                this.Width = this.Size.Width + AddItemViewWidth + 60;
                 isExtended = true;
 
                 if (addItemView != null)
@@ -85,7 +85,7 @@ namespace TheLongDarkItemMarker.Forms
             else
             {
                 Controls.Remove(addItemView);
-                this.Width = this.Size.Width - AddItemViewWidth - 10;
+                this.Width = this.Size.Width - AddItemViewWidth - 60;
                 isExtended = false;
             }
 
@@ -111,6 +111,7 @@ namespace TheLongDarkItemMarker.Forms
         private void OnItemAdd(Item copyOfItemToAdd)
         {
             var editItemForm = new EditItemForm(copyOfItemToAdd);
+            editItemForm.StartPosition = FormStartPosition.CenterParent;
             var result = editItemForm.ShowDialog();
 
             if (result == DialogResult.OK)
@@ -163,6 +164,7 @@ namespace TheLongDarkItemMarker.Forms
         {
             var selectedItem = itemListView.SelectedItems[0];
             var editItemForm = new EditItemForm(selectedItem);
+            editItemForm.StartPosition = FormStartPosition.CenterParent;
             var result = editItemForm.ShowDialog();
 
             if (result == DialogResult.OK)
