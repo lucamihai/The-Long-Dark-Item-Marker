@@ -92,12 +92,19 @@ namespace TheLongDarkItemMarker.Views
             var xPercentage = (rightClickLocation.X * 100) / pictureBox.Image.Size.Width;
             var yPercentage = (rightClickLocation.Y * 100) / pictureBox.Image.Size.Height;
 
-            var createMarkerForm = new CreateMarkerForm(xPercentage, yPercentage);
-            var result = createMarkerForm.ShowDialog();
+            var markerToBeCreated = new Marker
+            {
+                Name = "Marker name",
+                XPositionPercentage = xPercentage,
+                YPositionPercentage = yPercentage
+            };
+            var editMarkerForm = new EditMarkerForm(markerToBeCreated);
+            editMarkerForm.Text = "Create marker";
+            var result = editMarkerForm.ShowDialog();
 
             if (result == DialogResult.OK)
             {
-                Map.Markers.Add(createMarkerForm.Marker);
+                Map.Markers.Add(markerToBeCreated);
                 pictureBox.Refresh();
             }
         }

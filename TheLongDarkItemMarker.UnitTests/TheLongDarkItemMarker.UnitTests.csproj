@@ -60,7 +60,6 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="DomainEntities.cs" />
-    <Compile Include="FormsUnitTests\CreateMarkerFormUnitTests.cs" />
     <Compile Include="FormsUnitTests\EditItemFormUnitTests.cs" />
     <Compile Include="FormsUnitTests\EditItemListFormUnitTests.cs" />
     <Compile Include="FormsUnitTests\EditMarkerFormUnitTests.cs" />
