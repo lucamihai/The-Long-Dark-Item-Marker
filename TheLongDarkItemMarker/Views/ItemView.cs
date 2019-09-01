@@ -123,9 +123,17 @@ namespace TheLongDarkItemMarker.Views
 
             if (Item is IItemWithQuantity itemWithQuantity)
             {
+                var quantityString = itemWithQuantity.QuantityName.ToLower().Contains("liter")  || itemWithQuantity.QuantityName == "Kg"
+                    ? itemWithQuantity.Quantity.ToString("0.00")
+                    : itemWithQuantity.Quantity.ToString();
+
+                var quantityMaxValueString = itemWithQuantity.QuantityName.ToLower().Contains("liter") || itemWithQuantity.QuantityName == "Kg"
+                    ? itemWithQuantity.QuantityMaxValue.ToString("0.00")
+                    : itemWithQuantity.QuantityMaxValue.ToString();
+
                 textBoxQuantity = new TextBox();
                 textBoxQuantity.Font = new Font(new FontFamily("Times New Roman"), 10);
-                textBoxQuantity.Text = $"{itemWithQuantity.Quantity} / {itemWithQuantity.QuantityMaxValue} {itemWithQuantity.QuantityName}{itemWithQuantity.QuantityPostfix}";
+                textBoxQuantity.Text = $"{quantityString} / {quantityMaxValueString} {itemWithQuantity.QuantityName}{itemWithQuantity.QuantityPostfix}";
                 textBoxQuantity.ReadOnly = true;
                 textBoxQuantity.Width = 190;
                 activeFields.Add(textBoxQuantity);
