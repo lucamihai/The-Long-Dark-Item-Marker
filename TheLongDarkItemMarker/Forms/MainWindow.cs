@@ -217,12 +217,19 @@ namespace TheLongDarkItemMarker.Forms
 
         private void EditMarkerClick(object sender, EventArgs e)
         {
+            var markerItemsBeforeEdit = new List<Item>(markerView.Marker.Items);
             var editMarkerForm = new EditMarkerForm(markerView.Marker);
             var result = editMarkerForm.ShowDialog();
 
             if (result == DialogResult.OK)
             {
                 markerView.UpdateViewData();
+            }
+
+            if (result == DialogResult.Cancel)
+            {
+                markerView.Marker.Items.Clear();
+                markerView.Marker.Items.AddRange(markerItemsBeforeEdit);
             }
         }
 

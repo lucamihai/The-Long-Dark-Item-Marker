@@ -188,6 +188,7 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private void ComboBoxCategoryFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
             FilterItems();
@@ -195,6 +196,7 @@ namespace TheLongDarkItemMarker.Views
             UpdateColorsForItemViews();
         }
 
+        [ExcludeFromCodeCoverage]
         private void TextBoxFilterByNameTextChanged(object sender, EventArgs e)
         {
             FilterItems();
@@ -202,6 +204,7 @@ namespace TheLongDarkItemMarker.Views
             UpdateColorsForItemViews();
         }
 
+        [ExcludeFromCodeCoverage]
         private void FilterItems()
         {
             filteredItems.Clear();
@@ -211,6 +214,7 @@ namespace TheLongDarkItemMarker.Views
             FilterItemsBasedOnEnteredName();
         }
 
+        [ExcludeFromCodeCoverage]
         private void FilterItemsBasedOnSelectedItemCategory()
         {
             var selectedComboBoxItem = comboBoxCategoryFilter.SelectedItem as ItemFilteringComboBoxItem;
@@ -222,6 +226,7 @@ namespace TheLongDarkItemMarker.Views
             filteredItems = ItemListFilteringMethods.GetItemListFilteredByItemCategory(filteredItems, selectedCategory);
         }
 
+        [ExcludeFromCodeCoverage]
         private void FilterItemsBasedOnEnteredName()
         {
             if (string.IsNullOrEmpty(textBoxFilterByName.Text))
