@@ -156,10 +156,15 @@ namespace TheLongDarkItemMarker.Forms
             }
         }
 
-        private void SetActiveFolderClick(object sender, System.EventArgs e)
+        private void SetActiveFolderClick(object sender, EventArgs e)
         {
             using (var folderBrowserDialog = new FolderBrowserDialog())
             {
+                folderBrowserDialog.RootFolder = Environment.SpecialFolder.MyComputer;
+                folderBrowserDialog.SelectedPath = string.IsNullOrEmpty(ActiveFolderPath) 
+                    ? $"{Environment.CurrentDirectory}\\" 
+                    : ActiveFolderPath;
+
                 var dialogResult = folderBrowserDialog.ShowDialog();
 
                 if (dialogResult == DialogResult.OK && !string.IsNullOrWhiteSpace(folderBrowserDialog.SelectedPath))
