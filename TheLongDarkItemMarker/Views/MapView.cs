@@ -42,6 +42,8 @@ namespace TheLongDarkItemMarker.Views
             }
         }
 
+        private int displaysMade = 0;
+
         public delegate void MarkerClicked(Marker clickedMarker);
         [ExcludeFromCodeCoverage]
         public MarkerClicked OnMarkerClicked { get; set; } = clickedMarker => { };
@@ -133,6 +135,9 @@ namespace TheLongDarkItemMarker.Views
             var currentHorizontalScrollPercentage = GetCurrentHorizontalScrollPercentage();
             var currentVerticalScrollPercentage = GetCurrentVerticalScrollPercentage();
 
+            if (pictureBox != null)
+                pictureBox.Image = null;
+
             var image = UtilityMethods.GetZoomedImage(Map.Image, ZoomFactor);
             pictureBox = new PictureBox {Size = image.Size, Image = image};
             pictureBox.MouseDown += PictureBoxOnMouseDown;
@@ -147,6 +152,20 @@ namespace TheLongDarkItemMarker.Views
 
             panelMap.PerformLayout();
             pictureBox.Refresh();
+
+            PerformCleanupAndResetDisplaysMadeCounterIfTooManyDisplaysWereMade();
+            displaysMade++;
+        }
+
+        private void PerformCleanupAndResetDisplaysMadeCounterIfTooManyDisplaysWereMade()
+        {
+            if (displaysMade > 9)
+            {
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+
+                displaysMade = 0;
+            }
         }
 
         [ExcludeFromCodeCoverage]
