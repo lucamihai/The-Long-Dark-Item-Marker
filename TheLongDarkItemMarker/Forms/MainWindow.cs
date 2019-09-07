@@ -146,12 +146,12 @@ namespace TheLongDarkItemMarker.Forms
             {
                 if (e.KeyCode == Keys.PageUp)
                 {
-                    mapView.ZoomFactor += 0.025f;
+                    mapView.ZoomFactor += 0.02f;
                 }
 
                 if (e.KeyCode == Keys.PageDown)
                 {
-                    mapView.ZoomFactor -= 0.025f;
+                    mapView.ZoomFactor -= 0.02f;
                 }
             }
         }

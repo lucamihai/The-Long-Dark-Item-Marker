@@ -27,13 +27,17 @@ namespace TheLongDarkItemMarker.Views
         private PictureBox pictureBox;
         public Map Map { get; }
 
+        private readonly float zoomFactorMinimumValue;
         private float zoomFactor;
         public float ZoomFactor
         {
             get => zoomFactor;
             set
             {
-                zoomFactor = value;
+                zoomFactor = value < zoomFactorMinimumValue 
+                    ? zoomFactorMinimumValue 
+                    : value;
+
                 DisplayMap();
             }
         }
@@ -55,7 +59,10 @@ namespace TheLongDarkItemMarker.Views
             this.Controls.Add(panelMap);
 
             Map = map;
-            ZoomFactor = UtilityMethods.GetZoomFactorForImageToFitInSpecifiedSize(Map.Image, panelMap.Size);
+
+            var zoomFactorForImageToFitInPanel = UtilityMethods.GetZoomFactorForImageToFitInSpecifiedSize(Map.Image, panelMap.Size);
+            ZoomFactor = zoomFactorForImageToFitInPanel;
+            zoomFactorMinimumValue = zoomFactorForImageToFitInPanel;
         }
 
         [ExcludeFromCodeCoverage]
