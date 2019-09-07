@@ -122,6 +122,12 @@
       "ItemCategory": 0,
       "Name": "Accelerant",
       "HowMany": 1
+    },
+    {
+      "$type": "TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain",
+      "ItemCategory": 0,
+      "Name": "Coal",
+      "HowMany": 1
     }
   ]
 }

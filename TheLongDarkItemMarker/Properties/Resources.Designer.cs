@@ -447,6 +447,16 @@ namespace TheLongDarkItemMarker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itemCoal {
+            get {
+                object obj = ResourceManager.GetObject("itemCoal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap itemCohoSalmonCooked {
             get {
                 object obj = ResourceManager.GetObject("itemCohoSalmonCooked", resourceCulture);
