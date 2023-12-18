@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace TheLongDarkItemMarker.Forms
+﻿namespace TheLongDarkItemMarker.Forms
 {
     partial class MainWindow
     {

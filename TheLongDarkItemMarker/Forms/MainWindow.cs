@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
-using System.Drawing;
-using System.Linq;
-using System.Windows.Forms;
-using FluentValidation;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.FileSaving;
-using TheLongDarkItemMarker.Properties;
 using TheLongDarkItemMarker.Views;
 
 namespace TheLongDarkItemMarker.Forms
@@ -87,7 +81,7 @@ namespace TheLongDarkItemMarker.Forms
                 var map = new Map
                 {
                     Name = mapName,
-                    Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(mapImageName)
+                    Image = Settings.Settings.GetMapImageOrDefault(mapImageName)
                 };
 
                 map.ValidateAndThrow();
@@ -274,7 +268,7 @@ namespace TheLongDarkItemMarker.Forms
 
         private void OpenWebPageToolStripMenuItemClick(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(Resources.HelpWebPageUrl);
+            System.Diagnostics.Process.Start(Settings.Settings.HelpWebPageUrl);
         }
     }
 }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Windows.Forms;
+﻿using System.Diagnostics.CodeAnalysis;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.Enums;
 using TheLongDarkItemMarker.FileSaving;

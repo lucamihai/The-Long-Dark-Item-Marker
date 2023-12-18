@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using FluentValidation;
 using TheLongDarkItemMarker.Domain.Validators;

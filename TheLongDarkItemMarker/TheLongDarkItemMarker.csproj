@@ -1,845 +1,708 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D7484745-7D51-4CAF-88BC-33A14A8D84CD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TheLongDarkItemMarker</RootNamespace>
-    <AssemblyName>TheLongDarkItemMarker</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
-      <HintPath>..\packages\FluentValidation.8.4.0\lib\net45\FluentValidation.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
+    <ProjectReference Include="..\TheLongDarkItemMarker.Domain\TheLongDarkItemMarker.Domain.csproj" />
+    <ProjectReference Include="..\TheLongDarkItemMarker.FileSaving\TheLongDarkItemMarker.FileSaving.csproj" />
+    <ProjectReference Include="..\TheLongDarkItemMarker.Settings\TheLongDarkItemMarker.Settings.csproj" />
+    <ProjectReference Include="..\TheLongDarkItemMarker.Utility\TheLongDarkItemMarker.Utility.csproj" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Enums\ItemListViewSelection.cs" />
-    <Compile Include="Forms\AboutForm.cs">
+    <Compile Update="Forms\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AboutForm.Designer.cs">
-      <DependentUpon>AboutForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\EditItemForm.cs">
+    <Compile Update="Forms\EditItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\EditItemForm.Designer.cs">
-      <DependentUpon>EditItemForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\EditItemListForm.cs">
+    <Compile Update="Forms\EditItemListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\EditItemListForm.Designer.cs">
-      <DependentUpon>EditItemListForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\EditMarkerForm.cs">
+    <Compile Update="Forms\EditMarkerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\EditMarkerForm.Designer.cs">
-      <DependentUpon>EditMarkerForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MainWindow.cs">
+    <Compile Update="Forms\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainWindow.Designer.cs">
-      <DependentUpon>MainWindow.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ItemFilteringComboBoxItem.cs" />
-    <Compile Include="MapImageNames.cs" />
-    <Compile Include="MapNames.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\AddItemView.cs">
+    <Compile Update="Views\AddItemView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\AddItemView.Designer.cs">
-      <DependentUpon>AddItemView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ItemListView.cs">
+    <Compile Update="Views\ItemListView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\ItemListView.Designer.cs">
-      <DependentUpon>ItemListView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ItemView.cs">
+    <Compile Update="Views\ItemView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\ItemView.Designer.cs">
-      <DependentUpon>ItemView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MapView.cs">
+    <Compile Update="Views\MapView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\MapView.Designer.cs">
-      <DependentUpon>MapView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MarkerView.cs">
+    <Compile Update="Views\MarkerView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\MarkerView.Designer.cs">
-      <DependentUpon>MarkerView.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Forms\AboutForm.resx">
-      <DependentUpon>AboutForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EditItemForm.resx">
-      <DependentUpon>EditItemForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EditItemListForm.resx">
-      <DependentUpon>EditItemListForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EditMarkerForm.resx">
-      <DependentUpon>EditMarkerForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainWindow.resx">
-      <DependentUpon>MainWindow.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\AddItemView.resx">
-      <DependentUpon>AddItemView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\ItemListView.resx">
-      <DependentUpon>ItemListView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\ItemView.resx">
-      <DependentUpon>ItemView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\MapView.resx">
-      <DependentUpon>MapView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\MarkerView.resx">
-      <DependentUpon>MarkerView.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="Config\Items\ItemsFireStarting.json">
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Config\Items\ItemsClothing.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Config\Items\ItemsFirstAid.json">
+    <None Update="Config\Items\ItemsFireStarting.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Config\Items\ItemsFoodAndDrink.json">
+    <None Update="Config\Items\ItemsFirstAid.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Config\Items\ItemsMaterial.json">
+    <None Update="Config\Items\ItemsFoodAndDrink.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Config\Items\ItemsTool.json">
+    <None Update="Config\Items\ItemsMaterial.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    <None Update="Config\Items\ItemsTool.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TheLongDarkItemMarker.Domain\TheLongDarkItemMarker.Domain.csproj">
-      <Project>{e6cad944-5ba3-475c-927b-9f00fd3b1d00}</Project>
-      <Name>TheLongDarkItemMarker.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TheLongDarkItemMarker.FileSaving\TheLongDarkItemMarker.FileSaving.csproj">
-      <Project>{85ee57f0-6eda-4c9d-85e5-f1c8828c2fe1}</Project>
-      <Name>TheLongDarkItemMarker.FileSaving</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TheLongDarkItemMarker.Utility\TheLongDarkItemMarker.Utility.csproj">
-      <Project>{8fb27f29-bc1f-4c3d-8420-324058c8e52a}</Project>
-      <Name>TheLongDarkItemMarker.Utility</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CoastalHighway.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BrokenRailroad.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MountainTown.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\HushedRiverValley.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ForlornMuskeg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TimberwolfMountain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PleasantValley.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MysteryLake.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DesolationPoint.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Config\Items\ItemsClothing.json">
+    <None Update="Resources\BrokenRailroad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\CoastalHighway.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\DesolationPoint.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\ForlornMuskeg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\HushedRiverValley.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemAccelerant.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemAntibiotics.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemAntiseptic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemArrowhead.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemArrowShaft.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBalaclava.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBandage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBaseballCap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBearSkinBedroll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBearskinCoat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBedroll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBeefJerky.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBirchBark.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBirchBarkTea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBirchSapling.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBlackBearHide.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBlackBearMeatCooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBlackBearMeatRaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBook.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemBrokenArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCandyBar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCanOpener.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCardboardMatches.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCargoPants.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCash.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCatTailHead.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCatTailStalk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCedarFirewood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCharcoal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemClimbingSocks.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCloth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCoal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCohoSalmonCooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCohoSalmonRaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCombatBoots.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCombatPants.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCondensedMilk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCookingPot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCottonScarf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCottonToque.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCowichanSweater.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCrowFeather.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCupOfCoffee.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCupOfHerbalTea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemCuredLeather.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemDeerHide.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemDeerskinBoots.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemDeerskinPants.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemDistressPistol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemDogFood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemDownVest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemDressShirt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemDrivingGloves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemEmergencyStim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemEnergyBar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemEnergyDrink.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemExpeditionParka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFirearmCleaningKit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFirelog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFirestriker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFirFirewood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFishermansSweater.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFishingTackle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFlare.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFlareShell.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFlashlight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFleeceCowl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemFleeceMittens.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemGauntlets.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemGranolaBar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemGreenMapleSapling.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemGut.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemHacksaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemHatchet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemHeavyHammer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemHoodie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemHook.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemHuntingKnife.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemHuntingRifle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemImprovisedHandWraps.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemImprovisedHatchet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemImprovisedHeadWrap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemImprovisedKnife.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemInsulatedBoots.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemJeans.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemJeremiah%27sKnife.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemJerryCan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemLakeWhitefishCooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemLakeWhitefishRaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemLanternFuel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemLeatherShoes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemLightShell.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemLine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemLongWoolScarf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMackenzie%27sBoots.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMackenzie%27sPants.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMackenzie%27sParka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMackenzie%27sShirt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMackenzie%27sSweater.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMackenzie%27sToque.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMackinawJacket.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMagnifyingLens.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMariner%27sPeaCoat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMilitaryCoat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMilitaryGradeMRE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMoose-hideCloak.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMoose-HideSatchel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMooseHide.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMooseMeatCooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMooseMeatRaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMountaineeringBoots.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMountaineeringRope.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemMukluks.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemNewsprint.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemNewsprintRoll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemOldFashionedParka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemOldMan%27sBeardLichen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemOldMansBeardWoundDressing.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemOrangeSoda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemPainkillers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemPeanutButter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemPinnaclePeaches.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemPlaidShirt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemPorkAndBeans.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemPreparedBirchBark.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemPreparedReishiMushrooms.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemPreparedRoseHips.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemPrybar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemQualityTools.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRabbitMeatCooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRabbitMeatRaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRabbitPelt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRabbitskinHat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRabbitskinMitts.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRainbowTroutCooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRainbowTroutRaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemReclaimedWood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRecycledCan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemReishiMushroom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemReishiTea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRevolver.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRevolverCartridges.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRifleCartridges.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRoseHip.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRoseHipTea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemRunningShoes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSaltyCrackers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemScrapMetal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemScrapMetalShard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSewingKit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSimpleArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSimpleParka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSimpleTools.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSkiBoots.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSkiGloves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSkiJacket.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSmallmouthBassCooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSmallmouthBassRaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSnare.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSnowPants.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSportsSocks.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSportVest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemStackOfPapers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemStacy%27sGrapeSoda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemStick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemStone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemStormLantern.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSummitSoda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSurvivalBow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemSweatshirt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemT-Shirt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemThermalUnderwear.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemThickWoolSweater.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemThinWoolSweater.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemTinderPlug.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemTinOfSardines.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemTomatoSoup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemTorch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemTrailBoots.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemUrbanParka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemVenisonCooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemVenisonRaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWaterPotable.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWaterPurificationTablets.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWaterUnsafe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWhetstone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWindbreaker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWolfMeatCooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWolfMeatRaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWolfPelt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWolfskinCoat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWoodMatches.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWoolEarWrap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWoolLongjohns.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWoolMittens.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWoolScarf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWoolShirt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWoolSocks.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWoolToque.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWorkBoots.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWorkGloves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\itemWorkPants.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\MountainTown.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\MysteryLake.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\PleasantValley.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Stone_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\TimberwolfMountain.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Stone_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBrokenArrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCandyBar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCanOpener.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCargoPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCash.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCatTailHead.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCatTailStalk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCedarFirewood.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCharcoal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemClimbingSocks.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCloth.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCohoSalmonCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCohoSalmonRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCombatBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCombatPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCondensedMilk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCookingPot.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCottonScarf.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCottonToque.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCowichanSweater.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCrowFeather.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCupOfCoffee.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCupOfHerbalTea.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCuredLeather.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDeerHide.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDeerskinBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDeerskinPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDistressPistol.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDogFood.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDownVest.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDressShirt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemDrivingGloves.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemEmergencyStim.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemEnergyBar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemEnergyDrink.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemExpeditionParka.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFirearmCleaningKit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFirelog.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFirestriker.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFirFirewood.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFishermansSweater.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFishingTackle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFlare.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFlareShell.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFlashlight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFleeceCowl.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemFleeceMittens.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemGauntlets.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemGranolaBar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemGreenMapleSapling.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemGut.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHacksaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHatchet.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHeavyHammer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHoodie.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHuntingKnife.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemHuntingRifle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemImprovisedHandWraps.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemImprovisedHatchet.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemImprovisedHeadWrap.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemImprovisedKnife.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemInsulatedBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemJeans.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemJeremiah%27sKnife.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemJerryCan.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLakeWhitefishCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLakeWhitefishRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLanternFuel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLeatherShoes.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLightShell.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLine.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemLongWoolScarf.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMackenzie%27sBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMackenzie%27sPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMackenzie%27sParka.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMackenzie%27sShirt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMackenzie%27sSweater.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMackenzie%27sToque.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMackinawJacket.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMagnifyingLens.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMariner%27sPeaCoat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMilitaryCoat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMilitaryGradeMRE.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMooseHide.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMoose-hideCloak.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMoose-HideSatchel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMooseMeatCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMooseMeatRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMountaineeringBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMountaineeringRope.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemMukluks.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemNewsprint.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemNewsprintRoll.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemOldFashionedParka.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemOldMan%27sBeardLichen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemOldMansBeardWoundDressing.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemOrangeSoda.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPainkillers.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPeanutButter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPinnaclePeaches.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPlaidShirt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPorkAndBeans.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPreparedBirchBark.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPreparedReishiMushrooms.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPreparedRoseHips.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemPrybar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemQualityTools.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRabbitMeatCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRabbitMeatRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRabbitPelt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRabbitskinHat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRabbitskinMitts.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRainbowTroutCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRainbowTroutRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemReclaimedWood.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRecycledCan.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemReishiMushroom.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemReishiTea.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRevolver.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRevolverCartridges.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRifleCartridges.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRoseHip.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRoseHipTea.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemRunningShoes.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSaltyCrackers.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemScrapMetal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemScrapMetalShard.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSewingKit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSimpleArrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSimpleParka.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSimpleTools.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSkiBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSkiGloves.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSkiJacket.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSmallmouthBassCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSmallmouthBassRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSnare.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSnowPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSportsSocks.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSportVest.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemStackOfPapers.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemStacy%27sGrapeSoda.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemStick.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemStone.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemStormLantern.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSummitSoda.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSurvivalBow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemSweatshirt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemThermalUnderwear.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemThickWoolSweater.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemThinWoolSweater.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemTinderPlug.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemTinOfSardines.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemTomatoSoup.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemTorch.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemTrailBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemT-Shirt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemUrbanParka.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemVenisonCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemVenisonRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWaterPotable.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWaterPurificationTablets.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWaterUnsafe.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWhetstone.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWindbreaker.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWolfMeatCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWolfMeatRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWolfPelt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWolfskinCoat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoodMatches.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolEarWrap.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolLongjohns.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolMittens.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolScarf.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolShirt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolSocks.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWoolToque.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWorkBoots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWorkGloves.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemWorkPants.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemAccelerant.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemAntibiotics.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemAntiseptic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemArrowhead.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemArrowShaft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBalaclava.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBandage.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBaseballCap.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBearSkinBedroll.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBearskinCoat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBedroll.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBeefJerky.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBirchBark.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBirchBarkTea.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBirchSapling.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBlackBearHide.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBlackBearMeatCooked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBlackBearMeatRaw.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemBook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCardboardMatches.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\itemCoal.png" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

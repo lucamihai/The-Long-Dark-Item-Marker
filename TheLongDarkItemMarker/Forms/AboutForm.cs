@@ -1,7 +1,4 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using System.Drawing;
-using System.Windows.Forms;
-using TheLongDarkItemMarker.Properties;
 
 namespace TheLongDarkItemMarker.Forms
 {
@@ -14,7 +11,7 @@ namespace TheLongDarkItemMarker.Forms
 
             richTextBox.Font = new Font(new FontFamily("Times New Roman"), 12);
             richTextBox.ReadOnly = true;
-            richTextBox.Text = Resources.About;
+            richTextBox.Text = Settings.Settings.About;
         }
     }
 }

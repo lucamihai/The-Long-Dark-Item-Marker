@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Drawing;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Drawing.Drawing2D;
 using System.Text.RegularExpressions;
-using System.Windows.Forms;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.Domain.Interfaces;
 
@@ -52,11 +48,7 @@ namespace TheLongDarkItemMarker.Views
         private void PrepareItemImage()
         {
             var itemImageName = GetItemImageName(Item.Name);
-            var itemImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(itemImageName);
-
-            pictureBoxItem.BackgroundImage = itemImage != null 
-                ? itemImage
-                : new Bitmap(pictureBoxItem.Size.Width, pictureBoxItem.Size.Height);
+            pictureBoxItem.BackgroundImage = Settings.Settings.GetItemImageOrDefault(itemImageName);
         }
 
         [ExcludeFromCodeCoverage]

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using TheLongDarkItemMarker.Domain.Entities;
+﻿using TheLongDarkItemMarker.Domain.Entities;
 
 namespace TheLongDarkItemMarker.Utility
 {
