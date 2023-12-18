@@ -1,11 +1,10 @@
-﻿namespace TheLongDarkItemMarker.Domain.Interfaces
+﻿namespace TheLongDarkItemMarker.Domain.Interfaces;
+
+public interface IItemWithQuantity
 {
-    public interface IItemWithQuantity
-    {
-        string QuantityName { get; set; }
-        string QuantityPostfix { get; set; }
-        float Quantity { get; set; }
-        float QuantityMinValue { get; set; }
-        float QuantityMaxValue { get; set; }
-    }
+    string QuantityName { get; set; }
+    string QuantityPostfix { get; set; }
+    float Quantity { get; set; }
+    float QuantityMinValue { get; set; }
+    float QuantityMaxValue { get; set; }
 }

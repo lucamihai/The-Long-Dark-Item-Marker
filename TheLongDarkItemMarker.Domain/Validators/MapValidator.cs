@@ -2,27 +2,26 @@
 using FluentValidation;
 using TheLongDarkItemMarker.Domain.Entities;
 
-namespace TheLongDarkItemMarker.Domain.Validators
+namespace TheLongDarkItemMarker.Domain.Validators;
+
+[ExcludeFromCodeCoverage]
+public class MapValidator : AbstractValidator<Map>
 {
-    [ExcludeFromCodeCoverage]
-    public class MapValidator : AbstractValidator<Map>
+    public MapValidator()
     {
-        public MapValidator()
-        {
-            ValidateName();
-            ValidateImage();
-        }
+        ValidateName();
+        ValidateImage();
+    }
 
-        private void ValidateName()
-        {
-            RuleFor(x => x.Name)
-                .NotEmpty();
-        }
+    private void ValidateName()
+    {
+        RuleFor(x => x.Name)
+            .NotEmpty();
+    }
 
-        private void ValidateImage()
-        {
-            RuleFor(x => x.Image)
-                .NotNull();
-        }
+    private void ValidateImage()
+    {
+        RuleFor(x => x.Image)
+            .NotNull();
     }
 }

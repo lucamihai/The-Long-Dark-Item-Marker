@@ -1,7 +1,6 @@
-﻿namespace TheLongDarkItemMarker.Domain.Interfaces
+﻿namespace TheLongDarkItemMarker.Domain.Interfaces;
+
+public interface IItemWithCondition
 {
-    public interface IItemWithCondition
-    {
-        byte Condition { get; set; }
-    }
+    byte Condition { get; set; }
 }

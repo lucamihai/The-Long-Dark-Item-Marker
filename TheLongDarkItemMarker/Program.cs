@@ -1,14 +1,13 @@
 using TheLongDarkItemMarker.Forms;
 
-namespace TheLongDarkItemMarker
+namespace TheLongDarkItemMarker;
+
+internal static class Program
 {
-    internal static class Program
+    [STAThread]
+    private static void Main()
     {
-        [STAThread]
-        private static void Main()
-        {
-            ApplicationConfiguration.Initialize();
-            Application.Run(new MainWindow());
-        }
+        ApplicationConfiguration.Initialize();
+        Application.Run(new MainWindow());
     }
 }

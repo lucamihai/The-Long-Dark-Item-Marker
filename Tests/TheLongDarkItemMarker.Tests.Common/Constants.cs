@@ -1,20 +1,20 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace TheLongDarkItemMarker.Tests.Common
+namespace TheLongDarkItemMarker.Tests.Common;
+
+[ExcludeFromCodeCoverage]
+public static class Constants
 {
-    [ExcludeFromCodeCoverage]
-    public static class Constants
-    {
-        public const string MarkerName1 = "MarkerName1";
-        public const float MarkerXPositionPercentage1 = 10;
-        public const float MarkerYPositionPercentage1 = 20;
+    public const string MarkerName1 = "MarkerName1";
+    public const float MarkerXPositionPercentage1 = 10;
+    public const float MarkerYPositionPercentage1 = 20;
 
-        public const string MarkerName2 = "MarkerName2";
-        public const float MarkerXPositionPercentage2 = 2.2f;
-        public const float MarkerYPositionPercentage2 = 3.3f;
+    public const string MarkerName2 = "MarkerName2";
+    public const float MarkerXPositionPercentage2 = 2.2f;
+    public const float MarkerYPositionPercentage2 = 3.3f;
 
-        public const string MarkersJsonString =
-@"{
+    public const string MarkersJsonString =
+        @"{
   ""$type"": ""System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Marker, TheLongDarkItemMarker.Domain]], System.Private.CoreLib"",
   ""$values"": [
     {
@@ -40,8 +40,8 @@ namespace TheLongDarkItemMarker.Tests.Common
   ]
 }";
 
-        public const string ItemsJsonString =
-@"{
+    public const string ItemsJsonString =
+        @"{
         ""$type"": ""System.Collections.Generic.List`1[[TheLongDarkItemMarker.Domain.Entities.Item, TheLongDarkItemMarker.Domain]], mscorlib"",
         ""$values"": [
           {
@@ -80,5 +80,4 @@ namespace TheLongDarkItemMarker.Tests.Common
           }
         ]
       }";
-    }
 }

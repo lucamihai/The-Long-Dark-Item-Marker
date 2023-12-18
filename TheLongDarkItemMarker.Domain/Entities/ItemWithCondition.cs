@@ -1,9 +1,8 @@
 ﻿using TheLongDarkItemMarker.Domain.Interfaces;
 
-namespace TheLongDarkItemMarker.Domain.Entities
+namespace TheLongDarkItemMarker.Domain.Entities;
+
+public class ItemWithCondition : Item, IItemWithCondition
 {
-    public class ItemWithCondition : Item, IItemWithCondition
-    {
-        public byte Condition { get; set; }
-    }
+    public byte Condition { get; set; }
 }

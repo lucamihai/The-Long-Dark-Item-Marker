@@ -1,9 +1,8 @@
-﻿namespace TheLongDarkItemMarker.Enums
+﻿namespace TheLongDarkItemMarker.Enums;
+
+public enum ItemListViewSelection
 {
-    public enum ItemListViewSelection
-    {
-        None,
-        SingleElement,
-        MultipleElements
-    }
+    None,
+    SingleElement,
+    MultipleElements
 }

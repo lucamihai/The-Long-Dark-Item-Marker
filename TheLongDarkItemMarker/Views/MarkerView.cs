@@ -2,42 +2,41 @@
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.Enums;
 
-namespace TheLongDarkItemMarker.Views
+namespace TheLongDarkItemMarker.Views;
+
+public partial class MarkerView : UserControl
 {
-    public partial class MarkerView : UserControl
+    public Marker Marker { get; }
+
+    private ItemListView itemListView;
+
+    public MarkerView(Marker marker)
     {
-        public Marker Marker { get; }
+        ValidateMarker(marker);
 
-        private ItemListView itemListView;
+        InitializeComponent();
 
-        public MarkerView(Marker marker)
+        Marker = marker;
+        UpdateViewData();
+    }
+
+    [ExcludeFromCodeCoverage]
+    public void UpdateViewData()
+    {
+        textBoxMarkerName.Text = $"{Marker.Name}";
+
+        itemListView = new ItemListView(Marker.Items, ItemListViewSelection.None);
+        panelItems.Controls.Clear();
+        panelItems.Controls.Add(itemListView);
+    }
+
+    private void ValidateMarker(Marker marker)
+    {
+        if (marker == null)
         {
-            ValidateMarker(marker);
-
-            InitializeComponent();
-
-            Marker = marker;
-            UpdateViewData();
+            throw new ArgumentNullException();
         }
 
-        [ExcludeFromCodeCoverage]
-        public void UpdateViewData()
-        {
-            textBoxMarkerName.Text = $"{Marker.Name}";
-
-            itemListView = new ItemListView(Marker.Items, ItemListViewSelection.None);
-            panelItems.Controls.Clear();
-            panelItems.Controls.Add(itemListView);
-        }
-
-        private void ValidateMarker(Marker marker)
-        {
-            if (marker == null)
-            {
-                throw new ArgumentNullException();
-            }
-
-            marker.ValidateAndThrow();
-        }
+        marker.ValidateAndThrow();
     }
 }

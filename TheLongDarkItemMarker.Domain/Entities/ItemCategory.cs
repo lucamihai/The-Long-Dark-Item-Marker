@@ -1,12 +1,11 @@
-﻿namespace TheLongDarkItemMarker.Domain.Entities
+﻿namespace TheLongDarkItemMarker.Domain.Entities;
+
+public enum ItemCategory
 {
-    public enum ItemCategory
-    {
-        FireStarting,
-        FirstAid,
-        Clothing,
-        FoodAndDrink,
-        Tool,
-        Material
-    }
+    FireStarting,
+    FirstAid,
+    Clothing,
+    FoodAndDrink,
+    Tool,
+    Material
 }
