@@ -15,13 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.Utili
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.Settings", "TheLongDarkItemMarker.Settings\TheLongDarkItemMarker.Settings.csproj", "{7AC136FA-FC91-4E88-A651-07A704647BFC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.FileSaving.Tests", "TheLongDarkItemMarker.FileSaving.Tests\TheLongDarkItemMarker.FileSaving.Tests.csproj", "{1F36C376-AFE7-4052-A52F-7DB95F7C1902}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.FileSaving.Tests", "Tests\TheLongDarkItemMarker.FileSaving.Tests\TheLongDarkItemMarker.FileSaving.Tests.csproj", "{1F36C376-AFE7-4052-A52F-7DB95F7C1902}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.Tests", "TheLongDarkItemMarker.Tests\TheLongDarkItemMarker.Tests.csproj", "{7692F68D-D40F-4244-B57B-5FCE8916A477}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.Tests", "Tests\TheLongDarkItemMarker.Tests\TheLongDarkItemMarker.Tests.csproj", "{7692F68D-D40F-4244-B57B-5FCE8916A477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLongDarkItemMarker.Tests.Common", "TheLongDarkItemMarker.Tests.Common\TheLongDarkItemMarker.Tests.Common.csproj", "{9B66739B-BB00-45C6-A1F8-8AB116599868}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLongDarkItemMarker.Tests.Common", "Tests\TheLongDarkItemMarker.Tests.Common\TheLongDarkItemMarker.Tests.Common.csproj", "{9B66739B-BB00-45C6-A1F8-8AB116599868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLongDarkItemMarker.Utility.Tests", "TheLongDarkItemMarker.Utility.Tests\TheLongDarkItemMarker.Utility.Tests.csproj", "{DD4D9349-C66D-4AA4-9E57-FF059638BA62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLongDarkItemMarker.Utility.Tests", "Tests\TheLongDarkItemMarker.Utility.Tests\TheLongDarkItemMarker.Utility.Tests.csproj", "{DD4D9349-C66D-4AA4-9E57-FF059638BA62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
