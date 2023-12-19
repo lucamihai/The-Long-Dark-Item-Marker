@@ -11,7 +11,7 @@ public partial class EditItemListForm : Form
     public List<Item> Items { get; private set; }
 
     private readonly ItemListView itemListView;
-    private AddItemView addItemView;
+    private static readonly AddItemView AddItemView = StaticViews.AddItemView;
     private bool isExtended;
 
     public EditItemListForm(List<Item> items)
@@ -19,7 +19,7 @@ public partial class EditItemListForm : Form
         ValidateItemList(items);
 
         InitializeComponent();
-
+        AddItemView.OnItemAdd += OnItemAdd;
         InitializeItemListFromProvidedItems(items);
 
         itemListView = new ItemListView(Items, ItemListViewSelection.MultipleElements);
@@ -75,33 +75,20 @@ public partial class EditItemListForm : Form
             this.Width = this.Size.Width + AddItemViewWidth + 60;
             isExtended = true;
 
-            if (addItemView != null)
-                Controls.Add(addItemView);
+            AddItemView.Location = new Point(this.Size.Width - AddItemView.Width - 10, labelItems.Height);
+            Controls.Add(AddItemView);
+            
         }
         else
         {
-            Controls.Remove(addItemView);
+            Controls.Remove(AddItemView);
             this.Width = this.Size.Width - AddItemViewWidth - 60;
             isExtended = false;
-        }
-
-        if (addItemView == null)
-        {
-            InitializeAddItemView();
-            Controls.Add(addItemView);
         }
     }
 
     [ExcludeFromCodeCoverage]
     private int AddItemViewWidth => AddItemView.GetWidth;
-
-    [ExcludeFromCodeCoverage]
-    private void InitializeAddItemView()
-    {
-        addItemView = new AddItemView();
-        addItemView.Location = new Point(this.Size.Width - addItemView.Width - 10, labelItems.Height);
-        addItemView.OnItemAdd += OnItemAdd;
-    }
 
     [ExcludeFromCodeCoverage]
     private void OnItemAdd(Item copyOfItemToAdd)

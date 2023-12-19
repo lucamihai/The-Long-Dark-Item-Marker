@@ -4,7 +4,6 @@ namespace TheLongDarkItemMarker.Settings;
 
 public static class Settings
 {
-    private static readonly Dictionary<string, Image> MapImages = new();
     private static readonly Dictionary<string, Image> ItemImages = new();
 
     static Settings()
@@ -17,35 +16,17 @@ public static class Settings
         }
 
         // TODO: Improve file structure
-        //var resourceFiles = Directory.GetFiles(resourcesFolder);
-        //var mapImageFiles = resourceFiles.Where(x => !x.StartsWith("item")).Distinct();
-        //var itemImageFiles = resourceFiles.Where(x => x.StartsWith("item")).Distinct();
+        var resourceFiles = Directory.GetFiles(resourcesFolder);
 
-        //foreach (var resourceFile in resourceFiles)
-        //{
-        //    var name = Path.GetFileNameWithoutExtension(resourceFile);
+        foreach (var resourceFile in resourceFiles)
+        {
+            var resourceName = Path.GetFileNameWithoutExtension(resourceFile);
 
-        //    if (resourceFile.Contains("item"))
-        //    {
-
-        //    }
-        //    else
-        //    {
-
-        //    }
-        //}
-
-        //foreach (var mapImageFile in mapImageFiles)
-        //{
-        //    var mapName = Path.GetFileName(mapImageFile);
-        //    MapImages.Add(mapName, Image.FromFile(mapImageFile));
-        //}
-
-        //foreach (var itemImageFile in itemImageFiles)
-        //{
-        //    var itemName = Path.GetFileName(itemImageFile);
-        //    ItemImages.Add(itemImageFile, Image.FromFile(itemImageFile));
-        //}
+            if (resourceFile.Contains("item"))
+            {
+                ItemImages.Add(resourceName, Image.FromFile(resourceFile));
+            }
+        }
     }
 
     public static Image GetMapImageOrDefault(string mapImageName, Image defaultImage = null)
@@ -57,27 +38,15 @@ public static class Settings
             return Image.FromFile(filepath);
         }
 
-        //if (MapImages.TryGetValue(mapImageName, out var image))
-        //{
-        //    return image;
-        //}
-
         return defaultImage ?? new Bitmap(512, 512);
     }
 
     public static Image GetItemImageOrDefault(string itemImageName, Image defaultImage = null)
     {
-        var filepath = Path.Combine("Resources", $"{itemImageName}.png");
-
-        if (File.Exists($"Resources\\{itemImageName}.png"))
+        if (ItemImages.TryGetValue(itemImageName, out var image))
         {
-            return Image.FromFile(filepath);
+            return image;
         }
-
-        //if (ItemImages.TryGetValue(itemImageName, out var image))
-        //{
-        //    return image;
-        //}
 
         return defaultImage ?? new Bitmap(512, 512);
     }

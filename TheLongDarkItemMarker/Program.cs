@@ -8,6 +8,7 @@ internal static class Program
     private static void Main()
     {
         ApplicationConfiguration.Initialize();
+        StaticViews.Initialize();
         Application.Run(new MainWindow());
     }
 }
