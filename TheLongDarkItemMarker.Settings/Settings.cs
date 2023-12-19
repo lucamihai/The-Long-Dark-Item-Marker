@@ -31,9 +31,9 @@ public static class Settings
 
     public static Image GetMapImageOrDefault(string mapImageName, Image defaultImage = null)
     {
-        var filepath = Path.Combine("Resources", $"{mapImageName}.png");
+        var filepath = Path.Combine("Resources", $"{mapImageName}.jpg");
 
-        if (File.Exists($"Resources\\{mapImageName}.png"))
+        if (File.Exists(filepath))
         {
             return Image.FromFile(filepath);
         }

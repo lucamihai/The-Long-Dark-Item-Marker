@@ -67,19 +67,19 @@
     <None Update="Config\Items\ItemsTool.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\BrokenRailroad.png">
+    <None Update="Resources\BrokenRailroad.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\CoastalHighway.png">
+    <None Update="Resources\CoastalHighway.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\DesolationPoint.png">
+    <None Update="Resources\DesolationPoint.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\ForlornMuskeg.png">
+    <None Update="Resources\ForlornMuskeg.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\HushedRiverValley.png">
+    <None Update="Resources\HushedRiverValley.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\itemAccelerant.png">
@@ -688,19 +688,19 @@
     <None Update="Resources\itemWorkPants.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\MountainTown.png">
+    <None Update="Resources\MountainTown.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\MysteryLake.png">
+    <None Update="Resources\MysteryLake.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\PleasantValley.png">
+    <None Update="Resources\PleasantValley.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\Stone_icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\TimberwolfMountain.png">
+    <None Update="Resources\TimberwolfMountain.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
