@@ -15,6 +15,10 @@ namespace TheLongDarkItemMarker.WPF
 {
     public partial class MainWindow : Window
     {
+        // TODO: Make this a parameter for the component
+        // TODO: Investigate behaviour for different X and Y sizes
+        private readonly double BorderSize = 1000;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,14 +40,25 @@ namespace TheLongDarkItemMarker.WPF
             mapImage.RenderTransform = group;
         }
 
+        private double zoomScale = 1;
         private void image_MouseWheel(object sender, MouseWheelEventArgs e)
         {
             TransformGroup transformGroup = (TransformGroup)mapImage.RenderTransform;
             ScaleTransform transform = (ScaleTransform)transformGroup.Children[0];
 
             double zoom = e.Delta > 0 ? .2 : -.2;
+
+            if (zoom + zoomScale < 1)
+            {
+                return;
+            }
+
             transform.ScaleX += zoom;
             transform.ScaleY += zoom;
+
+            zoomScale = transform.ScaleX;
+
+            // TODO: Center on zoom out
         }
 
         Point start;
@@ -64,14 +79,33 @@ namespace TheLongDarkItemMarker.WPF
             {
                 var tt = (TranslateTransform)((TransformGroup)mapImage.RenderTransform).Children.First(tr => tr is TranslateTransform);
                 Vector v = start - e.GetPosition(border);
-                tt.X = origin.X - v.X;
-                tt.Y = origin.Y - v.Y;
+
+                var zoomedDifference = zoomScale - 1;
+                var clampLimit = 1000 * zoomedDifference / 2;
+
+                tt.X = Clamp(origin.X - v.X, min: -clampLimit, max: clampLimit);
+                tt.Y = Clamp(origin.Y - v.Y, min: -clampLimit, max: clampLimit);
             }
         }
 
         private void image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             mapImage.ReleaseMouseCapture();
+        }
+
+        private static double Clamp(double value, double min, double max)
+        {
+            if (value < min)
+            {
+                return min;
+            }
+
+            if (value > max)
+            {
+                return max;
+            }
+
+            return value;
         }
     }
 }
