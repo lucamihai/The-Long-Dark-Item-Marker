@@ -17,7 +17,7 @@ namespace TheLongDarkItemMarker.WPF
     {
         // TODO: Make this a parameter for the component
         // TODO: Investigate behaviour for different X and Y sizes
-        private readonly double BorderSize = 1000;
+        private const double BorderSize = 1000;
 
         public MainWindow()
         {
@@ -53,12 +53,18 @@ namespace TheLongDarkItemMarker.WPF
                 return;
             }
 
+            // TODO: Zoom in toward the mouse position
+
             transform.ScaleX += zoom;
             transform.ScaleY += zoom;
 
             zoomScale = transform.ScaleX;
 
-            // TODO: Center on zoom out
+            var isZoomOut = zoom < 0;
+            if (isZoomOut)
+            {
+                EnsureImageDoesNotGoOutsideBorders();
+            }
         }
 
         Point start;
@@ -77,20 +83,24 @@ namespace TheLongDarkItemMarker.WPF
         {
             if (mapImage.IsMouseCaptured)
             {
-                var tt = (TranslateTransform)((TransformGroup)mapImage.RenderTransform).Children.First(tr => tr is TranslateTransform);
                 Vector v = start - e.GetPosition(border);
-
-                var zoomedDifference = zoomScale - 1;
-                var clampLimit = 1000 * zoomedDifference / 2;
-
-                tt.X = Clamp(origin.X - v.X, min: -clampLimit, max: clampLimit);
-                tt.Y = Clamp(origin.Y - v.Y, min: -clampLimit, max: clampLimit);
+                EnsureImageDoesNotGoOutsideBorders(newPositionX: origin.X - v.X, newPositionY: origin.Y - v.Y);
             }
         }
 
         private void image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             mapImage.ReleaseMouseCapture();
+        }
+
+        private void EnsureImageDoesNotGoOutsideBorders(double? newPositionX = null, double? newPositionY = null)
+        {
+            var tt = (TranslateTransform)((TransformGroup)mapImage.RenderTransform).Children.First(tr => tr is TranslateTransform);
+            var zoomedDifference = zoomScale - 1;
+            var clampLimit = BorderSize * zoomedDifference / 2;
+
+            tt.X = Clamp(newPositionX ?? tt.X, min: -clampLimit, max: clampLimit);
+            tt.Y = Clamp(newPositionY ?? tt.Y, min: -clampLimit, max: clampLimit);
         }
 
         private static double Clamp(double value, double min, double max)
