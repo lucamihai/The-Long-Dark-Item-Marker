@@ -2,6 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using TheLongDarkItemMarker.Domain.Entities;
 using TheLongDarkItemMarker.FileSaving;
+using TheLongDarkItemMarker.Settings;
 using TheLongDarkItemMarker.Views;
 
 namespace TheLongDarkItemMarker.Forms;
@@ -81,7 +82,7 @@ public partial class MainWindow : Form
             var map = new Map
             {
                 Name = mapName,
-                Image = Settings.Settings.GetMapImageOrDefault(mapImageName)
+                Image = Settings.ImageProvider.GetMapImageOrDefault(mapImageName)
             };
 
             map.ValidateAndThrow();
@@ -268,6 +269,6 @@ public partial class MainWindow : Form
 
     private void OpenWebPageToolStripMenuItemClick(object sender, EventArgs e)
     {
-        System.Diagnostics.Process.Start(Settings.Settings.HelpWebPageUrl);
+        System.Diagnostics.Process.Start(AppInformation.HelpWebPageUrl);
     }
 }

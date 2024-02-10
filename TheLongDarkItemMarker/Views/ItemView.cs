@@ -48,7 +48,7 @@ public partial class ItemView : UserControl
     private void PrepareItemImage()
     {
         var itemImageName = GetItemImageName(Item.Name);
-        pictureBoxItem.BackgroundImage = Settings.Settings.GetItemImageOrDefault(itemImageName);
+        pictureBoxItem.BackgroundImage = Settings.ImageProvider.GetItemImageOrDefault(itemImageName);
     }
 
     [ExcludeFromCodeCoverage]

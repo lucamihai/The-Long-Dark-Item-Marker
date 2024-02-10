@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.FileS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.Tests", "Tests\TheLongDarkItemMarker.Tests\TheLongDarkItemMarker.Tests.csproj", "{7692F68D-D40F-4244-B57B-5FCE8916A477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLongDarkItemMarker.Tests.Common", "Tests\TheLongDarkItemMarker.Tests.Common\TheLongDarkItemMarker.Tests.Common.csproj", "{9B66739B-BB00-45C6-A1F8-8AB116599868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.Tests.Common", "Tests\TheLongDarkItemMarker.Tests.Common\TheLongDarkItemMarker.Tests.Common.csproj", "{9B66739B-BB00-45C6-A1F8-8AB116599868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLongDarkItemMarker.Utility.Tests", "Tests\TheLongDarkItemMarker.Utility.Tests\TheLongDarkItemMarker.Utility.Tests.csproj", "{DD4D9349-C66D-4AA4-9E57-FF059638BA62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLongDarkItemMarker.Utility.Tests", "Tests\TheLongDarkItemMarker.Utility.Tests\TheLongDarkItemMarker.Utility.Tests.csproj", "{DD4D9349-C66D-4AA4-9E57-FF059638BA62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLongDarkItemMarker.WPF", "TheLongDarkItemMarker.WPF\TheLongDarkItemMarker.WPF.csproj", "{EA84167B-A193-4142-AAC0-4E5AE1703FDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{DD4D9349-C66D-4AA4-9E57-FF059638BA62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD4D9349-C66D-4AA4-9E57-FF059638BA62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD4D9349-C66D-4AA4-9E57-FF059638BA62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA84167B-A193-4142-AAC0-4E5AE1703FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA84167B-A193-4142-AAC0-4E5AE1703FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA84167B-A193-4142-AAC0-4E5AE1703FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA84167B-A193-4142-AAC0-4E5AE1703FDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

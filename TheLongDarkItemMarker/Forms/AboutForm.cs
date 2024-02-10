@@ -11,6 +11,6 @@ public partial class AboutForm : Form
 
         richTextBox.Font = new Font(new FontFamily("Times New Roman"), 12);
         richTextBox.ReadOnly = true;
-        richTextBox.Text = Settings.Settings.About;
+        richTextBox.Text = Settings.AppInformation.About;
     }
 }

@@ -40,7 +40,7 @@ public partial class EditItemForm : Form
     {
         var itemImageName = GetItemImageName(item.Name);
         //var itemImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(itemImageName);
-        pictureBoxItem.BackgroundImage = Settings.Settings.GetItemImageOrDefault(itemImageName, defaultImage: new Bitmap(pictureBoxItem.Size.Width, pictureBoxItem.Size.Height));
+        pictureBoxItem.BackgroundImage = Settings.ImageProvider.GetItemImageOrDefault(itemImageName, defaultImage: new Bitmap(pictureBoxItem.Size.Width, pictureBoxItem.Size.Height));
     }
 
     [ExcludeFromCodeCoverage]

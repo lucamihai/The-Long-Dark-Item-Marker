@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace TheLongDarkItemMarker;
+namespace TheLongDarkItemMarker.Settings;
 
 [ExcludeFromCodeCoverage]
-internal static class MapImageNames
+public static class MapImageNames
 {
     public const string MysteryLake = "MysteryLake";
     public const string CoastalHighway = "CoastalHighway";
